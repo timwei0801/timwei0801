@@ -1,4 +1,6 @@
-# Hi 👋, I'm Wei Chi-Hung | Data Science Master's Student | Full-Stack Developer from Taiwan
+# Hi 👋, I'm Wei Chi-Hung
+
+## Data Science Master's Student | Full-Stack Developer from Taiwan
 
 ### A passionate data science graduate student from Tamkang University, currently working as a full-stack development intern at EY, specializing in statistical analysis and web
 
