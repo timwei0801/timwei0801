@@ -4,7 +4,7 @@
 
 ### A passionate data science graduate student from Tamkang University, currently working as a full-stack development intern at EY, specializing in statistical analysis and web
 
-- 🔭 I'm currently working on [Full-Stack Development Projects at EY (Ernst & Young)](https://github.com/timwei0801/Highway_trafficwave)
+- 🔭 I'm currently working on Full-Stack Development Projects at EY (Ernst & Young)
 
 - 🌱 I'm currently learning **Enterprise Software Architecture, Advanced Statistical Modeling, Modern Web Development Frameworks, and Cloud Technologies**
 
