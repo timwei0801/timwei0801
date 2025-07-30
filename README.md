@@ -1,4 +1,4 @@
-# Hi 👋, I'm Wei Chi-Hung
+# Hi 👋, I'm Tim Wei
 
 ## Data Science Master's Student | Full-Stack Developer from Taiwan
 
