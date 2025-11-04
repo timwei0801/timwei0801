@@ -22,7 +22,7 @@ My internship at EY gives me the opportunity to work with enterprise-level softw
 **Institute of Statistical Science, Academia Sinica**  
 Successfully transformed complex statistical analyses into accessible visualizations, standing out among numerous competing teams. This experience taught me that exceptional data science requires not only solid technical skills but, more importantly, the ability to communicate profound insights to non-technical audiences in an intuitive and understandable way.
 
-### 🥉 3rd Place - 2025 National Freeway Intelligent Traffic Management Competition
+### 🥈 2rd Place - 2025 National Freeway Intelligent Traffic Management Competition
 **Taiwan Area National Expressway Engineering Bureau**  
 Developed an intelligent traffic prediction system by innovatively merging deep learning with physics-based shockwave theory, successfully addressing real-world traffic congestion prediction challenges. This project demonstrated the capability to integrate cross-disciplinary knowledge and transform academic research into practical solutions, earning high recognition from the judging panel.
 
