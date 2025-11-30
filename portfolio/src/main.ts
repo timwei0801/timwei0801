@@ -18,11 +18,6 @@ setTimeout(() => {
     easing: 'ease-out-cubic',
     once: true,
     offset: 50,
-    disable: false,
-    startEvent: 'DOMContentLoaded',
-    initClassName: 'aos-init',
-    animatedClassName: 'aos-animate',
-    useClassNames: false,
   })
   // Refresh AOS to detect elements already in viewport
   AOS.refresh()
