@@ -9,12 +9,21 @@ const app = createApp(App)
 
 app.use(i18n)
 
-// Initialize AOS
-AOS.init({
-  duration: 800,
-  easing: 'ease-out-cubic',
-  once: true,
-  offset: 50,
-})
-
 app.mount('#app')
+
+// Initialize AOS after app is mounted
+setTimeout(() => {
+  AOS.init({
+    duration: 800,
+    easing: 'ease-out-cubic',
+    once: true,
+    offset: 50,
+    disable: false,
+    startEvent: 'DOMContentLoaded',
+    initClassName: 'aos-init',
+    animatedClassName: 'aos-animate',
+    useClassNames: false,
+  })
+  // Refresh AOS to detect elements already in viewport
+  AOS.refresh()
+}, 100)

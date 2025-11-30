@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, nextTick } from 'vue'
+import AOS from 'aos'
 import Navbar from './components/Navbar.vue'
 import Hero from './components/Hero.vue'
 import About from './components/About.vue'
@@ -15,8 +16,13 @@ import ScrollToTop from './components/ScrollToTop.vue'
 const isLoading = ref(true)
 
 onMounted(() => {
-  setTimeout(() => {
+  setTimeout(async () => {
     isLoading.value = false
+    // Wait for DOM update then refresh AOS
+    await nextTick()
+    setTimeout(() => {
+      AOS.refresh()
+    }, 100)
   }, 1500)
 })
 </script>
