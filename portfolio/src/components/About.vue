@@ -1,6 +1,14 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 
+// Import tech stack icons
+import vueIcon from '../assets/images/icons/Vue.png'
+import reactIcon from '../assets/images/icons/react.png'
+import pythonIcon from '../assets/images/icons/python.png'
+import typescriptIcon from '../assets/images/icons/typescript.png'
+import deepLearningIcon from '../assets/images/icons/DeepLearning.png'
+import dataScienceIcon from '../assets/images/icons/DataScience.png'
+
 const { t } = useI18n()
 
 const highlights = [
@@ -22,12 +30,12 @@ const highlights = [
 ]
 
 const techStack = [
-  { name: 'Vue.js', icon: '🖼️' },
-  { name: 'React', icon: '⚛️' },
-  { name: 'Python', icon: '🐍' },
-  { name: 'TypeScript', icon: '📘' },
-  { name: 'Deep Learning', icon: '🧠' },
-  { name: 'Data Science', icon: '📊' },
+  { name: 'Vue.js', icon: vueIcon },
+  { name: 'React', icon: reactIcon },
+  { name: 'Python', icon: pythonIcon },
+  { name: 'TypeScript', icon: typescriptIcon },
+  { name: 'Deep Learning', icon: deepLearningIcon },
+  { name: 'Data Science', icon: dataScienceIcon },
 ]
 </script>
 
@@ -68,7 +76,7 @@ const techStack = [
                   :key="tech.name"
                   class="flex items-center gap-2 px-4 py-2 bg-light-300 rounded-xl hover:bg-primary-50 hover:shadow-md transition-all duration-300 cursor-default"
                 >
-                  <span>{{ tech.icon }}</span>
+                  <img :src="tech.icon" :alt="tech.name" class="w-6 h-6 object-contain" />
                   <span class="text-sm font-medium text-dark-500">{{ tech.name }}</span>
                 </div>
               </div>

@@ -2,6 +2,36 @@
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 
+// Import skill icons
+import pythonIcon from '../assets/images/icons/python.png'
+import tensorflowIcon from '../assets/images/icons/TensorFlow.png'
+import deepLearningIcon from '../assets/images/icons/DeepLearning.png'
+import machineLearningIcon from '../assets/images/icons/MachineLearning.png'
+import ragIcon from '../assets/images/icons/RAG.png'
+import llmIcon from '../assets/images/icons/LLM.png'
+import scikitLearnIcon from '../assets/images/icons/Scikit-learn.png'
+import vueIcon from '../assets/images/icons/Vue.png'
+import reactIcon from '../assets/images/icons/react.png'
+import typescriptIcon from '../assets/images/icons/typescript.png'
+import javascriptIcon from '../assets/images/icons/JavaScript.png'
+import tailwindIcon from '../assets/images/icons/TailwindCSS.png'
+import htmlCssIcon from '../assets/images/icons/HTML-CSS.png'
+import nodeIcon from '../assets/images/icons/Node.png'
+import javaIcon from '../assets/images/icons/Java.png'
+import springBootIcon from '../assets/images/icons/SpringBoot.png'
+import fastApiIcon from '../assets/images/icons/FastAPI.png'
+import restfulApiIcon from '../assets/images/icons/RESTfulAPI.png'
+import rIcon from '../assets/images/icons/R.png'
+import sasIcon from '../assets/images/icons/SAS.png'
+import pandasIcon from '../assets/images/icons/Pandas.png'
+import numpyIcon from '../assets/images/icons/NumPy.png'
+import statisticalModelingIcon from '../assets/images/icons/StatisticalModeling.png'
+import gitIcon from '../assets/images/icons/Git.png'
+import dockerIcon from '../assets/images/icons/Docker.png'
+import linuxIcon from '../assets/images/icons/Linux.png'
+import sqlServerIcon from '../assets/images/icons/SQLServer.png'
+import mysqlIcon from '../assets/images/icons/MySQL.png'
+
 const { t, locale } = useI18n()
 
 const activeCategory = ref('all')
@@ -17,43 +47,42 @@ const categories = [
 
 const skills = [
   // AI & ML
-  { name: 'Python', level: 95, category: 'ai', icon: '🐍' },
-  { name: 'PyTorch', level: 85, category: 'ai', icon: '🔥' },
-  { name: 'TensorFlow', level: 80, category: 'ai', icon: '🧠' },
-  { name: 'Deep Learning', level: 88, category: 'ai', icon: '🤖' },
-  { name: 'GNN', level: 85, category: 'ai', icon: '🕸️' },
-  { name: 'RAG', level: 82, category: 'ai', icon: '📚' },
-  { name: 'LLM', level: 85, category: 'ai', icon: '💬' },
-  { name: 'Scikit-learn', level: 90, category: 'ai', icon: '📊' },
+  { name: 'Python', level: 95, category: 'ai', icon: pythonIcon },
+  { name: 'Machine Learning', level: 85, category: 'ai', icon: machineLearningIcon },
+  { name: 'TensorFlow', level: 80, category: 'ai', icon: tensorflowIcon },
+  { name: 'Deep Learning', level: 88, category: 'ai', icon: deepLearningIcon },
+  { name: 'RAG', level: 82, category: 'ai', icon: ragIcon },
+  { name: 'LLM', level: 85, category: 'ai', icon: llmIcon },
+  { name: 'Scikit-learn', level: 90, category: 'ai', icon: scikitLearnIcon },
 
   // Frontend
-  { name: 'Vue.js', level: 92, category: 'frontend', icon: '💚' },
-  { name: 'React', level: 78, category: 'frontend', icon: '⚛️' },
-  { name: 'TypeScript', level: 85, category: 'frontend', icon: '📘' },
-  { name: 'JavaScript', level: 90, category: 'frontend', icon: '💛' },
-  { name: 'Tailwind CSS', level: 88, category: 'frontend', icon: '🎨' },
-  { name: 'HTML/CSS', level: 92, category: 'frontend', icon: '🌐' },
+  { name: 'Vue.js', level: 92, category: 'frontend', icon: vueIcon },
+  { name: 'React', level: 78, category: 'frontend', icon: reactIcon },
+  { name: 'TypeScript', level: 85, category: 'frontend', icon: typescriptIcon },
+  { name: 'JavaScript', level: 90, category: 'frontend', icon: javascriptIcon },
+  { name: 'Tailwind CSS', level: 88, category: 'frontend', icon: tailwindIcon },
+  { name: 'HTML/CSS', level: 92, category: 'frontend', icon: htmlCssIcon },
 
   // Backend
-  { name: 'Node.js', level: 82, category: 'backend', icon: '🟢' },
-  { name: 'Java', level: 75, category: 'backend', icon: '☕' },
-  { name: 'Spring Boot', level: 72, category: 'backend', icon: '🍃' },
-  { name: 'FastAPI', level: 80, category: 'backend', icon: '⚡' },
-  { name: 'RESTful API', level: 88, category: 'backend', icon: '🔌' },
+  { name: 'Node.js', level: 82, category: 'backend', icon: nodeIcon },
+  { name: 'Java', level: 75, category: 'backend', icon: javaIcon },
+  { name: 'Spring Boot', level: 72, category: 'backend', icon: springBootIcon },
+  { name: 'FastAPI', level: 80, category: 'backend', icon: fastApiIcon },
+  { name: 'RESTful API', level: 88, category: 'backend', icon: restfulApiIcon },
 
   // Data
-  { name: 'R', level: 88, category: 'data', icon: '📈' },
-  { name: 'SAS', level: 85, category: 'data', icon: '📉' },
-  { name: 'Pandas', level: 92, category: 'data', icon: '🐼' },
-  { name: 'NumPy', level: 90, category: 'data', icon: '🔢' },
-  { name: 'Statistical Modeling', level: 88, category: 'data', icon: '📊' },
+  { name: 'R', level: 88, category: 'data', icon: rIcon },
+  { name: 'SAS', level: 85, category: 'data', icon: sasIcon },
+  { name: 'Pandas', level: 92, category: 'data', icon: pandasIcon },
+  { name: 'NumPy', level: 90, category: 'data', icon: numpyIcon },
+  { name: 'Statistical Modeling', level: 88, category: 'data', icon: statisticalModelingIcon },
 
   // Tools
-  { name: 'Git', level: 90, category: 'tools', icon: '🔧' },
-  { name: 'Docker', level: 70, category: 'tools', icon: '🐳' },
-  { name: 'Linux', level: 75, category: 'tools', icon: '🐧' },
-  { name: 'SQL Server', level: 82, category: 'tools', icon: '🗄️' },
-  { name: 'MySQL', level: 85, category: 'tools', icon: '💾' },
+  { name: 'Git', level: 90, category: 'tools', icon: gitIcon },
+  { name: 'Docker', level: 70, category: 'tools', icon: dockerIcon },
+  { name: 'Linux', level: 75, category: 'tools', icon: linuxIcon },
+  { name: 'SQL Server', level: 82, category: 'tools', icon: sqlServerIcon },
+  { name: 'MySQL', level: 85, category: 'tools', icon: mysqlIcon },
 ]
 
 const filteredSkills = () => {
@@ -105,8 +134,8 @@ const filteredSkills = () => {
           >
             <div class="card p-4 text-center hover:border-primary-200 border border-transparent cursor-default">
               <!-- Icon -->
-              <div class="text-3xl mb-2 group-hover:scale-125 transition-transform duration-300">
-                {{ skill.icon }}
+              <div class="w-10 h-10 mx-auto mb-2 group-hover:scale-125 transition-transform duration-300">
+                <img :src="skill.icon" :alt="skill.name" class="w-full h-full object-contain" />
               </div>
 
               <!-- Name -->
