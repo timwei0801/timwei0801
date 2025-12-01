@@ -156,25 +156,18 @@ const scrollToSection = (id: string) => {
         </div>
 
         <!-- Profile Image -->
-        <div
-          :class="[
-            'relative transition-all duration-1000 delay-300',
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          ]"
-        >
+        <div class="relative">
           <div class="relative">
             <!-- Decorative Ring -->
-            <div class="absolute -inset-4 bg-gradient-to-r from-accent-500 to-primary-400 rounded-full opacity-20 blur-xl animate-pulse-slow"></div>
+            <div class="absolute -inset-4 bg-gradient-to-r from-accent-500 to-primary-400 rounded-full opacity-20 blur-xl"></div>
 
             <!-- Image Container -->
-            <div class="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl">
+            <div class="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full border-4 border-white/20 shadow-2xl overflow-hidden">
               <img
                 :src="profileImage"
                 alt="Tim Wei"
-                class="w-full h-full object-cover"
+                style="display: block !important; width: 100% !important; height: 100% !important; object-fit: cover !important; opacity: 1 !important; visibility: visible !important; position: absolute !important; top: 0 !important; left: 0 !important;"
               />
-              <!-- Overlay -->
-              <div class="absolute inset-0 bg-gradient-to-t from-primary-700/30 to-transparent"></div>
             </div>
 
             <!-- Floating Badge -->
