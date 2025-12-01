@@ -47,42 +47,42 @@ const categories = [
 
 const skills = [
   // AI & ML
-  { name: 'Python', level: 95, category: 'ai', icon: pythonIcon },
-  { name: 'Machine Learning', level: 85, category: 'ai', icon: machineLearningIcon },
-  { name: 'TensorFlow', level: 80, category: 'ai', icon: tensorflowIcon },
-  { name: 'Deep Learning', level: 88, category: 'ai', icon: deepLearningIcon },
-  { name: 'RAG', level: 82, category: 'ai', icon: ragIcon },
-  { name: 'LLM', level: 85, category: 'ai', icon: llmIcon },
-  { name: 'Scikit-learn', level: 90, category: 'ai', icon: scikitLearnIcon },
+  { name: 'Python', level: 95, category: 'ai', icon: pythonIcon, uses: ['爬蟲', '自動化', '數據分析', '機器學習', 'API 開發'] },
+  { name: 'Machine Learning', level: 85, category: 'ai', icon: machineLearningIcon, uses: ['分類模型', '迴歸分析', '集成學習', '特徵工程', '模型調參'] },
+  { name: 'TensorFlow', level: 80, category: 'ai', icon: tensorflowIcon, uses: ['神經網路', '模型訓練', 'GPU 加速', '模型部署', 'Keras'] },
+  { name: 'Deep Learning', level: 88, category: 'ai', icon: deepLearningIcon, uses: ['CNN', 'RNN', 'GNN', '時序預測', '遷移學習'] },
+  { name: 'RAG', level: 82, category: 'ai', icon: ragIcon, uses: ['文件檢索', '向量資料庫', 'Embedding', '知識問答', 'LangChain'] },
+  { name: 'LLM', level: 85, category: 'ai', icon: llmIcon, uses: ['Prompt 工程', 'API 串接', '文本生成', '對話系統', 'Claude/GPT'] },
+  { name: 'Scikit-learn', level: 90, category: 'ai', icon: scikitLearnIcon, uses: ['預處理', '模型選擇', '交叉驗證', '管線建構', '評估指標'] },
 
   // Frontend
-  { name: 'Vue.js', level: 92, category: 'frontend', icon: vueIcon },
-  { name: 'React', level: 78, category: 'frontend', icon: reactIcon },
-  { name: 'TypeScript', level: 85, category: 'frontend', icon: typescriptIcon },
-  { name: 'JavaScript', level: 90, category: 'frontend', icon: javascriptIcon },
-  { name: 'Tailwind CSS', level: 88, category: 'frontend', icon: tailwindIcon },
-  { name: 'HTML/CSS', level: 92, category: 'frontend', icon: htmlCssIcon },
+  { name: 'Vue.js', level: 92, category: 'frontend', icon: vueIcon, uses: ['組件開發', 'Composition API', '狀態管理', '路由配置', 'Vite'] },
+  { name: 'React', level: 78, category: 'frontend', icon: reactIcon, uses: ['Hooks', 'JSX', '狀態管理', '組件設計', 'Next.js'] },
+  { name: 'TypeScript', level: 85, category: 'frontend', icon: typescriptIcon, uses: ['型別定義', '介面設計', '泛型', '嚴格模式', '重構'] },
+  { name: 'JavaScript', level: 90, category: 'frontend', icon: javascriptIcon, uses: ['ES6+', '非同步處理', 'DOM 操作', '事件處理', '模組化'] },
+  { name: 'Tailwind CSS', level: 88, category: 'frontend', icon: tailwindIcon, uses: ['響應式設計', '客製主題', '動畫效果', '組件樣式', 'Dark Mode'] },
+  { name: 'HTML/CSS', level: 92, category: 'frontend', icon: htmlCssIcon, uses: ['語意化標籤', 'Flexbox', 'Grid', 'RWD', '表單設計'] },
 
   // Backend
-  { name: 'Node.js', level: 82, category: 'backend', icon: nodeIcon },
-  { name: 'Java', level: 75, category: 'backend', icon: javaIcon },
-  { name: 'Spring Boot', level: 72, category: 'backend', icon: springBootIcon },
-  { name: 'FastAPI', level: 80, category: 'backend', icon: fastApiIcon },
-  { name: 'RESTful API', level: 88, category: 'backend', icon: restfulApiIcon },
+  { name: 'Node.js', level: 82, category: 'backend', icon: nodeIcon, uses: ['Express', 'API 開發', 'WebSocket', '中間件', '套件管理'] },
+  { name: 'Java', level: 75, category: 'backend', icon: javaIcon, uses: ['OOP', '多執行緒', '集合框架', '例外處理', 'Maven'] },
+  { name: 'Spring Boot', level: 72, category: 'backend', icon: springBootIcon, uses: ['REST API', 'JPA', '依賴注入', '安全認證', '微服務'] },
+  { name: 'FastAPI', level: 80, category: 'backend', icon: fastApiIcon, uses: ['非同步 API', '自動文件', '資料驗證', 'Pydantic', 'OAuth2'] },
+  { name: 'RESTful API', level: 88, category: 'backend', icon: restfulApiIcon, uses: ['CRUD 設計', '狀態碼', '認證授權', '版本控制', 'Swagger'] },
 
   // Data
-  { name: 'R', level: 88, category: 'data', icon: rIcon },
-  { name: 'SAS', level: 85, category: 'data', icon: sasIcon },
-  { name: 'Pandas', level: 92, category: 'data', icon: pandasIcon },
-  { name: 'NumPy', level: 90, category: 'data', icon: numpyIcon },
-  { name: 'Statistical Modeling', level: 88, category: 'data', icon: statisticalModelingIcon },
+  { name: 'R', level: 88, category: 'data', icon: rIcon, uses: ['統計分析', '資料視覺化', 'ggplot2', 'dplyr', '統計建模'] },
+  { name: 'SAS', level: 85, category: 'data', icon: sasIcon, uses: ['資料處理', 'PROC SQL', '統計程序', '報表產出', '巨集程式'] },
+  { name: 'Pandas', level: 92, category: 'data', icon: pandasIcon, uses: ['資料清洗', 'DataFrame', '合併聚合', '時間序列', '資料轉換'] },
+  { name: 'NumPy', level: 90, category: 'data', icon: numpyIcon, uses: ['陣列運算', '線性代數', '數值計算', '廣播機制', '隨機數'] },
+  { name: 'Statistical Modeling', level: 88, category: 'data', icon: statisticalModelingIcon, uses: ['假設檢定', '迴歸分析', '多變量分析', '貝氏統計', '存活分析'] },
 
   // Tools
-  { name: 'Git', level: 90, category: 'tools', icon: gitIcon },
-  { name: 'Docker', level: 70, category: 'tools', icon: dockerIcon },
-  { name: 'Linux', level: 75, category: 'tools', icon: linuxIcon },
-  { name: 'SQL Server', level: 82, category: 'tools', icon: sqlServerIcon },
-  { name: 'MySQL', level: 85, category: 'tools', icon: mysqlIcon },
+  { name: 'Git', level: 90, category: 'tools', icon: gitIcon, uses: ['版本控制', '分支管理', 'PR 審查', '衝突解決', 'GitHub Actions'] },
+  { name: 'Docker', level: 70, category: 'tools', icon: dockerIcon, uses: ['容器化', 'Dockerfile', 'Compose', '映像管理', '環境部署'] },
+  { name: 'Linux', level: 75, category: 'tools', icon: linuxIcon, uses: ['Shell 指令', '權限管理', '系統監控', 'Cron 排程', 'SSH'] },
+  { name: 'SQL Server', level: 82, category: 'tools', icon: sqlServerIcon, uses: ['查詢優化', '預存程序', '索引設計', '資料備份', 'SSMS'] },
+  { name: 'MySQL', level: 85, category: 'tools', icon: mysqlIcon, uses: ['資料庫設計', 'JOIN 查詢', '事務處理', '效能調校', '資料遷移'] },
 ]
 
 const filteredSkills = () => {
@@ -123,7 +123,7 @@ const filteredSkills = () => {
       </div>
 
       <!-- Skills Grid -->
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         <TransitionGroup name="skill">
           <div
             v-for="skill in filteredSkills()"
@@ -132,25 +132,34 @@ const filteredSkills = () => {
             data-aos="zoom-in"
             data-aos-duration="400"
           >
-            <div class="card p-4 text-center hover:border-primary-200 border border-transparent cursor-default">
-              <!-- Icon -->
-              <div class="w-10 h-10 mx-auto mb-2 group-hover:scale-125 transition-transform duration-300">
-                <img :src="skill.icon" :alt="skill.name" class="w-full h-full object-contain" />
+            <div class="card p-5 hover:border-primary-300 hover:shadow-lg border border-transparent cursor-default transition-all duration-300">
+              <div class="flex items-start gap-4">
+                <!-- Icon -->
+                <div class="w-12 h-12 flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                  <img :src="skill.icon" :alt="skill.name" class="w-full h-full object-contain" />
+                </div>
+
+                <div class="flex-1 min-w-0">
+                  <!-- Name -->
+                  <h4 class="font-semibold text-dark-600 text-base mb-2">{{ skill.name }}</h4>
+
+                  <!-- Progress Bar -->
+                  <div class="skill-bar mb-3">
+                    <div class="skill-bar-fill" :style="{ width: `${skill.level}%` }"></div>
+                  </div>
+
+                  <!-- Uses/Applications -->
+                  <div class="flex flex-wrap gap-1.5">
+                    <span
+                      v-for="use in skill.uses"
+                      :key="use"
+                      class="px-2 py-0.5 bg-primary-50 text-primary-600 rounded text-xs"
+                    >
+                      {{ use }}
+                    </span>
+                  </div>
+                </div>
               </div>
-
-              <!-- Name -->
-              <h4 class="font-semibold text-dark-500 text-sm mb-2">{{ skill.name }}</h4>
-
-              <!-- Progress Bar -->
-              <div class="skill-bar">
-                <div
-                  class="skill-bar-fill"
-                  :style="{ width: `${skill.level}%` }"
-                ></div>
-              </div>
-
-              <!-- Level -->
-              <p class="text-xs text-dark-300 mt-1">{{ skill.level }}%</p>
             </div>
           </div>
         </TransitionGroup>

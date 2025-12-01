@@ -1,5 +1,7 @@
 # Tim Wei 魏祺紘 👨‍💻
 
+[![Portfolio](https://img.shields.io/badge/個人網站-立即瀏覽-blue?style=for-the-badge&logo=github)](https://timwei0801.github.io/timwei0801/)
+
 > 淡江大學資料科學碩士生 | 安永台灣全端開發實習生
 
 嗨！我是 Tim，一個對數據充滿熱情的研究生，同時也是個喜歡用程式解決實際問題的開發者。目前在淡江大學攻讀資料科學碩士，同時在安永（EY Taiwan）擔任全端開發實習生，享受著在學術與產業之間游走的日子。

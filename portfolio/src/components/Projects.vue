@@ -55,6 +55,7 @@ const projects = [
     features: ['95%+ 牌面辨識準確率', 'WebSocket 即時通訊', '500ms 內系統回應', 'MySQL 資料管理'],
     featuresEn: ['95%+ Card Recognition', 'WebSocket Real-time', '500ms Response Time', 'MySQL Data Management'],
     tags: ['Python', 'Node.js', 'Claude API', 'MySQL', 'WebSocket'],
+    github: 'https://github.com/timwei0801/Datacase-Poker',
     color: 'from-red-500 to-orange-500',
     icon: '🃏',
   },

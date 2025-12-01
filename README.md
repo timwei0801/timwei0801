@@ -1,5 +1,7 @@
 # Tim Wei 魏祺紘 👨‍💻
 
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20My%20Website-blue?style=for-the-badge&logo=github)](https://timwei0801.github.io/timwei0801/)
+
 > Data Science Master's Student @ Tamkang University | Full-Stack Developer Intern @ EY Taiwan
 
 Hi! I'm Tim, a passionate graduate student fascinated by data science and a developer who loves solving real-world problems with code. Currently pursuing my Master's in Data Science at Tamkang University while working as a Full-Stack Developer Intern at EY Taiwan, I enjoy navigating between academia and industry.
