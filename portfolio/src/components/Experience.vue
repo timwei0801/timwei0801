@@ -49,6 +49,10 @@ import azureBadgeImage from '../assets/images/experience/azure-badge.png'
 import sasCertImage from '../assets/images/experience/sas-cert.png'
 import esgCertImage from '../assets/images/experience/esg-cert.png'
 import tkuCommunityImage from '../assets/images/experience/tku-community.png'
+// Transport conference images
+import transportConferenceBanner from '../assets/images/experience/transport-conference-banner.jpeg'
+import transportConferenceSpeaking from '../assets/images/experience/transport-conference-speaking.jpg'
+import transportConferencePoster from '../assets/images/experience/transport-conference-poster.jpg'
 
 const { t, locale } = useI18n()
 
@@ -80,6 +84,8 @@ const timelineItems = [
     tags: ['Public Speaking', 'Research', 'Deep Learning'],
     logo: transportSocietyLogo,
     color: 'from-purple-500 to-indigo-600',
+    image: transportConferenceSpeaking,
+    images: [transportConferenceSpeaking, transportConferenceBanner, transportConferencePoster],
   },
   // 2025/11
   {
@@ -151,16 +157,17 @@ const timelineItems = [
     type: 'award',
     year: '2025',
     month: '09',
-    title: '優良教學助理',
-    titleEn: 'Outstanding Teaching Assistant',
-    subtitle: '提名候選人',
-    subtitleEn: 'Nominee',
+    title: '淡江大學優良教學助理',
+    titleEn: 'TKU Outstanding Teaching Assistant',
+    subtitle: '統計系碩士班',
+    subtitleEn: 'Statistics Graduate Program',
     period: '2025/09',
-    description: '因協助教授課程教學表現優異，獲提名為優良教學助理候選人。',
-    descriptionEn: 'Nominated as Outstanding Teaching Assistant candidate for excellent performance in assisting course instruction.',
-    tags: ['Teaching', 'Leadership'],
+    description: '榮獲淡江大學 113 學年度第 2 學期優良教學助理殊榮，因協助教授課程教學表現優異，提供學生優質學習輔導而獲此肯定。',
+    descriptionEn: 'Awarded Outstanding Teaching Assistant for the 2nd semester of academic year 113 at Tamkang University, recognized for excellent performance in assisting course instruction and providing quality learning support to students.',
+    tags: ['Teaching', 'Leadership', 'Education'],
     icon: '👨‍🏫',
     color: 'from-teal-400 to-cyan-500',
+    certificateUrl: '/timwei0801/certificates/outstanding-ta-certificate.pdf',
   },
   // 2025/07
   {
@@ -555,7 +562,7 @@ const getTypeBadge = (type: string) => {
                     </li>
                   </ul>
 
-                  <!-- Tags and GitHub Link -->
+                  <!-- Tags and Links -->
                   <div class="flex flex-wrap items-center gap-1.5">
                     <span
                       v-for="tag in item.tags"
@@ -564,23 +571,65 @@ const getTypeBadge = (type: string) => {
                     >
                       {{ tag }}
                     </span>
-                    <!-- GitHub Link -->
-                    <a
-                      v-if="item.github"
-                      :href="item.github"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="ml-auto flex items-center gap-1.5 px-3 py-1 bg-dark-500 text-white rounded-full text-xs font-medium hover:bg-primary-600 transition-colors"
-                    >
-                      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                      </svg>
-                      {{ locale === 'zh-TW' ? '查看專案' : 'View Project' }}
-                    </a>
+                    <!-- Action Links Container -->
+                    <div class="ml-auto flex items-center gap-2">
+                      <!-- GitHub Link -->
+                      <a
+                        v-if="item.github"
+                        :href="item.github"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex items-center gap-1.5 px-3 py-1 bg-dark-500 text-white rounded-full text-xs font-medium hover:bg-primary-600 transition-colors"
+                      >
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        {{ locale === 'zh-TW' ? '查看專案' : 'View Project' }}
+                      </a>
+                      <!-- Certificate Link -->
+                      <a
+                        v-if="item.certificateUrl"
+                        :href="item.certificateUrl"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex items-center gap-1.5 px-3 py-1 bg-accent-500 text-white rounded-full text-xs font-medium hover:bg-accent-600 transition-colors"
+                      >
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                        </svg>
+                        {{ locale === 'zh-TW' ? '查看證書' : 'View Certificate' }}
+                      </a>
+                    </div>
                   </div>
 
-                  <!-- Image (if exists) - Clickable for Lightbox -->
-                  <div v-if="item.image" class="mt-4 rounded-xl overflow-hidden cursor-pointer group/img relative" @click="openLightbox(item.image, locale === 'zh-TW' ? item.title : item.titleEn)">
+                  <!-- Multiple Images Gallery (if exists) -->
+                  <div v-if="item.images && item.images.length > 1" class="mt-4 grid grid-cols-3 gap-2">
+                    <div
+                      v-for="(img, imgIndex) in item.images"
+                      :key="imgIndex"
+                      class="rounded-lg overflow-hidden cursor-pointer group/img relative"
+                      @click="openLightbox(img, locale === 'zh-TW' ? item.title : item.titleEn)"
+                    >
+                      <img
+                        :src="img"
+                        :alt="`${item.title} - ${imgIndex + 1}`"
+                        class="w-full h-32 object-cover group-hover/img:scale-105 transition-transform duration-500"
+                      />
+                      <!-- Hover overlay with zoom icon -->
+                      <div class="absolute inset-0 bg-black/0 group-hover/img:bg-black/30 transition-all duration-300 flex items-center justify-center">
+                        <div class="opacity-0 group-hover/img:opacity-100 transform scale-75 group-hover/img:scale-100 transition-all duration-300">
+                          <div class="bg-white/90 rounded-full p-2 shadow-lg">
+                            <svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Single Image (if exists) - Clickable for Lightbox -->
+                  <div v-else-if="item.image" class="mt-4 rounded-xl overflow-hidden cursor-pointer group/img relative" @click="openLightbox(item.image, locale === 'zh-TW' ? item.title : item.titleEn)">
                     <img
                       :src="item.image"
                       :alt="item.title"
