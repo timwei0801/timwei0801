@@ -54,13 +54,6 @@ const timWei = {
     philosophy: "Bridging the gap between academic research and real-world applications"
 };
 ```
-
-<p align="center">
-  <img src="https://img.shields.io/badge/🎯_Goal-Top_Tech_Company_R&D-FF6B6B?style=flat-square"/>
-  <img src="https://img.shields.io/badge/🔬_Style-Cross--disciplinary_Integration-4ECDC4?style=flat-square"/>
-  <img src="https://img.shields.io/badge/💡_Approach-Research_to_Production-45B7D1?style=flat-square"/>
-</p>
-
 ---
 
 ## 🌟 What Sets Me Apart
