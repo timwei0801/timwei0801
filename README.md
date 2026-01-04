@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Tim%20Wei%20魏祺紘&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Data%20Science%20|%20Full-Stack%20|%20AI/ML&descAlignY=52&descSize=18"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Tim%20Wei%20魏祺紘&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Data%20Science%20|%20Full-Stack%20|%20AI/ML Engineer&descAlignY=52&descSize=18"/>
 </p>
 
 <!-- Typing SVG -->
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=6AD3F7&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=100&lines=%F0%9F%8E%93+Data+Science+Master's+Student+%40+Tamkang+University;%F0%9F%92%BC+Full-Stack+Developer+Intern+%40+EY+Taiwan;%F0%9F%8E%A4+Invited+Speaker+%40+2025+Transportation+Annual+Conference" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=6AD3F7&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=100&lines=%F0%9F%8E%93+Data+Science+Master's+Student;%F0%9F%92%BC+Full-Stack+Developer+%26+AI+Engineer+Intern+%40+EY+Taiwan;%F0%9F%8E%A4+Invited+Speaker+%40+2025+Transportation+Annual+Conference" alt="Typing SVG" />
   </a>
 </p>
 
@@ -150,8 +150,13 @@ const timWei = {
   </tr>
   <tr>
     <td>🤖</td>
-    <td><b>Automation</b></td>
-    <td>Web scraping solutions for large-scale data collection</td>
+    <td><b>AI Engineering</b></td>
+    <td>Building internal AI RAG system for knowledge management</td>
+  </tr>
+  <tr>
+    <td>🎓</td>
+    <td><b>Teaching (Upcoming)</b></td>
+    <td>Teaching Assistant at NTU Accounting Department (Feb - Jun 2026)</td>
   </tr>
   <tr>
     <td>🏢</td>
@@ -270,8 +275,8 @@ const timWei = {
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=timwei0801&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=timwei0801&layout=compact&theme=tokyonight&hide_border=true"/>
+  <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api?username=timwei0801&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=timwei0801&layout=compact&theme=tokyonight&hide_border=true"/>
 </p>
 
 <p align="center">
@@ -302,10 +307,10 @@ const timWei = {
 
 <p align="center">
   <a href="https://github.com/timwei0801/Highway_trafficwave">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=timwei0801&repo=Highway_trafficwave&theme=tokyonight&hide_border=true" />
+    <img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=timwei0801&repo=Highway_trafficwave&theme=tokyonight&hide_border=true" />
   </a>
   <a href="https://github.com/timwei0801/MVA-Internet-use-and-bullying">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=timwei0801&repo=MVA-Internet-use-and-bullying&theme=tokyonight&hide_border=true" />
+    <img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=timwei0801&repo=MVA-Internet-use-and-bullying&theme=tokyonight&hide_border=true" />
   </a>
 </p>
 
