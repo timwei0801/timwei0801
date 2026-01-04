@@ -18,11 +18,6 @@ const highlights = [
     color: 'from-blue-500 to-cyan-500',
   },
   {
-    icon: `<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>`,
-    key: 'experience',
-    color: 'from-accent-500 to-yellow-500',
-  },
-  {
     icon: `<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>`,
     key: 'awards',
     color: 'from-green-500 to-emerald-500',
@@ -36,6 +31,14 @@ const techStack = [
   { name: 'TypeScript', icon: typescriptIcon },
   { name: 'Deep Learning', icon: deepLearningIcon },
   { name: 'Data Science', icon: dataScienceIcon },
+]
+
+// EY Work Responsibilities
+const eyWorkItems = [
+  { icon: '💻', key: 'frontend' },
+  { icon: '⚙️', key: 'backend' },
+  { icon: '🤖', key: 'ai' },
+  { icon: '🎓', key: 'teaching' },
 ]
 </script>
 
@@ -56,8 +59,9 @@ const techStack = [
         </h2>
       </div>
 
-      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-        <!-- Left Content -->
+      <!-- Main Content Grid -->
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start mb-16">
+        <!-- Left Content - Introduction -->
         <div data-aos="fade-right" data-aos-delay="100">
           <div class="space-y-6">
             <p class="text-lg text-dark-400 leading-relaxed">
@@ -84,7 +88,7 @@ const techStack = [
           </div>
         </div>
 
-        <!-- Right Content - Highlight Cards -->
+        <!-- Right Content - Highlight Cards (Education & Awards) -->
         <div class="space-y-4" data-aos="fade-left" data-aos-delay="200">
           <div
             v-for="(highlight, index) in highlights"
@@ -115,17 +119,59 @@ const techStack = [
                   {{ t(`about.highlights.${highlight.key}.description`) }}
                 </p>
               </div>
-
-              <!-- Arrow -->
-              <div class="opacity-0 group-hover:opacity-100 transform translate-x-2 group-hover:translate-x-0 transition-all duration-300">
-                <svg class="w-6 h-6 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </div>
             </div>
 
             <!-- Decorative Element -->
             <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-primary-500/5 to-accent-500/5 rounded-bl-3xl"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EY Work Experience Section -->
+      <div class="mt-8" data-aos="fade-up" data-aos-delay="300">
+        <div class="relative bg-gradient-to-br from-accent-50 via-white to-primary-50 rounded-3xl p-8 lg:p-10 border border-accent-200/50 shadow-lg overflow-hidden">
+          <!-- Background Pattern -->
+          <div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-accent-500/10 to-transparent rounded-full blur-2xl"></div>
+          <div class="absolute bottom-0 left-0 w-48 h-48 bg-gradient-to-tr from-primary-500/10 to-transparent rounded-full blur-2xl"></div>
+
+          <!-- Header -->
+          <div class="relative flex items-center gap-4 mb-8">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-accent-500 to-yellow-500 flex items-center justify-center shadow-lg">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-dark-600">{{ t('about.eyWork.company') }}</h3>
+              <p class="text-accent-600 font-medium">{{ t('about.eyWork.position') }}</p>
+              <p class="text-sm text-dark-300">{{ t('about.eyWork.period') }}</p>
+            </div>
+          </div>
+
+          <!-- Work Items Grid -->
+          <div class="relative grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div
+              v-for="(item, index) in eyWorkItems"
+              :key="item.key"
+              class="group bg-white/80 backdrop-blur-sm rounded-2xl p-5 border border-light-400/50 hover:border-accent-300 hover:shadow-md transition-all duration-300"
+              :data-aos="'zoom-in'"
+              :data-aos-delay="400 + index * 100"
+            >
+              <div class="text-3xl mb-3">{{ item.icon }}</div>
+              <h4 class="font-semibold text-dark-600 mb-2">{{ t(`about.eyWork.items.${item.key}.title`) }}</h4>
+              <p class="text-sm text-dark-400 leading-relaxed">{{ t(`about.eyWork.items.${item.key}.description`) }}</p>
+            </div>
+          </div>
+
+          <!-- Tags -->
+          <div class="relative mt-6 flex flex-wrap gap-2">
+            <span
+              v-for="tag in ['Vue.js', 'Python', 'Spring Boot', 'AI/RAG', 'LLM']"
+              :key="tag"
+              class="px-3 py-1 bg-white/70 text-dark-500 text-sm font-medium rounded-full border border-light-400/50"
+            >
+              {{ tag }}
+            </span>
           </div>
         </div>
       </div>

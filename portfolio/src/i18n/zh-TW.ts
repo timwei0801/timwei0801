@@ -29,15 +29,33 @@ export default {
         value: '系排名第二',
         description: '碩一成績 94.23 分',
       },
-      experience: {
-        title: '實務經歷',
-        value: 'EY 安永',
-        description: '全端開發 & AI 工程師實習生',
-      },
       awards: {
         title: '競賽成果',
         value: '多項獲獎',
         description: '國道競賽、中研院',
+      },
+    },
+    eyWork: {
+      company: 'EY 安永聯合會計師事務所',
+      position: '全端開發 & AI 工程師實習生',
+      period: '2025/07 - 現在 · 台北市信義區',
+      items: {
+        frontend: {
+          title: '前端開發',
+          description: '負責 Vue.js 前端模組開發，實現組件化架構與 RESTful API 整合',
+        },
+        backend: {
+          title: '後端開發',
+          description: 'Python & Java 微服務開發，Spring Boot 架構設計',
+        },
+        ai: {
+          title: 'AI 工程',
+          description: '協助建立公司內部 AI RAG 知識管理系統，提升資訊檢索效率',
+        },
+        teaching: {
+          title: '教學（即將）',
+          description: '台大會計學系課程助教（2026 年 2 月 - 6 月）',
+        },
       },
     },
   },

@@ -21,7 +21,7 @@ export default {
   about: {
     title: 'About Me',
     subtitle: 'A passionate software engineer specializing in AI and data science',
-    intro: "I'm a passionate software engineer specializing in artificial intelligence and data science, currently pursuing my Master's in Data Science at Tamkang University while working as a Full-Stack Developer Intern at EY Taiwan.",
+    intro: "I'm a passionate software engineer specializing in artificial intelligence and data science, currently pursuing my Master's in Data Science while working as a Full-Stack Developer & AI Engineer Intern at EY Taiwan.",
     philosophy: 'I believe the true value of technology lies in solving real-world problems, driving me to continuously bridge the gap between academic research and practical applications.',
     highlights: {
       education: {
@@ -29,15 +29,33 @@ export default {
         value: 'Rank #2',
         description: 'GPA 94.23',
       },
-      experience: {
-        title: 'Work Experience',
-        value: 'EY Taiwan',
-        description: 'Full-Stack Developer Intern',
-      },
       awards: {
         title: 'Achievements',
         value: 'Multiple Awards',
         description: 'National Competitions',
+      },
+    },
+    eyWork: {
+      company: 'Ernst & Young Taiwan',
+      position: 'Full-Stack Developer & AI Engineer Intern',
+      period: '2025/07 - Present · Taipei, Taiwan',
+      items: {
+        frontend: {
+          title: 'Frontend Dev',
+          description: 'Vue.js module development with component architecture & RESTful API integration',
+        },
+        backend: {
+          title: 'Backend Dev',
+          description: 'Python & Java microservices with Spring Boot architecture',
+        },
+        ai: {
+          title: 'AI Engineering',
+          description: 'Building internal AI RAG system for knowledge management',
+        },
+        teaching: {
+          title: 'Teaching (Upcoming)',
+          description: 'Teaching Assistant at NTU Accounting Dept. (Feb - Jun 2026)',
+        },
       },
     },
   },
