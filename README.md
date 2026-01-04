@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Tim%20Wei%20魏祺紘&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Data%20Science%20|%20Full-Stack%20|%20AI/ML Engineer&descAlignY=52&descSize=18"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Tim%20Wei%20魏祺紘&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Data%20Science%20|%20Full-Stack%20|%20AI/ML%20Engineer&descAlignY=52&descSize=18"/>
 </p>
 
 <!-- Typing SVG -->
