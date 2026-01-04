@@ -21,7 +21,7 @@ export default {
   about: {
     title: '關於我',
     subtitle: '一位對人工智慧與數據科學充滿熱情的軟體工程師',
-    intro: '我是一位對人工智慧與數據科學充滿熱忱的軟體工程師，目前就讀淡江大學數據科學碩士班，同時於安永聯合會計師事務所擔任全端開發實習生。',
+    intro: '我是一位對人工智慧與數據科學充滿熱忱的軟體工程師，目前就讀統計學系數據科學碩士班，同時於安永聯合會計師事務所擔任全端開發實習生/AI 工程師。',
     philosophy: '我相信技術的價值在於解決真實世界的問題，因此持續追求將學術研究轉化為實務應用的能力。',
     highlights: {
       education: {
@@ -32,7 +32,7 @@ export default {
       experience: {
         title: '實務經歷',
         value: 'EY 安永',
-        description: '全端開發實習生',
+        description: '全端開發 & AI 工程師實習生',
       },
       awards: {
         title: '競賽成果',
