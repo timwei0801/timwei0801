@@ -48,7 +48,6 @@ import aiCertImage from '../assets/images/experience/ai-cert.png'
 import azureBadgeImage from '../assets/images/experience/azure-badge.png'
 import sasCertImage from '../assets/images/experience/sas-cert.png'
 import esgCertImage from '../assets/images/experience/esg-cert.png'
-import tkuCommunityImage from '../assets/images/experience/tku-community.png'
 // Transport conference images
 import transportConferenceBanner from '../assets/images/experience/transport-conference-banner.jpeg'
 import transportConferenceSpeaking from '../assets/images/experience/transport-conference-speaking.jpg'
@@ -370,7 +369,6 @@ const timelineItems = [
     tags: ['Volunteer', 'Community', 'Service'],
     icon: '🤝',
     color: 'from-orange-400 to-red-500',
-    image: tkuCommunityImage,
   },
   // 2020/09
   {
