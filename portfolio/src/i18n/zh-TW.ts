@@ -23,6 +23,8 @@ export default {
     subtitle: '一位對人工智慧與數據科學充滿熱情的軟體工程師',
     intro: '我是一位對人工智慧與數據科學充滿熱忱的軟體工程師，目前就讀統計學系數據科學碩士班，同時於安永聯合會計師事務所擔任全端開發實習生/AI 工程師。',
     philosophy: '我相信技術的價值在於解決真實世界的問題，因此持續追求將學術研究轉化為實務應用的能力。',
+    clickToExpand: '點擊查看詳細內容',
+    clickToCollapse: '點擊收起',
     highlights: {
       education: {
         title: '學術表現',
@@ -33,6 +35,59 @@ export default {
         title: '競賽成果',
         value: '多項獲獎',
         description: '國道競賽、中研院',
+      },
+      eyWork: {
+        title: '實務經歷',
+        value: 'EY 安永',
+        description: '全端開發 & AI 工程師實習生',
+      },
+    },
+    educationDetail: {
+      school: '淡江大學',
+      degree: '統計學系數據科學碩士班',
+      period: '2024/09 - 至今',
+      grades: {
+        first: {
+          title: '碩一上學期',
+          score: '95.67',
+          note: '系排名第二',
+        },
+        second: {
+          title: '碩一下學期',
+          score: '92.80',
+          note: '持續優異表現',
+        },
+        overall: {
+          title: '整體平均',
+          score: '94.23',
+          note: '系排名第二',
+        },
+      },
+      coursesTitle: '主要修習課程',
+      courses: {
+        machineLearning: '機器學習',
+        deepLearning: '深度學習',
+        dataAnalysis: '多變量分析',
+        statistics: '高等統計推論',
+        optimization: '最佳化理論',
+      },
+    },
+    awardsDetail: {
+      title: '競賽獲獎紀錄',
+      subtitle: '透過競賽驗證所學並挑戰自我',
+      items: {
+        highway: {
+          name: '國道智慧交通管理競賽',
+          award: '第二名（第一名從缺）',
+          description: '開發結合深度學習與物理震波理論的 AI 交通預測系統，受邀至 2025 中華民國運輸學會年會演講。',
+          tags: 'Deep Learning, GNN, 震波理論, RAG',
+        },
+        sinica: {
+          name: '中研院資料科學漫步競賽',
+          award: '最佳人氣海報獎 & 優選獎',
+          description: '以網路使用行為與霸凌現象關聯分析研究，展現卓越的數據分析能力與研究成果表達力。',
+          tags: '多變量分析, PCA, 廣義關聯圖',
+        },
       },
     },
     eyWork: {

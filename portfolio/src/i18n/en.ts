@@ -23,6 +23,8 @@ export default {
     subtitle: 'A passionate software engineer specializing in AI and data science',
     intro: "I'm a passionate software engineer specializing in artificial intelligence and data science, currently pursuing my Master's in Data Science while working as a Full-Stack Developer & AI Engineer Intern at EY Taiwan.",
     philosophy: 'I believe the true value of technology lies in solving real-world problems, driving me to continuously bridge the gap between academic research and practical applications.',
+    clickToExpand: 'Click to view details',
+    clickToCollapse: 'Click to collapse',
     highlights: {
       education: {
         title: 'Academic Performance',
@@ -33,6 +35,59 @@ export default {
         title: 'Achievements',
         value: 'Multiple Awards',
         description: 'National Competitions',
+      },
+      eyWork: {
+        title: 'Work Experience',
+        value: 'EY Taiwan',
+        description: 'Full-Stack & AI Engineer Intern',
+      },
+    },
+    educationDetail: {
+      school: 'Tamkang University',
+      degree: "Master's in Data Science, Statistics",
+      period: '2024/09 - Present',
+      grades: {
+        first: {
+          title: 'Fall Semester',
+          score: '95.67',
+          note: 'Rank #2 in Dept.',
+        },
+        second: {
+          title: 'Spring Semester',
+          score: '92.80',
+          note: 'Consistent Performance',
+        },
+        overall: {
+          title: 'Overall GPA',
+          score: '94.23',
+          note: 'Rank #2 in Dept.',
+        },
+      },
+      coursesTitle: 'Key Courses',
+      courses: {
+        machineLearning: 'Machine Learning',
+        deepLearning: 'Deep Learning',
+        dataAnalysis: 'Multivariate Analysis',
+        statistics: 'Advanced Statistics',
+        optimization: 'Optimization Theory',
+      },
+    },
+    awardsDetail: {
+      title: 'Competition Awards',
+      subtitle: 'Validating skills through competitions',
+      items: {
+        highway: {
+          name: 'National Highway Traffic Competition',
+          award: '2nd Place (1st Place Vacant)',
+          description: 'Developed an AI traffic prediction system combining deep learning with physics-based shockwave theory. Invited to present at the 2025 Transportation Annual Conference.',
+          tags: 'Deep Learning, GNN, Shockwave Theory, RAG',
+        },
+        sinica: {
+          name: 'Academia Sinica Data Science Competition',
+          award: 'Best Popular Poster & Merit Award',
+          description: 'Research on internet usage behavior and cyberbullying correlation analysis, demonstrating excellent data analysis and research presentation skills.',
+          tags: 'Multivariate Analysis, PCA, GAP',
+        },
       },
     },
     eyWork: {
