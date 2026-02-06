@@ -11,11 +11,9 @@ const activeSection = ref('home')
 const navItems = [
   { key: 'home', href: '#home' },
   { key: 'about', href: '#about' },
-  { key: 'experience', href: '#experience' },
-  { key: 'awards', href: '#awards' },
   { key: 'projects', href: '#projects' },
+  { key: 'experience', href: '#experience' },
   { key: 'skills', href: '#skills' },
-  { key: 'certifications', href: '#certifications' },
   { key: 'contact', href: '#contact' },
 ]
 

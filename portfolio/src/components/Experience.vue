@@ -18,7 +18,6 @@ const closeLightbox = () => {
   document.body.style.overflow = ''
 }
 
-// Handle ESC key to close lightbox
 const handleKeydown = (e: KeyboardEvent) => {
   if (e.key === 'Escape' && selectedImage.value) {
     closeLightbox()
@@ -32,25 +31,19 @@ onMounted(() => {
 onUnmounted(() => {
   document.removeEventListener('keydown', handleKeydown)
 })
+
 import eyTeamImage from '../assets/images/experience/ey-team.jpeg'
 import eyLogo from '../assets/images/companies/EY.png'
 import hengjiaLogo from '../assets/images/companies/hengjia.png'
-import xindianLogo from '../assets/images/companies/xindian.png'
-import azureLogo from '../assets/images/icons/MicrosoftAzure.jpeg'
 import academiaSinicaLogo from '../assets/images/companies/academia-sinica.png'
 import transportSocietyLogo from '../assets/images/companies/transport-society.png'
 import tkuStatsLogo from '../assets/images/companies/tku-stats.png'
-import sasLogo from '../assets/images/icons/SAS.png'
 // Award/certificate images
 import highwayCertImage from '../assets/images/experience/highway-certificate.jpeg'
 import academiaSinicaAwardImage from '../assets/images/experience/academia-sinica-award.jpeg'
-import aiCertImage from '../assets/images/experience/ai-cert.png'
-import azureBadgeImage from '../assets/images/experience/azure-badge.png'
-import sasCertImage from '../assets/images/experience/sas-cert.png'
-import esgCertImage from '../assets/images/experience/esg-cert.png'
 // Transport conference images
-import transportConferenceBanner from '../assets/images/experience/transport-conference-banner.jpeg'
 import transportConferenceSpeaking from '../assets/images/experience/transport-conference-speaking.jpg'
+import transportConferenceBanner from '../assets/images/experience/transport-conference-banner.jpeg'
 import transportConferencePoster from '../assets/images/experience/transport-conference-poster.jpg'
 
 const { t, locale } = useI18n()
@@ -61,16 +54,14 @@ const filters = [
   { key: 'all', label: '全部', labelEn: 'All', icon: '📋' },
   { key: 'work', label: '工作經歷', labelEn: 'Work', icon: '💼' },
   { key: 'education', label: '學歷', labelEn: 'Education', icon: '🎓' },
-  { key: 'certification', label: '專業證照', labelEn: 'Certifications', icon: '🏅' },
   { key: 'award', label: '競賽/獲獎', labelEn: 'Awards', icon: '🏆' },
-  { key: 'service', label: '服務/演講', labelEn: 'Service', icon: '🤝' },
 ]
 
-// Timeline items sorted by date (newest first)
+// Trimmed to ~6 core timeline items
 const timelineItems = [
-  // 2025/12
+  // 2025/12 - Conference speaking
   {
-    type: 'service',
+    type: 'award',
     year: '2025',
     month: '12',
     title: '中華民國運輸學會年會',
@@ -79,39 +70,22 @@ const timelineItems = [
     subtitleEn: 'Invited Speaker',
     period: '2025/12',
     description: '受邀於中華民國運輸學會年會發表專題演講，分享國道智慧交通預測系統研究成果與深度學習在交通領域的創新應用。',
-    descriptionEn: 'Invited to deliver a keynote speech at the national transportation conference, sharing research on highway traffic prediction and deep learning applications in transportation.',
+    descriptionEn: 'Invited to deliver a keynote speech at the national transportation conference, sharing research on highway traffic prediction and deep learning applications.',
     tags: ['Public Speaking', 'Research', 'Deep Learning'],
     logo: transportSocietyLogo,
     color: 'from-purple-500 to-indigo-600',
     image: transportConferenceSpeaking,
     images: [transportConferenceSpeaking, transportConferenceBanner, transportConferencePoster],
   },
-  // 2025/11
-  {
-    type: 'certification',
-    year: '2025',
-    month: '11',
-    title: 'Microsoft Azure 三項認證',
-    titleEn: 'Microsoft Azure Triple Certifications',
-    subtitle: 'AI-900 / AZ-900 / DP-900',
-    subtitleEn: 'AI-900 / AZ-900 / DP-900',
-    period: '2025/11',
-    description: '同時取得 Azure AI 基礎、Azure 基礎與資料基礎三項 Microsoft 官方認證，全面掌握雲端與 AI 服務架構。',
-    descriptionEn: 'Obtained three Microsoft Azure certifications simultaneously: AI Fundamentals, Azure Fundamentals, and Data Fundamentals.',
-    tags: ['Azure', 'AI', 'Cloud', 'Data'],
-    logo: azureLogo,
-    color: 'from-blue-500 to-cyan-600',
-    image: azureBadgeImage,
-  },
-  // 2025/10
+  // 2025/10 - Highway competition
   {
     type: 'award',
     year: '2025',
     month: '10',
     title: '國道智慧交通創新應用競賽',
     titleEn: 'National Highway Smart Traffic Innovation Competition',
-    subtitle: '第二名',
-    subtitleEn: '2nd Place',
+    subtitle: '第二名（第一名從缺）',
+    subtitleEn: '2nd Place (1st Place Vacant)',
     period: '2025/10',
     description: '參與高速公路局主辦之全國性競賽，開發整合深度學習時空神經網路與 LWR 物理震波理論的交通壅塞預測系統，從眾多團隊中脫穎而出。',
     descriptionEn: 'Developed traffic congestion prediction system integrating deep learning spatio-temporal networks and LWR shockwave theory, winning 2nd place in the national competition.',
@@ -121,54 +95,7 @@ const timelineItems = [
     image: highwayCertImage,
     github: 'https://github.com/timwei0801/Highway_trafficwave',
   },
-  {
-    type: 'award',
-    year: '2025',
-    month: '10',
-    title: '淡江大學統計學系',
-    titleEn: 'TKU Statistics Department',
-    subtitle: '113-1 學期成績第二名',
-    subtitleEn: '113-1 Semester 2nd Place',
-    period: '2025/10',
-    description: '研究所碩士班 113 學年度第一學期學業成績優異，獲得年級第二名殊榮。',
-    descriptionEn: 'Achieved 2nd place in academic performance for the first semester of the 113 academic year in the graduate program.',
-    tags: ['Academic', 'Excellence'],
-    logo: tkuStatsLogo,
-    color: 'from-blue-400 to-indigo-500',
-  },
-  // 2025/09
-  {
-    type: 'award',
-    year: '2025',
-    month: '09',
-    title: '主計獎學金',
-    titleEn: 'Accounting and Statistics Scholarship',
-    subtitle: '獎學金得獎人',
-    subtitleEn: 'Scholarship Recipient',
-    period: '2025/09',
-    description: '榮獲主計獎學金，表彰統計專業領域的學術表現與研究潛力。',
-    descriptionEn: 'Received the Accounting and Statistics Scholarship, recognizing academic excellence and research potential in statistics.',
-    tags: ['Scholarship', 'Statistics'],
-    icon: '🏅',
-    color: 'from-yellow-500 to-orange-500',
-  },
-  {
-    type: 'award',
-    year: '2025',
-    month: '09',
-    title: '淡江大學優良教學助理',
-    titleEn: 'TKU Outstanding Teaching Assistant',
-    subtitle: '統計系碩士班',
-    subtitleEn: 'Statistics Graduate Program',
-    period: '2025/09',
-    description: '榮獲淡江大學 113 學年度第 2 學期優良教學助理殊榮，因協助教授課程教學表現優異，提供學生優質學習輔導而獲此肯定。',
-    descriptionEn: 'Awarded Outstanding Teaching Assistant for the 2nd semester of academic year 113 at Tamkang University, recognized for excellent performance in assisting course instruction and providing quality learning support to students.',
-    tags: ['Teaching', 'Leadership', 'Education'],
-    icon: '👨‍🏫',
-    color: 'from-teal-400 to-cyan-500',
-    certificateUrl: '/timwei0801/certificates/outstanding-ta-certificate.pdf',
-  },
-  // 2025/07
+  // 2025/07 - EY
   {
     type: 'work',
     year: '2025',
@@ -199,23 +126,7 @@ const timelineItems = [
     image: eyTeamImage,
     highlight: true,
   },
-  // 2025/02
-  {
-    type: 'award',
-    year: '2025',
-    month: '02',
-    title: '淡江大學統計學系',
-    titleEn: 'TKU Statistics Department',
-    subtitle: '112-2 學期成績第二名',
-    subtitleEn: '112-2 Semester 2nd Place',
-    period: '2025/02',
-    description: '研究所碩士班 112 學年度第二學期學業成績優異，獲得年級第二名殊榮。',
-    descriptionEn: 'Achieved 2nd place in academic performance for the second semester of the 112 academic year in the graduate program.',
-    tags: ['Academic', 'Excellence'],
-    logo: tkuStatsLogo,
-    color: 'from-blue-400 to-indigo-500',
-  },
-  // 2024/11
+  // 2024/11 - Academia Sinica
   {
     type: 'award',
     year: '2024',
@@ -233,7 +144,7 @@ const timelineItems = [
     image: academiaSinicaAwardImage,
     github: 'https://github.com/timwei0801/MVA-Internet-use-and-bullying',
   },
-  // 2024/09
+  // 2024/09 - Master's
   {
     type: 'education',
     year: '2024',
@@ -251,24 +162,7 @@ const timelineItems = [
     color: 'from-red-500 to-rose-600',
     highlight: true,
   },
-  // 2024/05
-  {
-    type: 'certification',
-    year: '2024',
-    month: '05',
-    title: 'ESG 初階管理師',
-    titleEn: 'ESG Foundation Manager',
-    subtitle: '永續管理認證',
-    subtitleEn: 'Sustainability Management Certification',
-    period: '2024/05',
-    description: '完成 ESG 初階管理師專業培訓認證，掌握企業永續發展策略與碳盤查實務基礎。',
-    descriptionEn: 'Completed ESG foundation manager certification, mastering corporate sustainability strategies and carbon inventory basics.',
-    tags: ['ESG', 'Sustainability'],
-    icon: '🌱',
-    color: 'from-green-400 to-teal-500',
-    image: esgCertImage,
-  },
-  // 2024/02
+  // 2024/02 - Heng Jia
   {
     type: 'work',
     year: '2024',
@@ -295,84 +189,7 @@ const timelineItems = [
     logo: hengjiaLogo,
     color: 'from-green-400 to-emerald-600',
   },
-  // 2023/10
-  {
-    type: 'certification',
-    year: '2023',
-    month: '10',
-    title: '人工智慧專項證照',
-    titleEn: 'Artificial Intelligence Specialty Certificate',
-    subtitle: 'AI 專業認證',
-    subtitleEn: 'AI Professional Certification',
-    period: '2023/10',
-    description: '取得人工智慧專項認證，驗證在 AI 理論與應用方面的專業知識。',
-    descriptionEn: 'Obtained AI specialty certification, validating professional knowledge in AI theory and applications.',
-    tags: ['AI', 'Machine Learning'],
-    icon: '🤖',
-    color: 'from-violet-500 to-purple-600',
-    image: aiCertImage,
-  },
-  // 2023/05
-  {
-    type: 'certification',
-    year: '2023',
-    month: '05',
-    title: 'SAS Certified Specialist',
-    titleEn: 'SAS Certified Specialist',
-    subtitle: 'Base Programming Using SAS 9.4',
-    subtitleEn: 'Base Programming Using SAS 9.4',
-    period: '2023/05',
-    description: '通過 SAS 官方認證考試，具備專業數據處理與統計程式設計能力。',
-    descriptionEn: 'Passed SAS official certification exam with professional data processing and statistical programming capabilities.',
-    tags: ['SAS', 'Statistics', 'Data'],
-    logo: sasLogo,
-    color: 'from-blue-600 to-cyan-500',
-    image: sasCertImage,
-  },
-  // 2021/07
-  {
-    type: 'work',
-    year: '2021',
-    month: '07',
-    title: '新北市新店區公所',
-    titleEn: 'New Taipei City Xindian District Office',
-    subtitle: '行政實習生',
-    subtitleEn: 'Administrative Intern',
-    period: '2021/07 - 2021/09',
-    location: 'New Taipei',
-    description: '於政府機關進行暑期行政實習，深入了解公部門運作流程，培養公文撰寫與行政事務處理能力。',
-    descriptionEn: 'Government administrative internship, gaining understanding of public sector operations and developing document writing and administrative skills.',
-    achievements: [
-      '協助區公所日常行政業務處理',
-      '學習公文系統操作與檔案管理',
-      '參與區民服務工作，提升溝通能力',
-    ],
-    achievementsEn: [
-      'Assisted with daily administrative operations',
-      'Learned document system operations and file management',
-      'Participated in citizen services, improving communication skills',
-    ],
-    tags: ['Administration', 'Government', 'Public Service'],
-    logo: xindianLogo,
-    color: 'from-blue-400 to-blue-600',
-  },
-  // 2021/05
-  {
-    type: 'service',
-    year: '2021',
-    month: '05',
-    title: '淡江大學社區服務',
-    titleEn: 'TKU Community Service',
-    subtitle: '志工服務',
-    subtitleEn: 'Volunteer Service',
-    period: '2021/05',
-    description: '參與淡江大學社區服務活動，投入志工服務，培養社會責任感與團隊合作精神。',
-    descriptionEn: 'Participated in TKU community service activities as a volunteer, developing social responsibility and teamwork skills.',
-    tags: ['Volunteer', 'Community', 'Service'],
-    icon: '🤝',
-    color: 'from-orange-400 to-red-500',
-  },
-  // 2020/09
+  // 2020/09 - Bachelor's
   {
     type: 'education',
     year: '2020',
@@ -400,9 +217,7 @@ const getTypeIcon = (type: string) => {
   const icons: Record<string, string> = {
     work: '💼',
     education: '🎓',
-    certification: '🏅',
     award: '🏆',
-    service: '🤝',
   }
   return icons[type] || '📌'
 }
@@ -411,9 +226,7 @@ const getTypeBadge = (type: string) => {
   const badges: Record<string, { label: string, labelEn: string, class: string }> = {
     work: { label: '工作', labelEn: 'Work', class: 'bg-blue-100 text-blue-700' },
     education: { label: '學歷', labelEn: 'Education', class: 'bg-red-100 text-red-700' },
-    certification: { label: '證照', labelEn: 'Cert', class: 'bg-purple-100 text-purple-700' },
     award: { label: '獲獎', labelEn: 'Award', class: 'bg-yellow-100 text-yellow-700' },
-    service: { label: '服務', labelEn: 'Service', class: 'bg-green-100 text-green-700' },
   }
   return badges[type] || { label: '其他', labelEn: 'Other', class: 'bg-gray-100 text-gray-700' }
 }
@@ -548,7 +361,7 @@ const getTypeBadge = (type: string) => {
                     {{ locale === 'zh-TW' ? item.description : item.descriptionEn }}
                   </p>
 
-                  <!-- Achievements (for work/service items) -->
+                  <!-- Achievements (for work items) -->
                   <ul v-if="item.achievements && item.achievements.length > 0" class="space-y-1.5 mb-4">
                     <li
                       v-for="(achievement, i) in (locale === 'zh-TW' ? item.achievements : item.achievementsEn)"
@@ -586,19 +399,6 @@ const getTypeBadge = (type: string) => {
                         </svg>
                         {{ locale === 'zh-TW' ? '查看專案' : 'View Project' }}
                       </a>
-                      <!-- Certificate Link -->
-                      <a
-                        v-if="item.certificateUrl"
-                        :href="item.certificateUrl"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="flex items-center gap-1.5 px-3 py-1 bg-accent-500 text-white rounded-full text-xs font-medium hover:bg-accent-600 transition-colors"
-                      >
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                        </svg>
-                        {{ locale === 'zh-TW' ? '查看證書' : 'View Certificate' }}
-                      </a>
                     </div>
                   </div>
 
@@ -615,7 +415,6 @@ const getTypeBadge = (type: string) => {
                         :alt="`${item.title} - ${imgIndex + 1}`"
                         class="w-full h-32 object-cover group-hover/img:scale-105 transition-transform duration-500"
                       />
-                      <!-- Hover overlay with zoom icon -->
                       <div class="absolute inset-0 bg-black/0 group-hover/img:bg-black/30 transition-all duration-300 flex items-center justify-center">
                         <div class="opacity-0 group-hover/img:opacity-100 transform scale-75 group-hover/img:scale-100 transition-all duration-300">
                           <div class="bg-white/90 rounded-full p-2 shadow-lg">
@@ -628,14 +427,13 @@ const getTypeBadge = (type: string) => {
                     </div>
                   </div>
 
-                  <!-- Single Image (if exists) - Clickable for Lightbox -->
+                  <!-- Single Image (if exists) -->
                   <div v-else-if="item.image" class="mt-4 rounded-xl overflow-hidden cursor-pointer group/img relative" @click="openLightbox(item.image, locale === 'zh-TW' ? item.title : item.titleEn)">
                     <img
                       :src="item.image"
                       :alt="item.title"
                       class="w-full h-40 object-cover group-hover/img:scale-105 transition-transform duration-500"
                     />
-                    <!-- Hover overlay with zoom icon -->
                     <div class="absolute inset-0 bg-black/0 group-hover/img:bg-black/30 transition-all duration-300 flex items-center justify-center">
                       <div class="opacity-0 group-hover/img:opacity-100 transform scale-75 group-hover/img:scale-100 transition-all duration-300">
                         <div class="bg-white/90 rounded-full p-3 shadow-lg">

@@ -176,11 +176,6 @@ const scrollToSection = (id: string) => {
               <span class="text-sm font-medium text-dark-500">Open to Work</span>
             </div>
 
-            <!-- Experience Badge -->
-            <div class="absolute -top-4 -left-4 px-4 py-3 bg-accent-500 rounded-xl shadow-xl">
-              <p class="text-2xl font-bold text-primary-700">1+</p>
-              <p class="text-xs text-primary-600">Years Exp.</p>
-            </div>
           </div>
         </div>
       </div>

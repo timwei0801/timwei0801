@@ -3,10 +3,8 @@ export default {
     home: '首頁',
     about: '關於我',
     experience: '經歷',
-    awards: '獲獎',
     projects: '專案',
     skills: '技能',
-    certifications: '證照',
     contact: '聯絡',
   },
   hero: {
@@ -23,8 +21,6 @@ export default {
     subtitle: '一位對人工智慧與機器學習充滿熱情的 AI/ML 算法工程師',
     intro: '我是一位對人工智慧與機器學習充滿熱忱的算法工程師，目前就讀統計學系數據科學碩士班，同時於安永聯合會計師事務所擔任 AI/ML 算法工程師，負責 RAG 系統設計、ML 推薦模型開發及 AI 模型評級。',
     philosophy: '我相信技術的價值在於解決真實世界的問題，因此持續追求將學術研究轉化為實務應用的能力。',
-    clickToExpand: '點擊查看詳細內容',
-    clickToCollapse: '點擊收起',
     highlights: {
       education: {
         title: '學術表現',
@@ -40,77 +36,6 @@ export default {
         title: '實務經歷',
         value: 'EY 安永',
         description: 'AI/ML 算法工程師',
-      },
-    },
-    educationDetail: {
-      school: '淡江大學',
-      degree: '統計學系數據科學碩士班',
-      period: '2024/09 - 至今',
-      grades: {
-        first: {
-          title: '碩一上學期',
-          score: '95.67',
-          note: '系排名第二',
-        },
-        second: {
-          title: '碩一下學期',
-          score: '92.80',
-          note: '持續優異表現',
-        },
-        overall: {
-          title: '整體平均',
-          score: '94.23',
-          note: '系排名第二',
-        },
-      },
-      coursesTitle: '主要修習課程',
-      courses: {
-        machineLearning: '機器學習',
-        deepLearning: '深度學習',
-        dataAnalysis: '多變量分析',
-        statistics: '高等統計推論',
-        optimization: '最佳化理論',
-      },
-    },
-    awardsDetail: {
-      title: '競賽獲獎紀錄',
-      subtitle: '透過競賽驗證所學並挑戰自我',
-      items: {
-        highway: {
-          name: '國道智慧交通管理競賽',
-          award: '第二名（第一名從缺）',
-          description: '開發結合深度學習與物理震波理論的 AI 交通預測系統，受邀至 2025 中華民國運輸學會年會演講。',
-          tags: 'Deep Learning, GNN, 震波理論, RAG',
-        },
-        sinica: {
-          name: '中研院資料科學漫步競賽',
-          award: '最佳人氣海報獎 & 優選獎',
-          description: '以網路使用行為與霸凌現象關聯分析研究，展現卓越的數據分析能力與研究成果表達力。',
-          tags: '多變量分析, PCA, 廣義關聯圖',
-        },
-      },
-    },
-    eyWork: {
-      company: 'EY 安永聯合會計師事務所',
-      position: 'AI/ML 算法工程師',
-      period: '2025/07 - 現在 · 台北市信義區',
-      items: {
-        rag: {
-          title: 'RAG 系統設計',
-          description: '主導公司內部轉型 RAG 知識管理系統的架構設計與開發',
-        },
-        recommendation: {
-          title: 'ML 推薦模型',
-          description: '全家專案：基於使用者習慣、個人資訊、商品營養素的即時商品推薦系統',
-        },
-        evaluation: {
-          title: 'AI 模型評級',
-          description: '評估企業客戶 ML 模型的公平性、可解釋性等 AI 能力指標',
-        },
-        teaching: {
-          title: '企業導師',
-          description: '以 EY 企業導師身份赴台大會計學系教授 RAG 技術（2026/02 - 06）',
-        },
       },
     },
   },
@@ -146,28 +71,6 @@ export default {
           '碳盤查認證課程規劃',
         ],
         tags: ['ESG', '專案管理', 'B2B'],
-      },
-    ],
-  },
-  awards: {
-    title: '獲獎經歷',
-    subtitle: '透過競賽驗證所學並挑戰自我',
-    items: [
-      {
-        title: '國道智慧交通管理競賽',
-        award: '第二名（第一名從缺）',
-        organization: '交通部高速公路局',
-        year: '2025',
-        description: '開發結合深度學習與物理震波理論的 AI 交通預測系統，受邀至 2025 中華民國運輸學會年會演講。',
-        highlights: ['MT-STNet 深度學習模型', '物理震波理論應用', '受邀年會演講'],
-      },
-      {
-        title: '資料科學漫步競賽',
-        award: '最佳人氣海報獎 & 優選獎',
-        organization: '中央研究院統計科學研究所',
-        year: '2024',
-        description: '以網路使用行為與霸凌現象關聯分析研究，展現卓越的數據分析能力與研究成果表達力。',
-        highlights: ['模型準確率 90%+', '創新研究方法', '雙獎肯定'],
       },
     ],
   },
@@ -254,48 +157,6 @@ export default {
         skills: ['SQL Server', 'MySQL', 'Git', 'Docker', 'Linux'],
       },
     },
-  },
-  certifications: {
-    title: '專業認證',
-    subtitle: '持續學習是技術人員的核心競爭力',
-    items: [
-      {
-        name: 'Microsoft Azure Fundamentals',
-        code: 'AZ-900',
-        issuer: 'Microsoft',
-        category: 'cloud',
-      },
-      {
-        name: 'Azure AI Fundamentals',
-        code: 'AI-900',
-        issuer: 'Microsoft',
-        category: 'ai',
-      },
-      {
-        name: 'Azure Data Fundamentals',
-        code: 'DP-900',
-        issuer: 'Microsoft',
-        category: 'data',
-      },
-      {
-        name: 'SAS Base Programming',
-        code: 'SAS Base',
-        issuer: 'SAS Institute',
-        category: 'data',
-      },
-      {
-        name: '人工智慧專項證照',
-        code: 'AI Specialist',
-        issuer: 'TQC+',
-        category: 'ai',
-      },
-      {
-        name: 'ESG 初階管理師',
-        code: 'ESG Manager',
-        issuer: 'ESG International Institute',
-        category: 'other',
-      },
-    ],
   },
   contact: {
     title: '聯絡我',
