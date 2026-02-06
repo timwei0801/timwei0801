@@ -7,7 +7,7 @@ const { t } = useI18n()
 
 const isVisible = ref(false)
 const typedText = ref('')
-const roles = ['Full-Stack Developer', 'Data Scientist', 'AI Engineer', 'Problem Solver']
+const roles = ['AI/ML Algorithm Engineer', 'Data Scientist', 'RAG System Architect', 'Full-Stack Developer']
 const currentRoleIndex = ref(0)
 const isTyping = ref(true)
 

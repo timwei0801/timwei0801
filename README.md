@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Tim%20Wei%20魏祺紘&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Data%20Science%20|%20Full-Stack%20|%20AI/ML%20Engineer&descAlignY=52&descSize=18"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Tim%20Wei%20魏祺紘&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=AI/ML%20Algorithm%20Engineer%20|%20Data%20Science%20|%20Full-Stack&descAlignY=52&descSize=18"/>
 </p>
 
 <!-- Typing SVG -->
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=6AD3F7&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=100&lines=%F0%9F%8E%93+Data+Science+Master's+Student;%F0%9F%92%BC+Full-Stack+Developer+%26+AI+Engineer+Intern+%40+EY+Taiwan;%F0%9F%8E%A4+Invited+Speaker+%40+2025+Transportation+Annual+Conference" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=6AD3F7&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=100&lines=%F0%9F%8E%93+Data+Science+Master's+Student;%F0%9F%92%BC+AI%2FML+Algorithm+Engineer+%40+EY+Taiwan;%F0%9F%8E%A4+Invited+Speaker+%40+2025+Transportation+Annual+Conference" alt="Typing SVG" />
   </a>
 </p>
 
@@ -36,27 +36,27 @@ const timWei = {
         gpa: 94.23,
         rank: "2nd in Department"
     },
-    currentRole: "Full-Stack Developer Intern @ EY Taiwan",
-    
+    currentRole: "AI/ML Algorithm Engineer @ EY Taiwan",
+
     highlights: [
         "🥈 2nd Place (1st Place Vacant) - National Highway Traffic Competition",
         "🏆 Best Popularity Award + Merit Award - Academia Sinica",
         "🎤 Invited Speaker - 2025 Transportation Annual Conference",
         "📊 Cross-disciplinary Researcher: AI × Physics × Statistics"
     ],
-    
+
     currentFocus: [
-        "Enterprise-level Full-Stack Development",
-        "Graph Neural Networks for Traffic Prediction",
-        "RAG Systems & AI Agent Development"
+        "ML Recommendation Systems & Model Fairness Evaluation",
+        "RAG System Architecture Design & Enterprise Mentoring",
+        "Graph Neural Networks for Traffic Prediction"
     ],
-    
+
     philosophy: "Bridging the gap between academic research and real-world applications"
 };
 ```
 
 <p align="center">
-  <img src="https://img.shields.io/badge/🎯_Goal-Top_Tech_Company_R&D-FF6B6B?style=flat-square"/>
+  <img src="https://img.shields.io/badge/🎯_Goal-AI/ML_Algorithm_R&D-FF6B6B?style=flat-square"/>
   <img src="https://img.shields.io/badge/🔬_Style-Cross--disciplinary_Integration-4ECDC4?style=flat-square"/>
   <img src="https://img.shields.io/badge/💡_Approach-Research_to_Production-45B7D1?style=flat-square"/>
 </p>
@@ -131,44 +131,39 @@ const timWei = {
 
 ## 💼 Professional Experience
 
-### <img src="https://img.shields.io/badge/EY-2E2E38?style=flat-square&logo=ey&logoColor=FFE600"/> Full-Stack Developer Intern | EY Taiwan
+### <img src="https://img.shields.io/badge/EY-2E2E38?style=flat-square&logo=ey&logoColor=FFE600"/> AI/ML Algorithm Engineer | EY Taiwan
 
 <p align="right"><i>July 2025 - Present</i></p>
 
-> Building **enterprise-level** solutions at one of the Big Four accounting firms
+> Designing & deploying **AI/ML solutions** at one of the **Big Four** accounting firms
 
 <table>
   <tr>
-    <td>🖥️</td>
-    <td><b>Frontend Development</b></td>
-    <td>Vue.js enterprise applications with complex business logic</td>
-  </tr>
-  <tr>
-    <td>⚙️</td>
-    <td><b>Backend Development</b></td>
-    <td>Python & Java microservices with Spring Boot architecture</td>
-  </tr>
-  <tr>
     <td>🤖</td>
-    <td><b>AI Engineering</b></td>
-    <td>Building internal AI RAG system for knowledge management</td>
+    <td><b>RAG System Design</b></td>
+    <td>Leading architecture design & development of internal RAG knowledge management system</td>
+  </tr>
+  <tr>
+    <td>🛒</td>
+    <td><b>ML Recommendation</b></td>
+    <td>FamilyMart project: Real-time product recommendation based on user behavior, profiles & nutritional data</td>
+  </tr>
+  <tr>
+    <td>📊</td>
+    <td><b>AI Model Evaluation</b></td>
+    <td>Assessing enterprise clients' ML model fairness, explainability & AI capability metrics</td>
   </tr>
   <tr>
     <td>🎓</td>
-    <td><b>Teaching (Upcoming)</b></td>
-    <td>Teaching Assistant at NTU Accounting Department (Feb - Jun 2026)</td>
-  </tr>
-  <tr>
-    <td>🏢</td>
-    <td><b>Scale</b></td>
-    <td>Enterprise-grade systems serving real business needs</td>
+    <td><b>Enterprise Mentor</b></td>
+    <td>Teaching RAG technology at NTU Accounting Dept. as EY corporate mentor (Feb - Jun 2026)</td>
   </tr>
 </table>
 
-**Key Learnings:**
-- Software architecture patterns for scalable applications
-- Agile development in professional team environments
-- Code review practices and quality standards
+**Core Competencies:**
+- Enterprise RAG architecture design & LLM applications
+- ML recommendation system modeling & real-time inference
+- AI model fairness & explainability evaluation
 
 ---
 
@@ -474,7 +469,7 @@ const timWei = {
 
 ## 📝 Technical Writing
 
-> 持續分享技術知識與專案經驗
+> Continuously sharing technical knowledge and project experiences
 
 | Platform | Topic | Status |
 |:---:|:---|:---:|

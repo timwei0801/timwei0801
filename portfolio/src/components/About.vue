@@ -60,9 +60,9 @@ const techStack = [
 
 // EY Work Responsibilities
 const eyWorkItems = [
-  { icon: '💻', key: 'frontend' },
-  { icon: '⚙️', key: 'backend' },
-  { icon: '🤖', key: 'ai' },
+  { icon: '🤖', key: 'rag' },
+  { icon: '🛒', key: 'recommendation' },
+  { icon: '📊', key: 'evaluation' },
   { icon: '🎓', key: 'teaching' },
 ]
 </script>
@@ -341,7 +341,7 @@ const eyWorkItems = [
             <!-- Tags -->
             <div class="relative mt-6 flex flex-wrap gap-2">
               <span
-                v-for="tag in ['Vue.js', 'Python', 'Spring Boot', 'AI/RAG', 'LLM']"
+                v-for="tag in ['RAG', 'ML Recommendation', 'Model Fairness', 'LLM', 'Python']"
                 :key="tag"
                 class="px-3 py-1 bg-white/70 text-dark-500 text-sm font-medium rounded-full border border-accent-100/50"
               >

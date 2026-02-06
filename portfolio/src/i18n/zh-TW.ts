@@ -12,16 +12,16 @@ export default {
   hero: {
     greeting: '你好，我是',
     name: '魏祺紘',
-    tagline: '數據科學碩士 / 全端開發工程師',
-    description: '持續學習，勇於創新，將 AI 技術轉化為解決真實問題的力量。',
+    tagline: '數據科學碩士 / AI・ML 算法工程師',
+    description: '持續學習，勇於創新，將 AI/ML 技術轉化為解決真實問題的力量。',
     cta: '了解更多',
     contact: '聯絡我',
     scrollDown: '向下滑動',
   },
   about: {
     title: '關於我',
-    subtitle: '一位對人工智慧與數據科學充滿熱情的軟體工程師',
-    intro: '我是一位對人工智慧與數據科學充滿熱忱的軟體工程師，目前就讀統計學系數據科學碩士班，同時於安永聯合會計師事務所擔任全端開發實習生/AI 工程師。',
+    subtitle: '一位對人工智慧與機器學習充滿熱情的 AI/ML 算法工程師',
+    intro: '我是一位對人工智慧與機器學習充滿熱忱的算法工程師，目前就讀統計學系數據科學碩士班，同時於安永聯合會計師事務所擔任 AI/ML 算法工程師，負責 RAG 系統設計、ML 推薦模型開發及 AI 模型評級。',
     philosophy: '我相信技術的價值在於解決真實世界的問題，因此持續追求將學術研究轉化為實務應用的能力。',
     clickToExpand: '點擊查看詳細內容',
     clickToCollapse: '點擊收起',
@@ -39,7 +39,7 @@ export default {
       eyWork: {
         title: '實務經歷',
         value: 'EY 安永',
-        description: '全端開發 & AI 工程師實習生',
+        description: 'AI/ML 算法工程師',
       },
     },
     educationDetail: {
@@ -92,24 +92,24 @@ export default {
     },
     eyWork: {
       company: 'EY 安永聯合會計師事務所',
-      position: '全端開發 & AI 工程師實習生',
+      position: 'AI/ML 算法工程師',
       period: '2025/07 - 現在 · 台北市信義區',
       items: {
-        frontend: {
-          title: '前端開發',
-          description: '負責 Vue.js 前端模組開發，實現組件化架構與 RESTful API 整合',
+        rag: {
+          title: 'RAG 系統設計',
+          description: '主導公司內部轉型 RAG 知識管理系統的架構設計與開發',
         },
-        backend: {
-          title: '後端開發',
-          description: 'Python & Java 微服務開發，Spring Boot 架構設計',
+        recommendation: {
+          title: 'ML 推薦模型',
+          description: '全家專案：基於使用者習慣、個人資訊、商品營養素的即時商品推薦系統',
         },
-        ai: {
-          title: 'AI 工程',
-          description: '協助建立公司內部 AI RAG 知識管理系統，提升資訊檢索效率',
+        evaluation: {
+          title: 'AI 模型評級',
+          description: '評估企業客戶 ML 模型的公平性、可解釋性等 AI 能力指標',
         },
         teaching: {
-          title: '教學（即將）',
-          description: '台大會計學系課程助教（2026 年 2 月 - 6 月）',
+          title: '企業導師',
+          description: '以 EY 企業導師身份赴台大會計學系教授 RAG 技術（2026/02 - 06）',
         },
       },
     },
@@ -121,17 +121,17 @@ export default {
       {
         company: '安永聯合會計師事務所',
         companyEn: 'Ernst & Young',
-        position: '全端開發實習生',
+        position: 'AI/ML 算法工程師',
         period: '2025/07 - 現在',
         location: '台北市信義區',
-        description: '於全球四大會計師事務所之一的安永台灣擔任全端開發實習生，參與企業級專案管理系統的開發與維護工作。',
+        description: '於全球四大會計師事務所之一的安永台灣擔任 AI/ML 算法工程師，負責企業級 AI 解決方案的設計與開發。',
         achievements: [
-          '負責 Vue.js 前端介面開發，從元件設計、狀態管理到 API 串接',
-          '進行頁面效能優化，包含減少重新渲染、實作懶加載機制',
-          '主責 Python 自動化爬蟲腳本開發，提升團隊資料蒐集效率',
-          '取得 Microsoft Azure 三項雲端認證',
+          '主導公司內部轉型 RAG 知識管理系統的架構設計與開發',
+          '全家專案：開發基於使用者習慣與商品營養素的即時 ML 商品推薦系統',
+          '協助評估企業客戶 ML 模型的公平性、可解釋性等 AI 能力指標',
+          '以 EY 企業導師身份赴台大會計學系教授 RAG 技術',
         ],
-        tags: ['Vue.js', 'Python', 'Spring Boot', 'Linux'],
+        tags: ['RAG', 'ML', 'Python', 'LLM'],
       },
       {
         company: '亨嘉企業有限公司',
@@ -307,7 +307,7 @@ export default {
     social: '社群連結',
   },
   footer: {
-    copyright: '© 2024 Tim Wei. All rights reserved.',
+    copyright: '© 2025 Tim Wei. All rights reserved.',
     madeWith: 'Made with',
     and: 'and',
   },

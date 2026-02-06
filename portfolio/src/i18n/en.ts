@@ -12,16 +12,16 @@ export default {
   hero: {
     greeting: "Hi, I'm",
     name: 'Tim Wei',
-    tagline: 'Data Science Master\'s Student / Full-Stack Developer',
-    description: 'Continuous learning, bold innovation, transforming AI technology into solutions for real-world problems.',
+    tagline: 'Data Science Master\'s Student / AI・ML Algorithm Engineer',
+    description: 'Continuous learning, bold innovation, transforming AI/ML technology into solutions for real-world problems.',
     cta: 'Learn More',
     contact: 'Contact Me',
     scrollDown: 'Scroll Down',
   },
   about: {
     title: 'About Me',
-    subtitle: 'A passionate software engineer specializing in AI and data science',
-    intro: "I'm a passionate software engineer specializing in artificial intelligence and data science, currently pursuing my Master's in Data Science while working as a Full-Stack Developer & AI Engineer Intern at EY Taiwan.",
+    subtitle: 'A passionate AI/ML algorithm engineer specializing in data science',
+    intro: "I'm a passionate AI/ML algorithm engineer, currently pursuing my Master's in Data Science while working at EY Taiwan, focusing on RAG system design, ML recommendation model development, and AI model evaluation.",
     philosophy: 'I believe the true value of technology lies in solving real-world problems, driving me to continuously bridge the gap between academic research and practical applications.',
     clickToExpand: 'Click to view details',
     clickToCollapse: 'Click to collapse',
@@ -39,7 +39,7 @@ export default {
       eyWork: {
         title: 'Work Experience',
         value: 'EY Taiwan',
-        description: 'Full-Stack & AI Engineer Intern',
+        description: 'AI/ML Algorithm Engineer',
       },
     },
     educationDetail: {
@@ -92,24 +92,24 @@ export default {
     },
     eyWork: {
       company: 'Ernst & Young Taiwan',
-      position: 'Full-Stack Developer & AI Engineer Intern',
+      position: 'AI/ML Algorithm Engineer',
       period: '2025/07 - Present · Taipei, Taiwan',
       items: {
-        frontend: {
-          title: 'Frontend Dev',
-          description: 'Vue.js module development with component architecture & RESTful API integration',
+        rag: {
+          title: 'RAG System Design',
+          description: 'Leading architecture design & development of internal RAG knowledge management system',
         },
-        backend: {
-          title: 'Backend Dev',
-          description: 'Python & Java microservices with Spring Boot architecture',
+        recommendation: {
+          title: 'ML Recommendation',
+          description: 'FamilyMart project: Real-time product recommendation based on user behavior, profiles & nutritional data',
         },
-        ai: {
-          title: 'AI Engineering',
-          description: 'Building internal AI RAG system for knowledge management',
+        evaluation: {
+          title: 'AI Model Evaluation',
+          description: 'Assessing enterprise clients\' ML model fairness, explainability & AI capability metrics',
         },
         teaching: {
-          title: 'Teaching (Upcoming)',
-          description: 'Teaching Assistant at NTU Accounting Dept. (Feb - Jun 2026)',
+          title: 'Enterprise Mentor',
+          description: 'Teaching RAG technology at NTU Accounting Dept. as EY corporate mentor (Feb - Jun 2026)',
         },
       },
     },
@@ -121,17 +121,17 @@ export default {
       {
         company: 'Ernst & Young',
         companyEn: 'Ernst & Young',
-        position: 'Full-Stack Developer Intern',
+        position: 'AI/ML Algorithm Engineer',
         period: '2025/07 - Present',
         location: 'Taipei, Taiwan',
-        description: 'Working as a Full-Stack Developer Intern at EY Taiwan, one of the Big Four accounting firms globally, developing and maintaining enterprise-level project management systems.',
+        description: 'Working as an AI/ML Algorithm Engineer at EY Taiwan, one of the Big Four accounting firms globally, designing and developing enterprise-level AI solutions.',
         achievements: [
-          'Developed Vue.js frontend interfaces, from component design to API integration',
-          'Optimized page performance including reducing re-renders and implementing lazy loading',
-          'Led Python automation web scraping project to improve data collection efficiency',
-          'Obtained three Microsoft Azure cloud certifications',
+          'Leading architecture design & development of internal RAG knowledge management system',
+          'FamilyMart project: Developing real-time ML product recommendation based on user behavior & nutritional data',
+          'Assessing enterprise clients\' ML model fairness, explainability & AI capability metrics',
+          'Teaching RAG technology at NTU Accounting Dept. as EY corporate mentor',
         ],
-        tags: ['Vue.js', 'Python', 'Spring Boot', 'Linux'],
+        tags: ['RAG', 'ML', 'Python', 'LLM'],
       },
       {
         company: 'Heng Jia Enterprise',
@@ -307,7 +307,7 @@ export default {
     social: 'Social Links',
   },
   footer: {
-    copyright: '© 2024 Tim Wei. All rights reserved.',
+    copyright: '© 2025 Tim Wei. All rights reserved.',
     madeWith: 'Made with',
     and: 'and',
   },

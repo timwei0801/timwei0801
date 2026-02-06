@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=魏祺紘%20Tim%20Wei&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=資料科學%20|%20全端開發%20|%20AI/ML%20工程師&descAlignY=52&descSize=18"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=魏祺紘%20Tim%20Wei&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=AI/ML%20算法工程師%20|%20資料科學%20|%20全端開發&descAlignY=52&descSize=18"/>
 </p>
 
 <!-- Typing SVG -->
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=6AD3F7&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=100&lines=%F0%9F%8E%93+%E8%B3%87%E6%96%99%E7%A7%91%E5%AD%B8%E7%A2%A9%E5%A3%AB%E7%94%9F;%F0%9F%92%BC+%E5%AE%89%E6%B0%B8%E5%8F%B0%E7%81%A3+%E5%85%A8%E7%AB%AF%E9%96%8B%E7%99%BC+%26+AI+%E5%B7%A5%E7%A8%8B%E5%B8%AB%E5%AF%A6%E7%BF%92%E7%94%9F;%F0%9F%8E%A4+2025+%E9%81%8B%E8%BC%B8%E5%AD%B8%E6%9C%83%E5%B9%B4%E6%9C%83%E5%8F%97%E9%82%80%E8%AC%9B%E8%80%85" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=6AD3F7&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=100&lines=%F0%9F%8E%93+%E8%B3%87%E6%96%99%E7%A7%91%E5%AD%B8%E7%A2%A9%E5%A3%AB%E7%94%9F;%F0%9F%92%BC+%E5%AE%89%E6%B0%B8%E5%8F%B0%E7%81%A3+AI%2FML+%E7%AE%97%E6%B3%95%E5%B7%A5%E7%A8%8B%E5%B8%AB;%F0%9F%8E%A4+2025+%E9%81%8B%E8%BC%B8%E5%AD%B8%E6%9C%83%E5%B9%B4%E6%9C%83%E5%8F%97%E9%82%80%E8%AC%9B%E8%80%85" alt="Typing SVG" />
   </a>
 </p>
 
@@ -36,7 +36,7 @@ const timWei = {
         成績: 94.23,
         排名: "系排第二"
     },
-    現職: "安永聯合會計師事務所 (EY) 全端開發 & AI 工程師實習生",
+    現職: "安永聯合會計師事務所 (EY) AI/ML 算法工程師",
 
     亮點經歷: [
         "🥈 國道智慧交通競賽第二名（第一名從缺）",
@@ -46,9 +46,9 @@ const timWei = {
     ],
 
     目前專注: [
-        "企業級全端開發",
-        "圖神經網路於交通預測應用",
-        "RAG 系統與 AI Agent 開發"
+        "ML 推薦系統與模型公平性評估",
+        "RAG 系統架構設計與企業導師教學",
+        "圖神經網路於交通預測應用"
     ],
 
     理念: "將學術研究轉化為解決真實問題的應用"
@@ -56,7 +56,7 @@ const timWei = {
 ```
 
 <p align="center">
-  <img src="https://img.shields.io/badge/🎯_目標-頂尖科技公司研發-FF6B6B?style=flat-square"/>
+  <img src="https://img.shields.io/badge/🎯_目標-AI/ML_算法研發-FF6B6B?style=flat-square"/>
   <img src="https://img.shields.io/badge/🔬_風格-跨領域整合-4ECDC4?style=flat-square"/>
   <img src="https://img.shields.io/badge/💡_方法-研究轉實務-45B7D1?style=flat-square"/>
 </p>
@@ -131,44 +131,39 @@ const timWei = {
 
 ## 💼 專業經歷
 
-### <img src="https://img.shields.io/badge/EY-2E2E38?style=flat-square&logo=ey&logoColor=FFE600"/> 全端開發 & AI 工程師實習生 | 安永聯合會計師事務所
+### <img src="https://img.shields.io/badge/EY-2E2E38?style=flat-square&logo=ey&logoColor=FFE600"/> AI/ML 算法工程師 | 安永聯合會計師事務所
 
 <p align="right"><i>2025 年 7 月 - 現在</i></p>
 
-> 在**四大會計師事務所**之一打造**企業級**解決方案
+> 在**四大會計師事務所**之一設計與部署 **AI/ML 解決方案**
 
 <table>
   <tr>
-    <td>🖥️</td>
-    <td><b>前端開發</b></td>
-    <td>Vue.js 企業應用程式，處理複雜商業邏輯</td>
-  </tr>
-  <tr>
-    <td>⚙️</td>
-    <td><b>後端開發</b></td>
-    <td>Python & Java 微服務，Spring Boot 架構</td>
-  </tr>
-  <tr>
     <td>🤖</td>
-    <td><b>AI 工程</b></td>
-    <td>協助建立公司內部 AI RAG 知識管理系統</td>
+    <td><b>RAG 系統設計</b></td>
+    <td>主導公司內部轉型 RAG 知識管理系統的架構設計與開發</td>
+  </tr>
+  <tr>
+    <td>🛒</td>
+    <td><b>ML 推薦模型</b></td>
+    <td>全家專案：基於使用者習慣、個人資訊、商品營養素的即時商品推薦系統</td>
+  </tr>
+  <tr>
+    <td>📊</td>
+    <td><b>AI 模型評級</b></td>
+    <td>協助評估企業客戶 ML 模型的公平性、可解釋性等 AI 能力指標</td>
   </tr>
   <tr>
     <td>🎓</td>
-    <td><b>教學（即將）</b></td>
-    <td>台大會計學系課程助教（2026 年 2 月 - 6 月）</td>
-  </tr>
-  <tr>
-    <td>🏢</td>
-    <td><b>規模</b></td>
-    <td>服務真實商業需求的企業級系統</td>
+    <td><b>企業導師</b></td>
+    <td>以 EY 企業導師身份赴台大會計學系教授 RAG 技術（2026 年 2 月 - 6 月）</td>
   </tr>
 </table>
 
-**主要學習：**
-- 可擴展應用程式的軟體架構模式
-- 專業團隊環境中的敏捷開發
-- Code Review 實務與品質標準
+**核心能力：**
+- 企業級 RAG 架構設計與 LLM 應用
+- ML 推薦系統建模與即時推論
+- AI 模型公平性與可解釋性評估
 
 ---
 
