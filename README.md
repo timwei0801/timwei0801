@@ -33,8 +33,9 @@ const timWei = {
     education: {
         degree: "M.S. in Data Science",
         school: "Tamkang University",
-        gpa: 94.23,
-        rank: "2nd in Department"
+        gpa_m1: 94.23,
+        gpa_m2_s1: 97,
+        rank: "1st in Class (M2 Semester 1)"
     },
     currentRole: "AI/ML Algorithm Engineer @ EY Taiwan",
 
@@ -132,8 +133,8 @@ const timWei = {
 ### 📊 Academic Excellence
 
 <p align="center">
-  <img src="https://img.shields.io/badge/GPA-94.23%2F100-success?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Rank-2nd_in_Department-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/M2_S1_Score-97%2F100-success?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Rank-1st_in_Class-blue?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Degree-M.S._Data_Science-purple?style=for-the-badge"/>
 </p>
 
@@ -260,9 +261,9 @@ const timWei = {
         <sub>DP-900</sub>
       </td>
       <td align="center">
-        <h1>94.23</h1>
-        <b>GPA Score</b><br/>
-        <sub>Top 2 in Dept.</sub><br/>
+        <h1>97</h1>
+        <b>M2 S1 Score</b><br/>
+        <sub>1st in Class</sub><br/>
         <sub>Graduate Level</sub>
       </td>
       <td align="center">

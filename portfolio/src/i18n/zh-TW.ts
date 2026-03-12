@@ -24,8 +24,8 @@ export default {
     highlights: {
       education: {
         title: '學術表現',
-        value: '系排名第二',
-        description: '碩一成績 94.23 分',
+        value: '系排名第一',
+        description: '碩二上學期成績 97 分',
       },
       awards: {
         title: '競賽成果',

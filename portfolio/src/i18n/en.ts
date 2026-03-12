@@ -24,8 +24,8 @@ export default {
     highlights: {
       education: {
         title: 'Academic Performance',
-        value: 'Rank #2',
-        description: 'GPA 94.23',
+        value: 'Rank #1',
+        description: '2nd-Year 1st Semester: 97',
       },
       awards: {
         title: 'Achievements',

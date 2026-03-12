@@ -33,8 +33,9 @@ const timWei = {
     學歷: {
         學位: "數據科學碩士",
         學校: "淡江大學統計學系",
-        成績: 94.23,
-        排名: "系排第二"
+        碩一成績: 94.23,
+        碩二上成績: 97,
+        排名: "全班第一（碩二上）"
     },
     現職: "安永聯合會計師事務所 (EY) AI/ML 算法工程師",
 
@@ -132,8 +133,8 @@ const timWei = {
 ### 📊 學業成就
 
 <p align="center">
-  <img src="https://img.shields.io/badge/GPA-94.23%2F100-success?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/排名-系排第二-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/碩二上成績-97%2F100-success?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/排名-全班第一-blue?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/學位-數據科學碩士-purple?style=for-the-badge"/>
 </p>
 
@@ -260,9 +261,9 @@ const timWei = {
         <sub>DP-900</sub>
       </td>
       <td align="center">
-        <h1>94.23</h1>
-        <b>GPA 成績</b><br/>
-        <sub>系排第二</sub><br/>
+        <h1>97</h1>
+        <b>碩二上成績</b><br/>
+        <sub>全班第一</sub><br/>
         <sub>碩士班</sub>
       </td>
       <td align="center">
