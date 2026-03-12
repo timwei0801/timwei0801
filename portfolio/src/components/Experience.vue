@@ -57,8 +57,24 @@ const filters = [
   { key: 'award', label: '競賽/獲獎', labelEn: 'Awards', icon: '🏆' },
 ]
 
-// Trimmed to ~6 core timeline items
+// Trimmed to core timeline items
 const timelineItems = [
+  // 2026/03 - Hackathon
+  {
+    type: 'award',
+    year: '2026',
+    month: '03',
+    title: '去偽存真：全民偵查黑客松',
+    titleEn: 'Agent for Truth: Disinformation Defense Hackathon',
+    subtitle: '入選工作坊，直接晉級複賽',
+    subtitleEn: 'Workshop Selected, Advanced to Semi-finals',
+    period: '2026/03',
+    description: '入選「去偽存真：全民偵查黑客松」工作坊，完成工作坊後直接進入複賽階段，致力於運用 AI 技術對抗不實資訊。',
+    descriptionEn: 'Selected for the "Agent for Truth: Disinformation Defense Hackathon" workshop. Upon completion, directly advanced to the semi-finals, leveraging AI to combat disinformation.',
+    tags: ['AI', 'NLP', 'Hackathon', 'Fact-checking'],
+    color: 'from-cyan-500 to-blue-600',
+    highlight: true,
+  },
   // 2025/12 - Conference speaking
   {
     type: 'award',
@@ -113,14 +129,16 @@ const timelineItems = [
       '全家專案：開發基於使用者習慣與商品營養素的即時 ML 商品推薦系統',
       '協助評估企業客戶 ML 模型的公平性、可解釋性等 AI 能力指標',
       '以 EY 企業導師身份赴台大會計學系教授 RAG 技術（2026/02 - 06）',
+      '銀行專案：完成 SAS Viya 專業課程培訓，協助銀行建立 ML 模型並導入 SAS Viya 系統',
     ],
     achievementsEn: [
       'Leading architecture design & development of internal RAG knowledge management system',
       'FamilyMart project: Developing real-time ML product recommendation based on user behavior & nutritional data',
       'Assessing enterprise clients\' ML model fairness, explainability & AI capability metrics',
       'Teaching RAG technology at NTU Accounting Dept. as EY corporate mentor (Feb - Jun 2026)',
+      'Banking project: Completed SAS Viya professional training, building ML models & deploying SAS Viya platform for bank client',
     ],
-    tags: ['RAG', 'ML', 'Python', 'LLM', 'AI Evaluation'],
+    tags: ['RAG', 'ML', 'Python', 'LLM', 'AI Evaluation', 'SAS Viya'],
     logo: eyLogo,
     color: 'from-yellow-400 to-yellow-600',
     image: eyTeamImage,

@@ -42,12 +42,14 @@ const timWei = {
         "🥈 國道智慧交通競賽第二名（第一名從缺）",
         "🏆 中研院資料科學漫步 最佳人氣獎 + 優選獎",
         "🎤 2025 中華民國運輸學會年會 受邀講者",
+        "🛡️ 2026 去偽存真：全民偵查黑客松 入選",
         "📊 跨領域研究者：AI × 物理 × 統計"
     ],
 
     目前專注: [
         "ML 推薦系統與模型公平性評估",
         "RAG 系統架構設計與企業導師教學",
+        "SAS Viya 銀行 ML 模型建置與導入",
         "圖神經網路於交通預測應用"
     ],
 
@@ -98,6 +100,14 @@ const timWei = {
   <img src="https://img.shields.io/badge/🏆_最佳人氣獎-中研院資料科學漫步_2024-4169E1?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/🎖️_優選獎-資料科學漫步_2024-32CD32?style=for-the-badge"/>
 </p>
+
+### 🛡️ 黑客松
+
+<p align="center">
+  <img src="https://img.shields.io/badge/🛡️_入選工作坊-去偽存真：全民偵查黑客松_2026-00CED1?style=for-the-badge"/>
+</p>
+
+> 入選「去偽存真：全民偵查黑客松」工作坊，完成工作坊後直接晉級複賽，運用 AI 技術對抗不實資訊。
 
 ### 🎤 演講與受邀
 
@@ -158,12 +168,18 @@ const timWei = {
     <td><b>企業導師</b></td>
     <td>以 EY 企業導師身份赴台大會計學系教授 RAG 技術（2026 年 2 月 - 6 月）</td>
   </tr>
+  <tr>
+    <td>🏦</td>
+    <td><b>銀行 ML 專案</b></td>
+    <td>完成 SAS 公司專業外師授課的 SAS Viya 課程培訓，協助銀行建立 ML 模型並導入 SAS Viya 系統</td>
+  </tr>
 </table>
 
 **核心能力：**
 - 企業級 RAG 架構設計與 LLM 應用
 - ML 推薦系統建模與即時推論
 - AI 模型公平性與可解釋性評估
+- SAS Viya ML 模型開發與企業導入
 
 ---
 

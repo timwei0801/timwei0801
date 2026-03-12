@@ -55,8 +55,9 @@ export default {
           '全家專案：開發基於使用者習慣與商品營養素的即時 ML 商品推薦系統',
           '協助評估企業客戶 ML 模型的公平性、可解釋性等 AI 能力指標',
           '以 EY 企業導師身份赴台大會計學系教授 RAG 技術',
+          '銀行專案：完成 SAS Viya 專業課程培訓，協助銀行建立 ML 模型並導入 SAS Viya 系統',
         ],
-        tags: ['RAG', 'ML', 'Python', 'LLM'],
+        tags: ['RAG', 'ML', 'Python', 'LLM', 'SAS Viya'],
       },
       {
         company: '亨嘉企業有限公司',

@@ -42,12 +42,14 @@ const timWei = {
         "🥈 2nd Place (1st Place Vacant) - National Highway Traffic Competition",
         "🏆 Best Popularity Award + Merit Award - Academia Sinica",
         "🎤 Invited Speaker - 2025 Transportation Annual Conference",
+        "🛡️ Selected for Agent for Truth: Disinformation Defense Hackathon 2026",
         "📊 Cross-disciplinary Researcher: AI × Physics × Statistics"
     ],
 
     currentFocus: [
         "ML Recommendation Systems & Model Fairness Evaluation",
         "RAG System Architecture Design & Enterprise Mentoring",
+        "SAS Viya ML Model Development for Banking",
         "Graph Neural Networks for Traffic Prediction"
     ],
 
@@ -98,6 +100,14 @@ const timWei = {
   <img src="https://img.shields.io/badge/🏆_Best_Popularity_Award-Academia_Sinica_Data_Science_2024-4169E1?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/🎖️_Merit_Award-Data_Science_Stroll_2024-32CD32?style=for-the-badge"/>
 </p>
+
+### 🛡️ Hackathon
+
+<p align="center">
+  <img src="https://img.shields.io/badge/🛡️_Workshop_Selected-Agent_for_Truth:_Disinformation_Defense_Hackathon_2026-00CED1?style=for-the-badge"/>
+</p>
+
+> Selected for the "Agent for Truth: Disinformation Defense Hackathon" workshop. Directly advanced to semi-finals upon completion.
 
 ### 🎤 Speaking & Invitations
 
@@ -158,12 +168,18 @@ const timWei = {
     <td><b>Enterprise Mentor</b></td>
     <td>Teaching RAG technology at NTU Accounting Dept. as EY corporate mentor (Feb - Jun 2026)</td>
   </tr>
+  <tr>
+    <td>🏦</td>
+    <td><b>Banking ML Project</b></td>
+    <td>Completed SAS Viya professional training (by SAS experts), building ML models & deploying SAS Viya platform for bank client</td>
+  </tr>
 </table>
 
 **Core Competencies:**
 - Enterprise RAG architecture design & LLM applications
 - ML recommendation system modeling & real-time inference
 - AI model fairness & explainability evaluation
+- SAS Viya ML model development & enterprise deployment
 
 ---
 

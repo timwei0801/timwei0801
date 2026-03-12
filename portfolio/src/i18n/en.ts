@@ -55,8 +55,9 @@ export default {
           'FamilyMart project: Developing real-time ML product recommendation based on user behavior & nutritional data',
           'Assessing enterprise clients\' ML model fairness, explainability & AI capability metrics',
           'Teaching RAG technology at NTU Accounting Dept. as EY corporate mentor',
+          'Banking project: Completed SAS Viya professional training, building ML models & deploying SAS Viya platform',
         ],
-        tags: ['RAG', 'ML', 'Python', 'LLM'],
+        tags: ['RAG', 'ML', 'Python', 'LLM', 'SAS Viya'],
       },
       {
         company: 'Heng Jia Enterprise',
