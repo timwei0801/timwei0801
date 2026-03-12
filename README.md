@@ -33,8 +33,7 @@ const timWei = {
     education: {
         degree: "M.S. in Data Science",
         school: "Tamkang University",
-        gpa_m1: 94.23,
-        gpa_m2_s1: 97,
+        gpa: "4.0/4.0",
         rank: "1st in Class (M2 Semester 1)"
     },
     currentRole: "AI/ML Algorithm Engineer @ EY Taiwan",

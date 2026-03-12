@@ -249,8 +249,8 @@ const awards = [
           <div class="flex items-center gap-2">
             <span class="text-2xl">🎓</span>
             <div class="text-left">
-              <p class="text-sm text-dark-300">{{ locale === 'zh-TW' ? '碩一成績' : 'Master GPA' }}</p>
-              <p class="font-bold text-primary-700">94.23 {{ locale === 'zh-TW' ? '分（系排第二）' : '(Rank #2)' }}</p>
+              <p class="text-sm text-dark-300">{{ locale === 'zh-TW' ? '碩士 GPA' : 'Master GPA' }}</p>
+              <p class="font-bold text-primary-700">4.0/4.0 {{ locale === 'zh-TW' ? '（系排第一）' : '(Rank #1)' }}</p>
             </div>
           </div>
           <div class="w-px h-10 bg-dark-200"></div>
