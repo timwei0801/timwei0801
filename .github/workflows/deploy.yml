@@ -30,6 +30,7 @@ jobs:
       - name: Install dependencies
         run: |
           cd portfolio
+          echo "registry=https://registry.npmjs.org/" > .npmrc
           npm ci
 
       - name: Build
