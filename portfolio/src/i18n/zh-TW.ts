@@ -4,6 +4,7 @@ export default {
     about: '關於我',
     experience: '經歷',
     projects: '專案',
+    awards: '獲獎',
     skills: '技能',
     contact: '聯絡',
   },
@@ -38,6 +39,10 @@ export default {
         description: 'AI/ML 算法工程師',
       },
     },
+  },
+  awards: {
+    title: '獲獎與榮譽',
+    subtitle: '競賽獎項與學術肯定',
   },
   experience: {
     title: '工作經歷',
@@ -108,6 +113,19 @@ export default {
         github: 'https://github.com/timwei0801/MVA-Internet-use-and-bullying',
       },
       {
+        title: 'BitoGuard 智慧合規風險雷達',
+        subtitle: 'AI 驅動的加密貨幣詐欺偵測',
+        description: '黑客松決賽入圍作品：針對加密貨幣交易所的智慧合規風險雷達，運用圖神經網路與集成學習偵測 77 萬筆以上交易中的詐欺帳戶。',
+        features: [
+          'HeteroSAGE + GAT 圖神經網路',
+          'Stacking 集成（XGBoost、LightGBM、CatBoost）',
+          'SHAP 可解釋性分析',
+          '四維度公平性審計',
+        ],
+        tags: ['GNN', 'XGBoost', 'React', 'AWS', 'PyTorch'],
+        github: 'https://github.com/timwei0801/Bio_AWS_Workshop',
+      },
+      {
         title: 'ChartGenie 智圖精靈',
         subtitle: 'AI 驅動的智能視覺化推薦系統',
         description: '透過 AI 技術降低資料視覺化的使用門檻，使用者可透過中文描述需求，系統自動推薦最適合的圖表類型並生成視覺化結果。',
@@ -155,7 +173,7 @@ export default {
       },
       database: {
         title: '資料庫與工具',
-        skills: ['SQL Server', 'MySQL', 'Git', 'Docker', 'Linux'],
+        skills: ['SQL Server', 'MySQL', 'Git', 'Docker', 'Linux', 'AWS'],
       },
     },
   },

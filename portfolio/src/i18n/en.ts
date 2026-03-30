@@ -4,6 +4,7 @@ export default {
     about: 'About',
     experience: 'Experience',
     projects: 'Projects',
+    awards: 'Awards',
     skills: 'Skills',
     contact: 'Contact',
   },
@@ -38,6 +39,10 @@ export default {
         description: 'AI/ML Algorithm Engineer',
       },
     },
+  },
+  awards: {
+    title: 'Awards & Honors',
+    subtitle: 'Competition Awards & Academic Recognition',
   },
   experience: {
     title: 'Experience',
@@ -108,6 +113,19 @@ export default {
         github: 'https://github.com/timwei0801/MVA-Internet-use-and-bullying',
       },
       {
+        title: 'BitoGuard: Compliance Risk Radar',
+        subtitle: 'AI-Driven Crypto Fraud Detection',
+        description: 'Hackathon finalist project: intelligent compliance risk radar for cryptocurrency exchanges. Uses Graph Neural Networks and ensemble learning to detect fraudulent accounts across 770K+ transactions.',
+        features: [
+          'HeteroSAGE + GAT Graph Networks',
+          'Stacking Ensemble (XGBoost, LightGBM, CatBoost)',
+          'SHAP Explainability Analysis',
+          '4-Dimension Fairness Audit',
+        ],
+        tags: ['GNN', 'XGBoost', 'React', 'AWS', 'PyTorch'],
+        github: 'https://github.com/timwei0801/Bio_AWS_Workshop',
+      },
+      {
         title: 'ChartGenie',
         subtitle: 'AI-Powered Smart Visualization System',
         description: 'AI-powered system that lowers the barrier to data visualization. Users can describe their needs in natural language, and the system automatically recommends suitable chart types.',
@@ -155,7 +173,7 @@ export default {
       },
       database: {
         title: 'Database & Tools',
-        skills: ['SQL Server', 'MySQL', 'Git', 'Docker', 'Linux'],
+        skills: ['SQL Server', 'MySQL', 'Git', 'Docker', 'Linux', 'AWS'],
       },
     },
   },

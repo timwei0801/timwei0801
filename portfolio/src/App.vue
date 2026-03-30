@@ -6,7 +6,9 @@ import Hero from './components/Hero.vue'
 import About from './components/About.vue'
 import Projects from './components/Projects.vue'
 import Experience from './components/Experience.vue'
+import Awards from './components/Awards.vue'
 import Skills from './components/Skills.vue'
+import Certifications from './components/Certifications.vue'
 import Contact from './components/Contact.vue'
 import Footer from './components/Footer.vue'
 import ScrollToTop from './components/ScrollToTop.vue'
@@ -29,7 +31,9 @@ onMounted(async () => {
       <About />
       <Projects />
       <Experience />
+      <Awards />
       <Skills />
+      <Certifications />
       <Contact />
     </main>
 
