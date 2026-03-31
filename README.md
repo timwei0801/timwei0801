@@ -5,7 +5,7 @@
 <!-- Typing SVG -->
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=6AD3F7&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=100&lines=%F0%9F%8E%93+Data+Science+Master's+Student;%F0%9F%92%BC+AI%2FML+Algorithm+Engineer+%40+EY+Taiwan;%F0%9F%8E%A4+Invited+Speaker+%40+2025+Transportation+Annual+Conference" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=6AD3F7&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=100&lines=%F0%9F%8E%93+Data+Science+Master's+Student;%F0%9F%92%BC+AI%2FML+Algorithm+Engineer+%40+EY+Taiwan;%F0%9F%9B%A1%EF%B8%8F+Hackathon+Finalist+%7C+Phi+Tau+Phi+Honor+Society" alt="Typing SVG" />
   </a>
 </p>
 
@@ -42,7 +42,8 @@ const timWei = {
         "🥈 2nd Place (1st Place Vacant) - National Highway Traffic Competition",
         "🏆 Best Popularity Award + Merit Award - Academia Sinica",
         "🎤 Invited Speaker - 2025 Transportation Annual Conference",
-        "🛡️ Selected for Agent for Truth: Disinformation Defense Hackathon 2026",
+        "🛡️ Finalist - Agent for Truth: Disinformation Defense Hackathon 2026",
+        "🎓 Phi Tau Phi Scholastic Honor Society - Nominated Honorary Member",
         "📊 Cross-disciplinary Researcher: AI × Physics × Statistics"
     ],
 
@@ -104,10 +105,18 @@ const timWei = {
 ### 🛡️ Hackathon
 
 <p align="center">
-  <img src="https://img.shields.io/badge/🛡️_Workshop_Selected-Agent_for_Truth:_Disinformation_Defense_Hackathon_2026-00CED1?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/🛡️_Finalist-Agent_for_Truth:_Disinformation_Defense_Hackathon_2026-00CED1?style=for-the-badge"/>
 </p>
 
-> Selected for the "Agent for Truth: Disinformation Defense Hackathon" workshop. Directly advanced to semi-finals upon completion.
+> **Finalist** in the "Agent for Truth: Disinformation Defense Hackathon 2026" (organized by DIGITIMES, supported by AWS). Built **BitoGuard: Intelligent Compliance Risk Radar** — an AI-driven cryptocurrency fraud detection system processing 770K+ transactions using Graph Neural Networks (HeteroSAGE + GAT), Ensemble Learning (XGBoost, LightGBM, CatBoost), SHAP explainability, and fairness auditing. Achieved AUC-ROC 0.861.
+
+### 🎓 Honor Society
+
+<p align="center">
+  <img src="https://img.shields.io/badge/🎓_Honorary_Member-Phi_Tau_Phi_Scholastic_Honor_Society_2026-9B59B6?style=for-the-badge"/>
+</p>
+
+> Nominated by Tamkang University Department of Statistics & Data Science as an **Honorary Member** of the **Phi Tau Phi Scholastic Honor Society** (中華民國斐陶斐榮譽學會), recognizing outstanding academic achievement.
 
 ### 🎤 Speaking & Invitations
 
@@ -216,7 +225,7 @@ const timWei = {
 ### Tools & Infrastructure
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=docker,git,mysql,linux,vscode,vercel&theme=light&perline=9" />
+    <img src="https://skillicons.dev/icons?i=docker,git,mysql,linux,vscode,vercel,aws&theme=light&perline=9" />
   </a>
 </p>
 
@@ -320,6 +329,9 @@ const timWei = {
   <a href="https://github.com/timwei0801/Highway_trafficwave">
     <img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=timwei0801&repo=Highway_trafficwave&theme=tokyonight&hide_border=true" />
   </a>
+  <a href="https://github.com/timwei0801/Bio_AWS_Workshop">
+    <img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=timwei0801&repo=Bio_AWS_Workshop&theme=tokyonight&hide_border=true" />
+  </a>
   <a href="https://github.com/timwei0801/MVA-Internet-use-and-bullying">
     <img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=timwei0801&repo=MVA-Internet-use-and-bullying&theme=tokyonight&hide_border=true" />
   </a>
@@ -401,7 +413,56 @@ const timWei = {
 
 ---
 
-### 📊 Project 2: Online Behavior & Cyberbullying Research
+### 🛡️ Project 2: BitoGuard — Intelligent Compliance Risk Radar
+
+> **🏅 Finalist** - Agent for Truth: Disinformation Defense Hackathon 2026 (DIGITIMES × AWS)
+
+<p align="center">
+  <a href="https://github.com/timwei0801/Bio_AWS_Workshop">
+    <img src="https://img.shields.io/badge/📂_Source_Code-GitHub-181717?style=for-the-badge&logo=github"/>
+  </a>
+</p>
+
+#### 💡 Innovation Highlights
+
+<table>
+  <tr>
+    <td width="50%">
+      <h4>🧠 Graph Neural Networks</h4>
+      <ul>
+        <li><b>HeteroSAGE + GAT</b> heterogeneous graph architecture</li>
+        <li>81-dimensional feature engineering (refined to 65)</li>
+        <li>Risk propagation modeling across transaction networks</li>
+        <li>770K+ transaction records processed</li>
+      </ul>
+    </td>
+    <td width="50%">
+      <h4>📊 Ensemble & Explainability</h4>
+      <ul>
+        <li><b>Stacking Ensemble</b>: XGBoost + LightGBM + CatBoost</li>
+        <li>SHAP analysis for local/global interpretations</li>
+        <li>4-dimension fairness audit (gender, age, career, income)</li>
+        <li>Counterfactual recommendations</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+#### 🛠️ Tech Stack
+
+<p align="center">
+  <img src="https://img.shields.io/badge/React_18-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/PyTorch_Geometric-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=three.js&logoColor=white"/>
+  <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white"/>
+  <img src="https://img.shields.io/badge/XGBoost-FF6F00?style=flat-square"/>
+</p>
+
+---
+
+### 📊 Project 3: Online Behavior & Cyberbullying Research
 
 > **🏆 Best Popularity Award + 🎖️ Merit Award** - Academia Sinica Data Science Stroll 2024
 

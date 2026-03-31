@@ -5,7 +5,7 @@
 <!-- Typing SVG -->
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=6AD3F7&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=100&lines=%F0%9F%8E%93+%E8%B3%87%E6%96%99%E7%A7%91%E5%AD%B8%E7%A2%A9%E5%A3%AB%E7%94%9F;%F0%9F%92%BC+%E5%AE%89%E6%B0%B8%E5%8F%B0%E7%81%A3+AI%2FML+%E7%AE%97%E6%B3%95%E5%B7%A5%E7%A8%8B%E5%B8%AB;%F0%9F%8E%A4+2025+%E9%81%8B%E8%BC%B8%E5%AD%B8%E6%9C%83%E5%B9%B4%E6%9C%83%E5%8F%97%E9%82%80%E8%AC%9B%E8%80%85" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=6AD3F7&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=100&lines=%F0%9F%8E%93+%E8%B3%87%E6%96%99%E7%A7%91%E5%AD%B8%E7%A2%A9%E5%A3%AB%E7%94%9F;%F0%9F%92%BC+%E5%AE%89%E6%B0%B8%E5%8F%B0%E7%81%A3+AI%2FML+%E7%AE%97%E6%B3%95%E5%B7%A5%E7%A8%8B%E5%B8%AB;%F0%9F%9B%A1%EF%B8%8F+%E9%BB%91%E5%AE%A2%E6%9D%BE%E6%B1%BA%E8%B3%BD%E5%85%A5%E5%9C%8D+%7C+%E6%96%90%E9%99%B6%E6%96%90%E6%A6%AE%E8%AD%BD%E6%9C%83%E5%93%A1" alt="Typing SVG" />
   </a>
 </p>
 
@@ -42,7 +42,8 @@ const timWei = {
         "🥈 國道智慧交通競賽第二名（第一名從缺）",
         "🏆 中研院資料科學漫步 最佳人氣獎 + 優選獎",
         "🎤 2025 中華民國運輸學會年會 受邀講者",
-        "🛡️ 2026 去偽存真：全民偵查黑客松 入選",
+        "🛡️ 2026 去偽存真：全民偵查黑客松 決賽入圍",
+        "🎓 中華民國斐陶斐榮譽學會 榮譽會員推薦",
         "📊 跨領域研究者：AI × 物理 × 統計"
     ],
 
@@ -104,10 +105,18 @@ const timWei = {
 ### 🛡️ 黑客松
 
 <p align="center">
-  <img src="https://img.shields.io/badge/🛡️_入選工作坊-去偽存真：全民偵查黑客松_2026-00CED1?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/🛡️_決賽入圍-去偽存真：全民偵查黑客松_2026-00CED1?style=for-the-badge"/>
 </p>
 
-> 入選「去偽存真：全民偵查黑客松」工作坊，完成工作坊後直接晉級複賽，運用 AI 技術對抗不實資訊。
+> **決賽入圍**「去偽存真：全民偵查黑客松 2026」（主辦：DIGITIMES，技術支持：AWS）。開發 **BitoGuard：智慧合規風險雷達** — AI 驅動的加密貨幣詐欺偵測系統，處理 77 萬筆以上交易紀錄，採用圖神經網路（HeteroSAGE + GAT）、集成學習（XGBoost、LightGBM、CatBoost）、SHAP 可解釋性分析及公平性審計，達成 AUC-ROC 0.861。
+
+### 🎓 榮譽學會
+
+<p align="center">
+  <img src="https://img.shields.io/badge/🎓_榮譽會員-中華民國斐陶斐榮譽學會_2026-9B59B6?style=for-the-badge"/>
+</p>
+
+> 由淡江大學統計與資料科學學系推薦為**中華民國斐陶斐榮譽學會**淡江大學分會**榮譽會員**，肯定其優異學術表現。
 
 ### 🎤 演講與受邀
 
@@ -216,7 +225,7 @@ const timWei = {
 ### 工具與基礎設施
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=docker,git,mysql,linux,vscode,vercel&theme=light&perline=9" />
+    <img src="https://skillicons.dev/icons?i=docker,git,mysql,linux,vscode,vercel,aws&theme=light&perline=9" />
   </a>
 </p>
 
@@ -320,6 +329,9 @@ const timWei = {
   <a href="https://github.com/timwei0801/Highway_trafficwave">
     <img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=timwei0801&repo=Highway_trafficwave&theme=tokyonight&hide_border=true&locale=zh-tw" />
   </a>
+  <a href="https://github.com/timwei0801/Bio_AWS_Workshop">
+    <img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=timwei0801&repo=Bio_AWS_Workshop&theme=tokyonight&hide_border=true&locale=zh-tw" />
+  </a>
   <a href="https://github.com/timwei0801/MVA-Internet-use-and-bullying">
     <img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=timwei0801&repo=MVA-Internet-use-and-bullying&theme=tokyonight&hide_border=true&locale=zh-tw" />
   </a>
@@ -401,7 +413,56 @@ const timWei = {
 
 ---
 
-### 📊 專案二：網路行為與霸凌研究
+### 🛡️ 專案二：BitoGuard — 智慧合規風險雷達
+
+> **🏅 決賽入圍** - 去偽存真：全民偵查黑客松 2026（DIGITIMES × AWS）
+
+<p align="center">
+  <a href="https://github.com/timwei0801/Bio_AWS_Workshop">
+    <img src="https://img.shields.io/badge/📂_原始碼-GitHub-181717?style=for-the-badge&logo=github"/>
+  </a>
+</p>
+
+#### 💡 創新亮點
+
+<table>
+  <tr>
+    <td width="50%">
+      <h4>🧠 圖神經網路</h4>
+      <ul>
+        <li><b>HeteroSAGE + GAT</b> 異質圖架構</li>
+        <li>81 維特徵工程（精煉至 65 維）</li>
+        <li>交易網路風險傳播建模</li>
+        <li>處理 77 萬筆以上交易紀錄</li>
+      </ul>
+    </td>
+    <td width="50%">
+      <h4>📊 集成學習與可解釋性</h4>
+      <ul>
+        <li><b>Stacking 集成</b>：XGBoost + LightGBM + CatBoost</li>
+        <li>SHAP 局部/全局可解釋性分析</li>
+        <li>四維度公平性審計（性別、年齡、職業、收入）</li>
+        <li>反事實推薦機制</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+#### 🛠️ 技術棧
+
+<p align="center">
+  <img src="https://img.shields.io/badge/React_18-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/PyTorch_Geometric-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=three.js&logoColor=white"/>
+  <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white"/>
+  <img src="https://img.shields.io/badge/XGBoost-FF6F00?style=flat-square"/>
+</p>
+
+---
+
+### 📊 專案三：網路行為與霸凌研究
 
 > **🏆 最佳人氣獎 + 🎖️ 優選獎** - 中研院資料科學漫步 2024
 
