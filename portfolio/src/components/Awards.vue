@@ -3,6 +3,8 @@ import { ref, onMounted, onUnmounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 import highwayAward from '../assets/images/awards/highway-award.jpeg'
 import academiaSinicaAward from '../assets/images/awards/academia-sinica-award.jpeg'
+import hackathonTeam from '../assets/images/awards/hackathon-team.jpeg'
+import aiExpo from '../assets/images/awards/ai-expo-2026.jpeg'
 
 const { t, locale } = useI18n()
 
@@ -38,6 +40,50 @@ onUnmounted(() => {
 })
 
 const awards = [
+  {
+    title: '去偽存真：全民偵查黑客松',
+    titleEn: 'Agent for Truth: Disinformation Defense Hackathon',
+    award: '決賽入圍',
+    awardEn: 'Finalist',
+    organization: 'DIGITIMES × AWS',
+    organizationEn: 'DIGITIMES × AWS',
+    year: '2026',
+    description: '開發 BitoGuard 智慧合規風險雷達，運用圖神經網路與集成學習偵測加密貨幣詐欺，達成 AUC-ROC 0.861。',
+    descriptionEn: 'Built BitoGuard: Intelligent Compliance Risk Radar — AI-driven crypto fraud detection using GNN and ensemble learning, achieving AUC-ROC 0.861.',
+    fullDescription: '於「去偽存真：全民偵查黑客松 2026」中選擇幣託科技出題的虛擬貨幣交易安全賽道，開發 BitoGuard 智慧合規風險雷達系統。系統處理 77 萬筆以上交易紀錄，透過 81 維特徵工程（精煉至 65 維）、異質圖神經網路（HeteroSAGE + GAT）捕捉風險傳播，並以 Stacking 集成學習（XGBoost、LightGBM with Focal Loss、CatBoost）進行分類，同時整合 SHAP 可解釋性分析與四維度公平性審計（性別、年齡、職業、收入），打造端到端的合規風險偵測平台。',
+    fullDescriptionEn: 'In the "Agent for Truth: Disinformation Defense Hackathon 2026", we chose the BitoPro virtual currency trading security track. We built BitoGuard: Intelligent Compliance Risk Radar, processing 770K+ transaction records with 81-dimensional feature engineering (refined to 65), heterogeneous Graph Neural Networks (HeteroSAGE + GAT) for risk propagation modeling, and Stacking ensemble learning (XGBoost, LightGBM with Focal Loss, CatBoost). The system integrates SHAP explainability analysis and 4-dimension fairness auditing (gender, age, career, income) for an end-to-end compliance risk detection platform.',
+    highlights: ['GNN 圖神經網路', '集成學習 Stacking', 'SHAP 可解釋性'],
+    highlightsEn: ['Graph Neural Networks', 'Ensemble Stacking', 'SHAP Explainability'],
+    techStack: ['Python', 'PyTorch Geometric', 'XGBoost', 'LightGBM', 'CatBoost', 'React', 'Three.js', 'AWS'],
+    teamSize: '5 人團隊',
+    teamSizeEn: '5-member team',
+    duration: '2 天黑客松',
+    durationEn: '2-day hackathon',
+    image: hackathonTeam,
+    images: [hackathonTeam, aiExpo],
+    icon: '🛡️',
+    color: 'from-cyan-400 to-blue-500',
+    github: 'https://github.com/timwei0801/Bio_AWS_Workshop',
+    role: '技術負責人',
+    roleEn: 'Technical Lead',
+    problemStatement: '加密貨幣交易中存在大量洗錢與詐欺行為，傳統規則型偵測系統難以應對不斷演化的詐欺手法。',
+    problemStatementEn: 'Cryptocurrency transactions involve extensive money laundering and fraud. Traditional rule-based detection systems struggle to keep up with evolving fraud patterns.',
+    solution: '結合圖神經網路捕捉交易網路中的風險傳播模式，以集成學習提升分類效能，並透過 SHAP 與公平性審計確保模型的可解釋性與無偏見。',
+    solutionEn: 'Combined Graph Neural Networks to capture risk propagation in transaction networks, ensemble learning for classification performance, and SHAP with fairness auditing to ensure model explainability and unbiased decisions.',
+    keyFeatures: [
+      { title: '圖神經網路', titleEn: 'Graph Neural Networks', desc: 'HeteroSAGE + GAT 異質圖', descEn: 'HeteroSAGE + GAT heterogeneous graph' },
+      { title: '集成學習', titleEn: 'Ensemble Learning', desc: 'XGBoost + LightGBM + CatBoost', descEn: 'XGBoost + LightGBM + CatBoost' },
+      { title: '可解釋 AI', titleEn: 'Explainable AI', desc: 'SHAP 局部/全局分析', descEn: 'SHAP local/global analysis' },
+      { title: '公平性審計', titleEn: 'Fairness Audit', desc: '四維度偏見偵測', descEn: '4-dimension bias detection' },
+    ],
+    results: [
+      { metric: 'AUC-ROC', metricEn: 'AUC-ROC', value: '0.861', desc: '風險偵測', descEn: 'Risk detection' },
+      { metric: '特徵維度', metricEn: 'Feature Dimensions', value: '65', desc: '精煉特徵', descEn: 'Refined features' },
+      { metric: '交易紀錄', metricEn: 'Transactions', value: '770K+', desc: '處理規模', descEn: 'Processing scale' },
+    ],
+    learnings: '深入掌握圖神經網路在金融風控的應用，體驗高壓力黑客松環境下的快速原型開發，強化了 AI 可解釋性與公平性的實務經驗。',
+    learningsEn: 'Gained deep expertise in applying GNN to financial risk control, experienced rapid prototyping under hackathon pressure, and strengthened practical experience in AI explainability and fairness.',
+  },
   {
     title: '國道智慧交通管理競賽',
     titleEn: 'National Highway Intelligent Traffic Competition',
@@ -125,6 +171,48 @@ const awards = [
     ],
     learnings: '精進了統計分析與資料視覺化技能，學習如何將複雜的分析結果轉化為易懂的視覺呈現，並在學術場合進行有效的研究成果發表。',
     learningsEn: 'Enhanced statistical analysis and data visualization skills, learned how to transform complex analytical results into understandable visual presentations, and effectively present research findings in academic settings.',
+  },
+  {
+    title: '中華民國斐陶斐榮譽學會',
+    titleEn: 'Phi Tau Phi Scholastic Honor Society',
+    award: '榮譽會員',
+    awardEn: 'Honorary Member',
+    organization: '淡江大學統計與資料科學學系推薦',
+    organizationEn: 'Nominated by TKU Dept. of Statistics & Data Science',
+    year: '2026',
+    description: '由淡江大學統計與資料科學學系推薦為中華民國斐陶斐榮譽學會榮譽會員，肯定碩士班期間優異學術表現。',
+    descriptionEn: 'Nominated as Honorary Member of the Phi Tau Phi Scholastic Honor Society, recognizing outstanding academic achievement during Master\'s program.',
+    fullDescription: '斐陶斐榮譽學會（Phi Tau Phi Scholastic Honor Society）為中華民國最具代表性的學術榮譽學會，創立於 1921 年，旨在表彰品學兼優之大學學生。由淡江大學統計與資料科學學系推薦為淡江大學分會榮譽會員，肯定其碩士班期間 GPA 4.0/4.0（系排名第一）的優異學術表現，以及在 AI/ML 研究與產學合作上的卓越貢獻。',
+    fullDescriptionEn: 'The Phi Tau Phi Scholastic Honor Society, founded in 1921, is the most prestigious academic honor society in Taiwan, dedicated to recognizing students of outstanding academic merit and character. Nominated by TKU Department of Statistics & Data Science as Honorary Member, acknowledging GPA 4.0/4.0 (Rank #1) during Master\'s program and outstanding contributions to AI/ML research and industry-academia collaboration.',
+    highlights: ['GPA 4.0/4.0 系排第一', '學術卓越', '品學兼優'],
+    highlightsEn: ['GPA 4.0/4.0 Rank #1', 'Academic Excellence', 'Outstanding Merit'],
+    techStack: ['Machine Learning', 'Deep Learning', 'Statistical Modeling', 'Data Science', 'RAG'],
+    teamSize: '個人榮譽',
+    teamSizeEn: 'Individual Honor',
+    duration: '碩士班期間',
+    durationEn: 'During Master\'s program',
+    image: hackathonTeam,
+    icon: '🎓',
+    color: 'from-purple-500 to-violet-600',
+    role: '碩士研究生',
+    roleEn: 'Master\'s Student',
+    problemStatement: '',
+    problemStatementEn: '',
+    solution: '',
+    solutionEn: '',
+    keyFeatures: [
+      { title: '學業成績', titleEn: 'Academic Performance', desc: 'GPA 4.0/4.0（97 分）', descEn: 'GPA 4.0/4.0 (Score 97)' },
+      { title: '系排名', titleEn: 'Class Rank', desc: '全班第一名', descEn: 'Ranked 1st in class' },
+      { title: '研究貢獻', titleEn: 'Research Contribution', desc: '多項競賽獲獎', descEn: 'Multiple competition awards' },
+      { title: '產學合作', titleEn: 'Industry Collab', desc: 'EY Taiwan AI/ML 實務', descEn: 'EY Taiwan AI/ML practice' },
+    ],
+    results: [
+      { metric: 'GPA', metricEn: 'GPA', value: '4.0/4.0', desc: '碩士班成績', descEn: 'Master\'s GPA' },
+      { metric: '排名', metricEn: 'Rank', value: '#1', desc: '系排名第一', descEn: 'Ranked 1st' },
+      { metric: '學期成績', metricEn: 'Semester Score', value: '97', desc: '碩二上', descEn: 'M2 S1' },
+    ],
+    learnings: '持續追求學術卓越，在研究與實務並進的過程中獲得學會肯定，激勵自己在 AI/ML 領域持續精進。',
+    learningsEn: 'Pursuing academic excellence while balancing research and practice, receiving recognition from the honor society as motivation to continue advancing in AI/ML.',
   },
 ]
 </script>
@@ -255,10 +343,10 @@ const awards = [
           </div>
           <div class="w-px h-10 bg-dark-200"></div>
           <div class="flex items-center gap-2">
-            <span class="text-2xl">🏅</span>
+            <span class="text-2xl">🎓</span>
             <div class="text-left">
-              <p class="text-sm text-dark-300">{{ locale === 'zh-TW' ? '持續參與' : 'Ongoing' }}</p>
-              <p class="font-bold text-primary-700">{{ locale === 'zh-TW' ? '巴黎人壽、土銀、台積電黑客松' : 'Multiple Hackathons' }}</p>
+              <p class="text-sm text-dark-300">{{ locale === 'zh-TW' ? '榮譽學會' : 'Honor Society' }}</p>
+              <p class="font-bold text-primary-700">{{ locale === 'zh-TW' ? '斐陶斐榮譽會員' : 'Phi Tau Phi Member' }}</p>
             </div>
           </div>
         </div>
