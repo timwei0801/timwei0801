@@ -20,6 +20,9 @@
   <a href="https://timwei0801.github.io/timwei0801/">
     <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=github&logoColor=white"/>
   </a>
+  <a href="https://medium.com/@chwei9181">
+    <img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white"/>
+  </a>
   <img src="https://komarev.com/ghpvc/?username=timwei0801&style=for-the-badge&color=blue" alt="Profile Views"/>
 </p>
 
@@ -550,6 +553,7 @@ const timWei = {
 
 | Platform | Topic | Status |
 |:---:|:---|:---:|
+| 📰 [Medium](https://medium.com/@chwei9181/篇一-當-97-的資料都在騙你-加密貨幣反洗錢中的極度不平衡分類實戰-627275bc9944) | Crypto AML: Extreme Imbalanced Classification in Practice | ✅ Published |
 | 📰 Medium | AI-Assisted Development Experience | ✅ Published |
 | 📝 Medium | Highway Traffic System Technical Deep Dive | 🔄 Coming Soon |
 | 🌐 Blog | Cross-disciplinary Research Methodology | 📋 Planned |

@@ -20,6 +20,9 @@
   <a href="https://timwei0801.github.io/timwei0801/">
     <img src="https://img.shields.io/badge/個人網站-000000?style=for-the-badge&logo=github&logoColor=white"/>
   </a>
+  <a href="https://medium.com/@chwei9181">
+    <img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white"/>
+  </a>
   <img src="https://komarev.com/ghpvc/?username=timwei0801&style=for-the-badge&color=blue" alt="Profile Views"/>
 </p>
 
@@ -550,6 +553,7 @@ const timWei = {
 
 | 平台 | 主題 | 狀態 |
 |:---:|:---|:---:|
+| 📰 [Medium](https://medium.com/@chwei9181/篇一-當-97-的資料都在騙你-加密貨幣反洗錢中的極度不平衡分類實戰-627275bc9944) | 當 97% 的資料都在騙你 — 加密貨幣反洗錢中的極度不平衡分類實戰 | ✅ 已發布 |
 | 📰 Medium | AI 輔助開發經驗分享 | ✅ 已發布 |
 | 📝 Medium | 國道交通系統技術深度解析 | 🔄 撰寫中 |
 | 🌐 部落格 | 跨領域研究方法論 | 📋 規劃中 |
