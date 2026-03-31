@@ -45,6 +45,11 @@ import academiaSinicaAwardImage from '../assets/images/experience/academia-sinic
 import transportConferenceSpeaking from '../assets/images/experience/transport-conference-speaking.jpg'
 import transportConferenceBanner from '../assets/images/experience/transport-conference-banner.jpeg'
 import transportConferencePoster from '../assets/images/experience/transport-conference-poster.jpg'
+// Hackathon images
+import hackathonTeam from '../assets/images/awards/hackathon-team.jpeg'
+import aiExpo from '../assets/images/awards/ai-expo-2026.jpeg'
+// Phi Tau Phi
+import phiTauPhiLogo from '../assets/images/awards/phi-tau-phi.png'
 
 const { t, locale } = useI18n()
 
@@ -59,21 +64,42 @@ const filters = [
 
 // Trimmed to core timeline items
 const timelineItems = [
-  // 2026/03 - Hackathon
+  // 2026/03 - Phi Tau Phi Honor Society
+  {
+    type: 'award',
+    year: '2026',
+    month: '03',
+    title: '中華民國斐陶斐榮譽學會',
+    titleEn: 'Phi Tau Phi Scholastic Honor Society',
+    subtitle: '榮譽會員推薦',
+    subtitleEn: 'Nominated Honorary Member',
+    period: '2026/03',
+    description: '由淡江大學統計與資料科學學系推薦為中華民國斐陶斐榮譽學會淡江大學分會榮譽會員，肯定其碩士班期間優異學術表現（GPA 4.0/4.0，系排名第一）。',
+    descriptionEn: 'Nominated by Tamkang University Department of Statistics & Data Science as an Honorary Member of the Phi Tau Phi Scholastic Honor Society, recognizing outstanding academic achievement (GPA 4.0/4.0, Rank #1) during Master\'s program.',
+    tags: ['Honor Society', 'Academic Excellence', 'GPA 4.0'],
+    logo: tkuStatsLogo,
+    image: phiTauPhiLogo,
+    color: 'from-purple-500 to-violet-600',
+    highlight: true,
+  },
+  // 2026/03 - Hackathon Finalist
   {
     type: 'award',
     year: '2026',
     month: '03',
     title: '去偽存真：全民偵查黑客松',
     titleEn: 'Agent for Truth: Disinformation Defense Hackathon',
-    subtitle: '入選工作坊，直接晉級複賽',
-    subtitleEn: 'Workshop Selected, Advanced to Semi-finals',
+    subtitle: '決賽入圍 — BitoGuard 智慧合規風險雷達',
+    subtitleEn: 'Finalist — BitoGuard: Intelligent Compliance Risk Radar',
     period: '2026/03',
-    description: '入選「去偽存真：全民偵查黑客松」工作坊，完成工作坊後直接進入複賽階段，致力於運用 AI 技術對抗不實資訊。',
-    descriptionEn: 'Selected for the "Agent for Truth: Disinformation Defense Hackathon" workshop. Upon completion, directly advanced to the semi-finals, leveraging AI to combat disinformation.',
-    tags: ['AI', 'NLP', 'Hackathon', 'Fact-checking'],
+    description: '決賽入圍「去偽存真：全民偵查黑客松 2026」（DIGITIMES × AWS），開發 BitoGuard 智慧合規風險雷達，運用圖神經網路（HeteroSAGE + GAT）與集成學習處理 77 萬筆交易紀錄，偵測加密貨幣詐欺行為，達成 AUC-ROC 0.861。',
+    descriptionEn: 'Finalist in the "Agent for Truth: Disinformation Defense Hackathon 2026" (DIGITIMES × AWS). Built BitoGuard: Intelligent Compliance Risk Radar — an AI-driven crypto fraud detection system using Graph Neural Networks (HeteroSAGE + GAT) and ensemble learning on 770K+ transactions, achieving AUC-ROC 0.861.',
+    tags: ['GNN', 'XGBoost', 'AWS', 'React', 'Fraud Detection'],
     color: 'from-cyan-500 to-blue-600',
     highlight: true,
+    image: hackathonTeam,
+    images: [hackathonTeam, aiExpo],
+    github: 'https://github.com/timwei0801/Bio_AWS_Workshop',
   },
   // 2025/12 - Conference speaking
   {

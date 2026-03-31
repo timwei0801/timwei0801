@@ -5,6 +5,7 @@ import highwayAward from '../assets/images/awards/highway-award.jpeg'
 import academiaSinicaAward from '../assets/images/awards/academia-sinica-award.jpeg'
 import hackathonTeam from '../assets/images/awards/hackathon-team.jpeg'
 import aiExpo from '../assets/images/awards/ai-expo-2026.jpeg'
+import phiTauPhiLogo from '../assets/images/awards/phi-tau-phi.png'
 
 const { t, locale } = useI18n()
 
@@ -191,7 +192,7 @@ const awards = [
     teamSizeEn: 'Individual Honor',
     duration: '碩士班期間',
     durationEn: 'During Master\'s program',
-    image: hackathonTeam,
+    image: phiTauPhiLogo,
     icon: '🎓',
     color: 'from-purple-500 to-violet-600',
     role: '碩士研究生',
