@@ -31,7 +31,7 @@ export default {
       awards: {
         title: 'Achievements',
         value: 'Multiple Awards',
-        description: 'National Competitions',
+        description: 'Hackathon Finalist & National Competitions',
       },
       eyWork: {
         title: 'Work Experience',

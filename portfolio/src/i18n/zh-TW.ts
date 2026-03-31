@@ -31,7 +31,7 @@ export default {
       awards: {
         title: '競賽成果',
         value: '多項獲獎',
-        description: '國道競賽、中研院',
+        description: '黑客松決賽、國道競賽、中研院',
       },
       eyWork: {
         title: '實務經歷',
