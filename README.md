@@ -554,9 +554,9 @@ const timWei = {
 | Platform | Topic | Status |
 |:---:|:---|:---:|
 | 📰 [Medium](https://medium.com/@chwei9181/篇一-當-97-的資料都在騙你-加密貨幣反洗錢中的極度不平衡分類實戰-627275bc9944) | Crypto AML: Extreme Imbalanced Classification in Practice | ✅ Published |
-| 📰 Medium | AI-Assisted Development Experience | ✅ Published |
-| 📝 Medium | Highway Traffic System Technical Deep Dive | 🔄 Coming Soon |
-| 🌐 Blog | Cross-disciplinary Research Methodology | 📋 Planned |
+| 📰 [Medium](https://medium.com/@chwei9181/我用-ai-在一天內完成個人網站-與-claude-code-協作開發的真實體驗-e315f00e365a) | Building a Portfolio in One Day with AI — Claude Code Collab | ✅ Published |
+| 📝 Medium | BitoGuard Series: GNN & Ensemble Learning in Practice | 🔄 Writing |
+| 📝 Medium | Highway Traffic System Technical Deep Dive | 🔄 Writing |
 
 ---
 
