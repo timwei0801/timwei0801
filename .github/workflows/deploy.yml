@@ -30,8 +30,9 @@ jobs:
       - name: Install dependencies
         run: |
           cd portfolio
-          echo "registry=https://registry.npmjs.org/" > .npmrc
           npm ci
+        env:
+          npm_config_registry: https://registry.npmjs.org/
 
       - name: Build
         run: |
