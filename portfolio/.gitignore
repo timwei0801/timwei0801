@@ -12,6 +12,19 @@ dist
 dist-ssr
 *.local
 
+# vue-tsc / TS build artifacts (generated alongside .ts/.vue sources)
+src/**/*.vue.js
+src/**/*.vue.js.map
+src/main.js
+src/i18n/index.js
+src/i18n/en.js
+src/i18n/zh-TW.js
+*.tsbuildinfo
+
+# Playwright
+test-results/
+playwright-report/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

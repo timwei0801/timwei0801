@@ -1,3 +1,17 @@
 /source
 portfolio/node_modules.nosync
 portfolio/package-lock.json
+
+# OS
+.DS_Store
+
+# Playwright tooling artifacts (generated during dev/QA only)
+.playwright-mcp/
+
+# Local screenshots & mockups (not needed in repo)
+mockup.html
+*.jpeg
+*.png
+!portfolio/src/**/*.png
+!portfolio/src/**/*.jpeg
+!portfolio/src/**/*.jpg
