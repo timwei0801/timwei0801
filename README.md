@@ -50,25 +50,39 @@
 ### 🛡️ &nbsp; BitoGuard — Compliance Risk Radar
 *Hackathon finalist · DIGITIMES × AWS 2026*
 
-AI-driven crypto fraud detection. **HeteroSAGE + GAT** heterogeneous GNN with stacking ensemble (XGBoost + LightGBM + CatBoost) identifies fraudulent accounts across **770K+ transactions**. SHAP explainability and 4-dimension fairness audit. **AUC-ROC 0.861**.
+AI-driven crypto fraud detection across **63,770 users · 129,545 graph edges**. **HeteroSAGE + GAT** heterogeneous GNN with stacking ensemble (XGBoost + LightGBM + CatBoost) on a 78-dim feature space. SHAP explainability and 4-dimension fairness audit baked in.
 
+<p>
+  <a href="https://timwei0801.github.io/Bio_AWS_Workshop/">
+    <img src="./.github/assets/bitoguard-dashboard.jpeg" alt="BitoGuard Fraud Detection Dashboard" width="100%" />
+  </a>
+</p>
+
+[![BitoGuard live](https://img.shields.io/badge/Live%20Dashboard-00D9A3?style=for-the-badge&logo=github&logoColor=0E1A1F)](https://timwei0801.github.io/Bio_AWS_Workshop/)
 [![BitoGuard repo](https://img.shields.io/badge/Source-timwei0801%2FBio__AWS__Workshop-FF6B35?style=for-the-badge&logo=github&logoColor=white)](https://github.com/timwei0801/Bio_AWS_Workshop)
 [![Last commit](https://img.shields.io/github/last-commit/timwei0801/Bio_AWS_Workshop?style=for-the-badge&label=updated&color=8A9BA3&labelColor=1F3038)](https://github.com/timwei0801/Bio_AWS_Workshop/commits)
-[![Top language](https://img.shields.io/github/languages/top/timwei0801/Bio_AWS_Workshop?style=for-the-badge&color=00D9A3&labelColor=1F3038)](https://github.com/timwei0801/Bio_AWS_Workshop)
 
 ### 🚗 &nbsp; Highway Traffic Prediction — Deep Learning × Physics Shockwave
 *2nd Place (1st vacant), National Highway Comp. 2025 · Invited talk at Transportation Annual Conference*
 
 Dual-engine architecture combining **MT-STNet** (spatio-temporal GNN) with **LWR shockwave theory** for accurate congestion prediction and real-time alerts. RAG decision support adds explainability on top of prediction.
 
-[![Highway repo](https://img.shields.io/badge/Source-timwei0801%2FHighway__trafficwave-FF6B35?style=for-the-badge&logo=github&logoColor=white)](https://github.com/timwei0801/Highway_trafficwave)
+<p>
+  <img src="./.github/assets/highway-speaking.jpeg" alt="Invited speaker at the 2025 Chinese Institute of Transportation Annual Conference" width="100%" />
+</p>
+
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-00D9A3?style=for-the-badge&logo=vercel&logoColor=0E1A1F)](https://highway-trafficwave.vercel.app)
+[![Highway repo](https://img.shields.io/badge/Source-timwei0801%2FHighway__trafficwave-FF6B35?style=for-the-badge&logo=github&logoColor=white)](https://github.com/timwei0801/Highway_trafficwave)
 [![Last commit](https://img.shields.io/github/last-commit/timwei0801/Highway_trafficwave?style=for-the-badge&label=updated&color=8A9BA3&labelColor=1F3038)](https://github.com/timwei0801/Highway_trafficwave/commits)
 
 ### 📊 &nbsp; Cyberbullying Research — Multivariate Analysis × GAP
 *Best Popularity + Merit Award · Academia Sinica 2024*
 
 First application of **Generalized Association Plots (GAP)** to cyberbullying research. Combined with PCA, factor analysis and CCA, identified **5 user clusters** and **4 behavioral factors** from 672 respondents.
+
+<p>
+  <img src="./.github/assets/cyberbullying-award.jpeg" alt="Award presentation at Academia Sinica Data Science Stroll 2024" width="100%" />
+</p>
 
 [![Research repo](https://img.shields.io/badge/Source-timwei0801%2FMVA--Internet--use--and--bullying-FF6B35?style=for-the-badge&logo=github&logoColor=white)](https://github.com/timwei0801/MVA-Internet-use-and-bullying)
 [![Last commit](https://img.shields.io/github/last-commit/timwei0801/MVA-Internet-use-and-bullying?style=for-the-badge&label=updated&color=8A9BA3&labelColor=1F3038)](https://github.com/timwei0801/MVA-Internet-use-and-bullying/commits)

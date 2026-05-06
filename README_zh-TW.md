@@ -50,25 +50,39 @@
 ### 🛡️ &nbsp; BitoGuard — 智慧合規風險雷達
 *黑客松決賽入圍 · DIGITIMES × AWS 2026*
 
-AI 驅動的加密貨幣詐欺偵測系統。**HeteroSAGE + GAT** 異質圖神經網路結合 Stacking 集成學習(XGBoost + LightGBM + CatBoost),在 **77 萬筆以上交易**中識別詐欺帳戶。整合 SHAP 可解釋性與四維度公平性審計,**AUC-ROC 達 0.861**。
+AI 驅動的加密貨幣詐欺偵測系統,涵蓋 **63,770 位使用者 · 129,545 筆圖譜邊**。**HeteroSAGE + GAT** 異質圖神經網路結合 Stacking 集成學習(XGBoost + LightGBM + CatBoost),建構於 78 維特徵空間。整合 SHAP 可解釋性分析與四維度公平性審計。
 
+<p>
+  <a href="https://timwei0801.github.io/Bio_AWS_Workshop/">
+    <img src="./.github/assets/bitoguard-dashboard.jpeg" alt="BitoGuard 詐欺偵測儀表板" width="100%" />
+  </a>
+</p>
+
+[![BitoGuard live](https://img.shields.io/badge/即時儀表板-00D9A3?style=for-the-badge&logo=github&logoColor=0E1A1F)](https://timwei0801.github.io/Bio_AWS_Workshop/)
 [![BitoGuard repo](https://img.shields.io/badge/原始碼-timwei0801%2FBio__AWS__Workshop-FF6B35?style=for-the-badge&logo=github&logoColor=white)](https://github.com/timwei0801/Bio_AWS_Workshop)
 [![Last commit](https://img.shields.io/github/last-commit/timwei0801/Bio_AWS_Workshop?style=for-the-badge&label=最後更新&color=8A9BA3&labelColor=1F3038)](https://github.com/timwei0801/Bio_AWS_Workshop/commits)
-[![Top language](https://img.shields.io/github/languages/top/timwei0801/Bio_AWS_Workshop?style=for-the-badge&color=00D9A3&labelColor=1F3038)](https://github.com/timwei0801/Bio_AWS_Workshop)
 
 ### 🚗 &nbsp; 國道智慧交通預測系統 — Deep Learning × Physics Shockwave
 *2025 國道智慧交通競賽全國第二名(第一從缺) · 中華民國運輸學會年會受邀演講*
 
 雙引擎並行架構,整合 **MT-STNet** 時空神經網路與 **LWR** 物理震波理論,實現精準的交通壅塞預測與即時預警。RAG 智慧決策輔助讓系統不只預測,還能解釋。
 
-[![Highway repo](https://img.shields.io/badge/原始碼-timwei0801%2FHighway__trafficwave-FF6B35?style=for-the-badge&logo=github&logoColor=white)](https://github.com/timwei0801/Highway_trafficwave)
+<p>
+  <img src="./.github/assets/highway-speaking.jpeg" alt="2025 中華民國運輸學會年會 受邀演講" width="100%" />
+</p>
+
 [![Live Demo](https://img.shields.io/badge/線上展示-00D9A3?style=for-the-badge&logo=vercel&logoColor=0E1A1F)](https://highway-trafficwave.vercel.app)
+[![Highway repo](https://img.shields.io/badge/原始碼-timwei0801%2FHighway__trafficwave-FF6B35?style=for-the-badge&logo=github&logoColor=white)](https://github.com/timwei0801/Highway_trafficwave)
 [![Last commit](https://img.shields.io/github/last-commit/timwei0801/Highway_trafficwave?style=for-the-badge&label=最後更新&color=8A9BA3&labelColor=1F3038)](https://github.com/timwei0801/Highway_trafficwave/commits)
 
 ### 📊 &nbsp; 網路行為與霸凌研究 — Multivariate Analysis × GAP
 *最佳人氣獎 + 優選獎 · 中研院資料科學漫步 2024*
 
 首創將 **廣義關聯圖 (GAP)** 應用於網路霸凌行為研究。結合 PCA、因素分析、典型相關分析(CCA),從 672 位受訪者中識別 **5 個使用者群** 與 **4 大行為因子**。
+
+<p>
+  <img src="./.github/assets/cyberbullying-award.jpeg" alt="中研院資料科學漫步 2024 頒獎現場" width="100%" />
+</p>
 
 [![Research repo](https://img.shields.io/badge/原始碼-timwei0801%2FMVA--Internet--use--and--bullying-FF6B35?style=for-the-badge&logo=github&logoColor=white)](https://github.com/timwei0801/MVA-Internet-use-and-bullying)
 [![Last commit](https://img.shields.io/github/last-commit/timwei0801/MVA-Internet-use-and-bullying?style=for-the-badge&label=最後更新&color=8A9BA3&labelColor=1F3038)](https://github.com/timwei0801/MVA-Internet-use-and-bullying/commits)

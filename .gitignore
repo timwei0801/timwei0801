@@ -15,3 +15,7 @@ mockup.html
 !portfolio/src/**/*.png
 !portfolio/src/**/*.jpeg
 !portfolio/src/**/*.jpg
+!.github/**/*.png
+!.github/**/*.jpeg
+!.github/**/*.jpg
+!.github/**/*.svg
