@@ -52,31 +52,27 @@
 
 AI-driven crypto fraud detection. **HeteroSAGE + GAT** heterogeneous GNN with stacking ensemble (XGBoost + LightGBM + CatBoost) identifies fraudulent accounts across **770K+ transactions**. SHAP explainability and 4-dimension fairness audit. **AUC-ROC 0.861**.
 
-<a href="https://github.com/timwei0801/Bio_AWS_Workshop">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=timwei0801&repo=Bio_AWS_Workshop&theme=transparent&hide_border=true&title_color=FF6B35&text_color=8A9BA3&icon_color=00D9A3" />
-</a>
+[![BitoGuard repo](https://img.shields.io/badge/Source-timwei0801%2FBio__AWS__Workshop-FF6B35?style=for-the-badge&logo=github&logoColor=white)](https://github.com/timwei0801/Bio_AWS_Workshop)
+[![Last commit](https://img.shields.io/github/last-commit/timwei0801/Bio_AWS_Workshop?style=for-the-badge&label=updated&color=8A9BA3&labelColor=1F3038)](https://github.com/timwei0801/Bio_AWS_Workshop/commits)
+[![Top language](https://img.shields.io/github/languages/top/timwei0801/Bio_AWS_Workshop?style=for-the-badge&color=00D9A3&labelColor=1F3038)](https://github.com/timwei0801/Bio_AWS_Workshop)
 
 ### 🚗 &nbsp; Highway Traffic Prediction — Deep Learning × Physics Shockwave
 *2nd Place (1st vacant), National Highway Comp. 2025 · Invited talk at Transportation Annual Conference*
 
 Dual-engine architecture combining **MT-STNet** (spatio-temporal GNN) with **LWR shockwave theory** for accurate congestion prediction and real-time alerts. RAG decision support adds explainability on top of prediction.
 
-<a href="https://github.com/timwei0801/Highway_trafficwave">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=timwei0801&repo=Highway_trafficwave&theme=transparent&hide_border=true&title_color=FF6B35&text_color=8A9BA3&icon_color=00D9A3" />
-</a>
-&nbsp;
-<a href="https://highway-trafficwave.vercel.app">
-  <img src="https://img.shields.io/badge/Live%20Demo-FF6B35?style=for-the-badge&logoColor=white" alt="Live Demo" />
-</a>
+[![Highway repo](https://img.shields.io/badge/Source-timwei0801%2FHighway__trafficwave-FF6B35?style=for-the-badge&logo=github&logoColor=white)](https://github.com/timwei0801/Highway_trafficwave)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-00D9A3?style=for-the-badge&logo=vercel&logoColor=0E1A1F)](https://highway-trafficwave.vercel.app)
+[![Last commit](https://img.shields.io/github/last-commit/timwei0801/Highway_trafficwave?style=for-the-badge&label=updated&color=8A9BA3&labelColor=1F3038)](https://github.com/timwei0801/Highway_trafficwave/commits)
 
 ### 📊 &nbsp; Cyberbullying Research — Multivariate Analysis × GAP
 *Best Popularity + Merit Award · Academia Sinica 2024*
 
 First application of **Generalized Association Plots (GAP)** to cyberbullying research. Combined with PCA, factor analysis and CCA, identified **5 user clusters** and **4 behavioral factors** from 672 respondents.
 
-<a href="https://github.com/timwei0801/MVA-Internet-use-and-bullying">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=timwei0801&repo=MVA-Internet-use-and-bullying&theme=transparent&hide_border=true&title_color=FF6B35&text_color=8A9BA3&icon_color=00D9A3" />
-</a>
+[![Research repo](https://img.shields.io/badge/Source-timwei0801%2FMVA--Internet--use--and--bullying-FF6B35?style=for-the-badge&logo=github&logoColor=white)](https://github.com/timwei0801/MVA-Internet-use-and-bullying)
+[![Last commit](https://img.shields.io/github/last-commit/timwei0801/MVA-Internet-use-and-bullying?style=for-the-badge&label=updated&color=8A9BA3&labelColor=1F3038)](https://github.com/timwei0801/MVA-Internet-use-and-bullying/commits)
+[![Top language](https://img.shields.io/github/languages/top/timwei0801/MVA-Internet-use-and-bullying?style=for-the-badge&color=00D9A3&labelColor=1F3038)](https://github.com/timwei0801/MVA-Internet-use-and-bullying)
 
 ---
 
@@ -97,7 +93,9 @@ First application of **Generalized Association Plots (GAP)** to cyberbullying re
 **Certified** &nbsp;·&nbsp; Azure AZ-900 · AI-900 · DP-900 · SAS Base · ESG Junior Manager
 
 <p>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=timwei0801&layout=compact&theme=transparent&hide_border=true&title_color=FF6B35&text_color=8A9BA3&langs_count=8" alt="Top Languages" />
+  <img src="https://img.shields.io/github/followers/timwei0801?style=for-the-badge&label=followers&color=FF6B35&labelColor=1F3038" alt="GitHub followers" />
+  &nbsp;
+  <img src="https://img.shields.io/github/stars/timwei0801?style=for-the-badge&label=total%20stars&color=00D9A3&labelColor=1F3038" alt="GitHub stars" />
 </p>
 
 ---
