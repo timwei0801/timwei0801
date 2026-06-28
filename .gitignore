@@ -19,3 +19,5 @@ mockup.html
 !.github/**/*.jpeg
 !.github/**/*.jpg
 !.github/**/*.svg
+
+/content

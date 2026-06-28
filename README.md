@@ -28,7 +28,7 @@
 - 🛒 &nbsp; **Retail ML Recommender** — Real-time product recommendation engine for a major retail chain (PoC), combining user behavior with product nutrition signals, refreshed in 5-minute batches.
 - 🏦 &nbsp; **Banking Credit Scoring** — Owning credit-scoring model development for a banking client. Completed SAS Viya certification and supported the client's platform onboarding.
 - 🧪 &nbsp; **AI Model Governance** — Owning fairness, explainability and AI capability evaluation for enterprise clients (SHAP analysis + multi-dimension fairness audit).
-- 🎓 &nbsp; **EY Corporate Mentor × NTU Accounting** — Mentoring a 6–7 student team on a 16-week, 3-hour-per-week RAG project (Spring 2026).
+- 🎓 &nbsp; **EY Corporate Mentor × NTU Accounting** — Mentored a 6–7 student team through a 16-week, 3-hour-per-week RAG project (Spring 2026 — completed, final reports delivered).
 
 ---
 
@@ -36,7 +36,9 @@
 
 | | |
 |:---|:---|
-| 🥇 &nbsp; **#1** | Class rank, M2 S1 score 97/100 — Tamkang Statistics |
+| 🥇 &nbsp; **#1 Graduate** | Graduated ranked #1 in department — Tamkang Statistics & Data Science (2026) |
+| 🧑‍🏫 &nbsp; **Outstanding TA** | 3 consecutive semesters + academic award — Tamkang Stats |
+| 💰 &nbsp; **Scholarship** | 2025 Accounting Association Scholarship (NT$20,000) |
 | 🎓 &nbsp; **Phi Tau Phi** | Honorary member, nominated by Tamkang Stats (2026) |
 | 🛡️ &nbsp; **Hackathon Finalist** | DIGITIMES × AWS · Agent for Truth 2026 — *BitoGuard* |
 | 🥈 &nbsp; **2nd Place (1st vacant)** | National Highway Intelligent Traffic Competition 2025 |
@@ -116,6 +118,7 @@ First application of **Generalized Association Plots (GAP)** to cyberbullying re
 
 ## Public thinking
 
+- 📚 &nbsp; [Claude Code Field Manual — a beginner-friendly zh-TW tutorial series (G1~G20, ongoing)](https://ithelp.ithome.com.tw/users/20182796/articles) &nbsp;·&nbsp; *iThome · 2026*
 - 📰 &nbsp; [When 97% of Your Data Lies — Extreme Imbalanced Classification in Crypto AML](https://medium.com/@chwei9181/篇一-當-97-的資料都在騙你-加密貨幣反洗錢中的極度不平衡分類實戰-627275bc9944) &nbsp;·&nbsp; *Medium · 2025*
 - 📰 &nbsp; [Building a Portfolio in One Day with AI — Claude Code Collab Reality Check](https://medium.com/@chwei9181/我用-ai-在一天內完成個人網站-與-claude-code-協作開發的真實體驗-e315f00e365a) &nbsp;·&nbsp; *Medium · 2025*
 

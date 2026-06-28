@@ -21,7 +21,7 @@ export default {
     stats: {
         rank: { value: '#1', label: 'CLASS RANK · M2 GPA 97' },
         systems: { value: '4+', label: 'AI SYSTEMS SHIPPED' },
-        awards: { value: '5+', label: 'AWARDS · TALKS' },
+        awards: { value: '7+', label: 'AWARDS · TALKS' },
         teaching: { value: 'EY×NTU', label: 'CORPORATE MENTOR' },
     },
     about: {
@@ -65,9 +65,21 @@ export default {
                     '<strong>Retail ML Recommender</strong>: Developing a real-time product recommendation engine for a major retail chain (PoC), covering most in-store SKUs, combining user behavior with product nutrition signals, refreshed in 5-minute batches.',
                     '<strong>Banking Credit Scoring</strong>: Leading the development of a credit scoring model for a banking client. Completed SAS Viya certification and supported the client through SAS Viya platform onboarding and model pipeline setup.',
                     '<strong>AI Model Governance</strong>: Owning fairness, explainability and AI capability evaluation for enterprise clients — delivering SHAP feature-importance analysis and multi-dimension fairness audit reports to surface model risk.',
-                    '<strong>EY Corporate Mentor × NTU Accounting</strong>: Mentoring a 6–7 student team on a 16-week, 3-hour-per-week RAG project as an industry mentor (Spring 2026).',
+                    '<strong>EY Corporate Mentor × NTU Accounting</strong>: Mentored a 6–7 student team through a 16-week, 3-hour-per-week RAG project as an industry mentor (Spring 2026 — completed, final student reports delivered).',
                 ],
                 tags: ['RAG', 'LLM', 'Ollama', 'Python', 'SAS Viya', 'Recommender', 'Teaching'],
+            },
+            {
+                period: '2023 — 2026',
+                position: 'M.S. Data Science · Ranked #1 in Department',
+                company: 'Tamkang University, Dept. of Statistics & Data Science',
+                location: 'New Taipei · Tamsui',
+                description: 'Thesis on adversarial self-evolving training for visualization agents (essentially complete). Recognized across both research and teaching during the program.',
+                bullets: [
+                    '<strong>Graduated ranked #1 in the department</strong>, with an academic award, and honorary member of the Phi Tau Phi Honor Society (nominated by Tamkang Stats).',
+                    '<strong>Outstanding Teaching Assistant for 3 consecutive semesters</strong>, and recipient of the 2025 Accounting Association Scholarship (NT$20,000).',
+                ],
+                tags: ['Data Science', 'GNN', 'PyTorch', 'Statistics', 'Research'],
             },
             {
                 period: '2024.02 — 2024.06',
@@ -146,7 +158,9 @@ export default {
         titleEm: 'honors.',
         sub: 'Academic, competition, and industry recognition.',
         items: [
+            { year: '2026', name: 'Ranked #1 Graduate', nameZh: 'M.S. Data Science', org: 'Tamkang University, Stats & DS', desc: 'Graduated ranked #1 in the department, with an academic award and Outstanding TA for 3 consecutive semesters.', tag: 'Academic' },
             { year: '2026', name: 'Phi Tau Phi Honor Society', nameZh: 'Honorary Member', org: 'Nominated by Tamkang Stats', desc: 'Nominated as honorary member of the Phi Tau Phi Scholastic Honor Society for academic excellence.', tag: 'Honor' },
+            { year: '2025', name: 'Accounting Scholarship', nameZh: 'NT$20,000', org: 'Accounting Association', desc: 'Recipient of the 2025 Accounting Association Scholarship (NT$20,000), among national award recipients.', tag: 'Scholarship' },
             { year: '2026', name: 'Hackathon Finalist', nameZh: 'Agent for Truth', org: 'DIGITIMES × AWS', desc: 'Finalist at "Agent for Truth: Disinformation Defense Hackathon 2026" with BitoGuard.', tag: 'Hackathon' },
             { year: '2025', name: '2nd Place (1st Vacant)', nameZh: 'National Highway Comp.', org: 'Taiwan Highway Bureau', desc: '2nd place (1st place vacant) at the 2025 National Highway Intelligent Traffic Competition.', tag: 'National' },
             { year: '2025', name: 'Invited Speaker', nameZh: 'Transportation Annual Conf.', org: 'Highway Bureau', desc: 'Invited talk at the 2025 Chinese Institute of Transportation Annual Conference on AI traffic prediction.', tag: 'Speaking' },
@@ -186,8 +200,9 @@ export default {
         num: '07 / writing',
         title: 'Public ',
         titleEm: 'thinking.',
-        sub: 'Sharing engineering practice and project lessons on Medium.',
+        sub: 'Sharing engineering practice and project lessons on Medium and iThome.',
         articles: [
+            { title: 'Claude Code Field Manual — a beginner-friendly zh-TW series (G1~G20, ongoing)', date: '2026', tag: 'iThome · Claude Code', url: 'https://ithelp.ithome.com.tw/users/20182796/articles' },
             { title: 'When 97% of Your Data Lies — Extreme Imbalanced Classification in Crypto AML', date: '2025', tag: 'AML · GNN', url: 'https://medium.com/@chwei9181/篇一-當-97-的資料都在騙你-加密貨幣反洗錢中的極度不平衡分類實戰-627275bc9944' },
             { title: 'Building a Portfolio in One Day with AI — Claude Code Collab Reality Check', date: '2025', tag: 'AI Workflow', url: 'https://medium.com/@chwei9181/我用-ai-在一天內完成個人網站-與-claude-code-協作開發的真實體驗-e315f00e365a' },
         ],

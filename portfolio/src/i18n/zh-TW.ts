@@ -21,7 +21,7 @@ export default {
     stats: {
         rank: { value: '#1', label: '系排名 · 碩二上 97 分' },
         systems: { value: '4+', label: 'AI 系統開發上線' },
-        awards: { value: '5+', label: '競賽 · 獎項 · 演講' },
+        awards: { value: '7+', label: '競賽 · 獎項 · 演講' },
         teaching: { value: 'EY×NTU', label: '台大企業導師' },
     },
     about: {
@@ -65,9 +65,21 @@ export default {
                     '<strong>零售業 ML 推薦系統</strong>:為某大型連鎖便利商店開發即時商品推薦引擎 (PoC 階段),涵蓋線下門市大部分上架品項,結合使用者行為與商品營養素資料,推薦結果以 5 分鐘批次更新。',
                     '<strong>銀行信用評分模型</strong>:主導某銀行信用評分模型的開發,完成 SAS Viya 專業課程培訓,並協助銀行端導入 SAS Viya 平台與建立模型流程。',
                     '<strong>AI 模型治理</strong>:負責企業客戶 ML 模型的公平性、可解釋性與 AI 能力評估,輸出 SHAP 特徵重要性分析與多維度公平性審計報告,協助客戶識別模型風險。',
-                    '<strong>EY 企業導師 × 台大會計系</strong>:以業師身份指導 6-7 人小組,16 週、每週 3 小時帶領學生進行 RAG 專案實作 (2026 春季)。',
+                    '<strong>EY 企業導師 × 台大會計系</strong>:以業師身份指導 6-7 人小組,16 週、每週 3 小時帶領學生完成 RAG 專案 (2026 春季,已結案,學生成果報告完成)。',
                 ],
                 tags: ['RAG', 'LLM', 'Ollama', 'Python', 'SAS Viya', 'Recommender', 'Teaching'],
+            },
+            {
+                period: '2023 — 2026',
+                position: '資料科學碩士 · 系排名第一畢業',
+                company: '淡江大學 統計與資料科學學系',
+                location: '新北 · 淡水',
+                description: '碩士論文聚焦對抗式自我進化訓練的視覺化 agent (基本完成)。在學期間獲多項學術與教學肯定。',
+                bullets: [
+                    '<strong>系排名第一畢業</strong>,獲學業獎,並為斐陶斐榮譽學會榮譽會員 (淡江統計系提名)。',
+                    '<strong>連續三學期優良教學助理</strong>,並獲主計協進社 114 年主計獎學金 (NT$20,000)。',
+                ],
+                tags: ['Data Science', 'GNN', 'PyTorch', 'Statistics', 'Research'],
             },
             {
                 period: '2024.02 — 2024.06',
@@ -148,11 +160,27 @@ export default {
         items: [
             {
                 year: '2026',
+                name: 'Ranked #1 Graduate',
+                nameZh: '系排名第一畢業',
+                org: '淡江大學 統計與資料科學學系',
+                desc: '碩士班系排名第一畢業,獲學業獎,並連續三學期獲選優良教學助理。',
+                tag: '學業榮譽',
+            },
+            {
+                year: '2026',
                 name: 'Phi Tau Phi Honor Society',
                 nameZh: '斐陶斐榮譽學會榮譽會員',
                 org: '提名 by 淡江統計系',
                 desc: '由淡江大學統計學系提名為斐陶斐榮譽學會榮譽會員,表彰學術卓越表現。',
                 tag: '學術榮譽',
+            },
+            {
+                year: '2025',
+                name: 'Accounting Scholarship',
+                nameZh: '主計協進社 114 年主計獎學金',
+                org: '主計協進社',
+                desc: '獲頒主計協進社 114 年主計獎學金 (NT$20,000),全國各校獲獎名單之一。',
+                tag: '獎學金',
             },
             {
                 year: '2026',
@@ -228,8 +256,14 @@ export default {
         num: '07 / writing',
         title: 'Public ',
         titleEm: 'thinking.',
-        sub: '在 Medium 持續分享技術實戰與專案經驗。',
+        sub: '在 Medium 與 iT 邦幫忙持續分享技術實戰與專案經驗。',
         articles: [
+            {
+                title: 'Claude Code 實戰手冊 — 從零開始的繁中教學連載 (G1~G20,連載中)',
+                date: '2026',
+                tag: 'iT 邦 · Claude Code',
+                url: 'https://ithelp.ithome.com.tw/users/20182796/articles',
+            },
             {
                 title: '當 97% 的資料都在騙你 — 加密貨幣反洗錢中的極度不平衡分類實戰',
                 date: '2025',
