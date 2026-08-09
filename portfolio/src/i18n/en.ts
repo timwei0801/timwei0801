@@ -32,7 +32,7 @@ export default {
         titleEm2: 'production.',
         intro1: "I'm <strong>Tim Wei</strong>, a consultant in the Technology Consulting practice at <strong>Ernst & Young Taiwan (EY)</strong> — with AI/ML as my specialty — holding an M.S. in Data Science from <strong>Tamkang University</strong>.",
         intro2: "At EY, I lead the architecture of an internal RAG knowledge system, build a per-patient health-education RAG system with a healthcare institution, develop a real-time ML recommendation engine for a major retail chain, and own credit-scoring model development for banking clients — turning research into shipped products.",
-        intro3: 'Academically: <strong>graduated ranked #1 in the department</strong>, with an academic award and three consecutive semesters as an Outstanding TA. Honorary member of the <strong>Phi Tau Phi Honor Society</strong>. Research spans GNN, spatio-temporal forecasting, explainable AI, and fairness auditing.',
+        intro3: 'Academically: <strong>graduated ranked #1 in the department</strong>, with an academic award and three consecutive semesters as an Outstanding TA. Honorary member of the <strong>Phi Tau Phi Honor Society</strong>. My thesis <strong>ADVIZ</strong> trains AI to detect misleading charts through red-blue adversarial self-play — fully open-sourced. Research spans GNN, vision-language models, spatio-temporal forecasting, explainable AI, and fairness auditing.',
         quote: '"The value of technology lies in turning complexity into simplicity, and abstraction into utility."',
         quote2: "I do research, write code, teach, and write articles — because expression matters as much as execution.",
         techHeader: 'TECH I WORK WITH',
@@ -75,12 +75,13 @@ export default {
                 position: 'M.S. Data Science · Ranked #1 in Department',
                 company: 'Tamkang University, Dept. of Statistics & Data Science',
                 location: 'New Taipei · Tamsui',
-                description: 'Thesis on adversarial self-evolving training for visualization agents (essentially complete). Recognized across both research and teaching during the program.',
+                description: 'Master\'s thesis ADVIZ on adversarial self-evolving visualization agents, defended and graduated July 2026 under Dr. Chiun-How Kao. Full text archived in the TKU electronic thesis system; code and interactive demo fully open-sourced.',
                 bullets: [
+                    "<strong>Master's thesis — ADVIZ</strong>: red-blue adversarial self-play to train AI to detect misleading charts, showing the detection bottleneck is the decoding interface rather than representational capacity — balanced accuracy 0.57 → 0.83, with a 3.7M-parameter detector beating general-purpose large models on synthetic adversarial charts.",
                     '<strong>Graduated ranked #1 in the department</strong>, with an academic award, and honorary member of the Phi Tau Phi Honor Society (nominated by Tamkang Stats).',
                     '<strong>Outstanding Teaching Assistant for 3 consecutive semesters</strong>, and recipient of the 2025 Accounting Association Scholarship (NT$20,000).',
                 ],
-                tags: ['Data Science', 'GNN', 'PyTorch', 'Statistics', 'Research'],
+                tags: ['Data Science', 'VLM', 'GRPO', 'PyTorch', 'Statistics', 'Research'],
             },
             {
                 period: '2024.02 — 2024.06',
@@ -102,7 +103,18 @@ export default {
         viewLive: 'Live Demo',
         items: [
             {
-                tag: '01 — HACKATHON FINALIST · DIGITIMES × AWS',
+                tag: "01 — MASTER'S THESIS · TAMKANG DATA SCIENCE 2026",
+                title: 'ADVIZ',
+                subtitle: 'Adversarial Self-Evolving Visualization',
+                description: "Training AI to detect misleading charts through red-blue adversarial self-play: Red generates attacks, Blue learns to catch them, both co-evolve via Dual-GRPO. The core finding is mechanistic — the bottleneck is the decoding interface, not representational capacity. On the same vision-language features, swapping generative JSON decoding for a sigmoid classifier head lifts balanced accuracy 0.57 → 0.70; fusing with a rule-based linter reaches 0.83. On synthetic adversarial charts the 3.7M-parameter detector (BalAcc 0.943) decisively beats general-purpose large models.",
+                metrics: ['BalAcc 0.57 → 0.83', '0.943 vs 0.743 vs LLMs', '3.7M trainable params'],
+                tags: ['VLM', 'GRPO', 'Qwen2.5-VL', 'LoRA', 'RL', 'PyTorch'],
+                github: 'https://github.com/timwei0801/adversarial-viz-evolution',
+                live: 'https://timwei0801.github.io/adversarial-viz-evolution/',
+                viz: 'architecture',
+            },
+            {
+                tag: '02 — HACKATHON FINALIST · DIGITIMES × AWS',
                 title: 'BitoGuard',
                 subtitle: 'Compliance Risk Radar',
                 description: 'AI-driven crypto fraud detection. HeteroSAGE + GAT heterogeneous GNN with stacking ensemble identifies fraudulent accounts across 770K+ transactions. SHAP explainability and 4-dimension fairness audit. AUC-ROC 0.861.',
@@ -112,7 +124,7 @@ export default {
                 viz: 'architecture',
             },
             {
-                tag: '02 — 2nd PLACE (1st VACANT) · NATIONAL HIGHWAY 2025',
+                tag: '03 — 2nd PLACE (1st VACANT) · NATIONAL HIGHWAY 2025',
                 title: 'Highway Traffic Prediction',
                 subtitle: 'Deep Learning × Physics Shockwave',
                 description: 'Dual-engine architecture combining MT-STNet (spatio-temporal GNN) with LWR shockwave theory. Invited speaker at the 2025 Chinese Institute of Transportation Annual Conference. RAG decision support adds explainability on top of prediction.',
@@ -123,7 +135,7 @@ export default {
                 viz: 'heatmap',
             },
             {
-                tag: '03 — BEST POPULARITY + MERIT · ACADEMIA SINICA 2024',
+                tag: '04 — BEST POPULARITY + MERIT · ACADEMIA SINICA 2024',
                 title: 'Cyberbullying Research',
                 subtitle: 'Multivariate Analysis × GAP',
                 description: 'First application of Generalized Association Plots (GAP) to cyberbullying research. Combined with PCA, factor analysis and CCA, identified 5 user clusters and 4 behavioral factors from 672 respondents at 90%+ prediction accuracy.',
@@ -133,7 +145,7 @@ export default {
                 viz: 'cluster',
             },
             {
-                tag: '04 — FULL-STACK AI',
+                tag: '05 — FULL-STACK AI',
                 title: 'ChartGenie',
                 subtitle: 'AI-Powered Visualization',
                 description: 'Lower the barrier to data viz. Users describe their needs in natural language, the LLM picks the right chart and generates it. 30+ chart types, multi-format upload, auto-report generation.',
@@ -142,7 +154,7 @@ export default {
                 viz: 'chart',
             },
             {
-                tag: '05 — IMAGE RECOGNITION × AI',
+                tag: '06 — IMAGE RECOGNITION × AI',
                 title: 'Texas Poker AI',
                 subtitle: 'Image Recognition × Strategy',
                 description: 'Real-time poker decision support combining image recognition with AI strategy. 95%+ card recognition, sub-500ms response, WebSocket-based live game analysis.',

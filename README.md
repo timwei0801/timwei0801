@@ -41,6 +41,7 @@
 | | |
 |:---|:---|
 | 🥇 &nbsp; **#1 Graduate** | Graduated ranked #1 in department — Tamkang Statistics & Data Science (2026) |
+| 🔬 &nbsp; **Thesis Published** | [ADVIZ](https://github.com/timwei0801/adversarial-viz-evolution) — adversarial self-evolving chart-deception detection, open-sourced (2026) |
 | 🧑‍🏫 &nbsp; **Outstanding TA** | 3 consecutive semesters + academic award — Tamkang Stats |
 | 💰 &nbsp; **Scholarship** | 2025 Accounting Association Scholarship (NT$20,000) |
 | 🎓 &nbsp; **Phi Tau Phi** | Honorary member, nominated by Tamkang Stats (2026) |
@@ -52,6 +53,18 @@
 ---
 
 ## Selected work
+
+### 🔴🔵 &nbsp; ADVIZ — Adversarial Self-Evolving Visualization
+*Master's thesis · Tamkang Data Science · Graduated July 2026*
+
+Training AI to detect misleading charts through **red–blue adversarial self-play**: Red generates attacks, Blue learns to catch them, both co-evolve via **Dual-GRPO**. The core result is mechanistic — the bottleneck is the model's **decoding interface, not its representational capacity**. On the same vision-language features, swapping generative JSON decoding for a **sigmoid classifier head** lifts balanced accuracy **0.57 → 0.70**; fusing with a rule-based linter reaches **0.83**. On synthetic adversarial charts, the **3.7M-parameter** detector hits **BalAcc 0.943 / AUC 0.997** — well ahead of general-purpose large models.
+
+The out-of-distribution ceiling is characterized honestly rather than hidden: all 12 detectors plateau on wild charts, traced substantially to **renderer shift**.
+
+[![Interactive showcase](https://img.shields.io/badge/Play%20the%20Showcase-00D9A3?style=for-the-badge&logo=github&logoColor=0E1A1F)](https://timwei0801.github.io/adversarial-viz-evolution/)
+[![ADVIZ repo](https://img.shields.io/badge/Source-timwei0801%2Fadversarial--viz--evolution-FF6B35?style=for-the-badge&logo=github&logoColor=white)](https://github.com/timwei0801/adversarial-viz-evolution)
+[![Thesis PDF](https://img.shields.io/badge/Thesis-PDF-C1272D?style=for-the-badge&logoColor=white)](https://github.com/timwei0801/adversarial-viz-evolution/releases/tag/v1.0.0)
+[![Last commit](https://img.shields.io/github/last-commit/timwei0801/adversarial-viz-evolution?style=for-the-badge&label=updated&color=8A9BA3&labelColor=1F3038)](https://github.com/timwei0801/adversarial-viz-evolution/commits)
 
 ### 🛡️ &nbsp; BitoGuard — Compliance Risk Radar
 *Hackathon finalist · DIGITIMES × AWS 2026*

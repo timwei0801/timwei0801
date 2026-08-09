@@ -41,6 +41,7 @@
 | | |
 |:---|:---|
 | 🥇 &nbsp; **系排名第一畢業** | 淡江大學 統計與資料科學學系 (2026) |
+| 🔬 &nbsp; **碩士論文開源** | [ADVIZ](https://github.com/timwei0801/adversarial-viz-evolution) — 對抗式自進化的誤導性圖表偵測 (2026) |
 | 🧑‍🏫 &nbsp; **優良教學助理** | 連續三學期 + 學業獎 — 淡江統計 |
 | 💰 &nbsp; **獎學金** | 主計協進社 114 年主計獎學金(NT$20,000) |
 | 🎓 &nbsp; **斐陶斐榮譽會員** | 由淡江統計系提名 (2026) |
@@ -52,6 +53,18 @@
 ---
 
 ## 精選作品
+
+### 🔴🔵 &nbsp; ADVIZ — 對抗式自進化視覺化系統
+*碩士論文 · 淡江資料科學 · 2026 年 7 月畢業*
+
+用**紅藍對抗自我進化**訓練 AI 偵測誤導性圖表:紅方生成攻擊、藍方學習識破,兩者透過 **Dual-GRPO** 共同進化。核心結果是機制性的 — 瓶頸不在模型的表徵能力,而在**解碼介面**。同一組視覺語言特徵,把生成式 JSON 解碼換成 **sigmoid 分類頭**,平衡準確率從 **0.57 提升到 0.70**,再融合規則式 linter 達 **0.83**。在合成對抗圖表上,這個**僅 3.7M 參數**的偵測器達 **BalAcc 0.943 / AUC 0.997**,大幅領先通用大模型。
+
+論文同時誠實刻畫了分布外的天花板:12 個偵測器在真實世界圖表上全數持平,主要原因追溯到 **renderer shift** 而非能力缺失。
+
+[![互動 Showcase](https://img.shields.io/badge/玩玩看%20Showcase-00D9A3?style=for-the-badge&logo=github&logoColor=0E1A1F)](https://timwei0801.github.io/adversarial-viz-evolution/)
+[![ADVIZ repo](https://img.shields.io/badge/原始碼-timwei0801%2Fadversarial--viz--evolution-FF6B35?style=for-the-badge&logo=github&logoColor=white)](https://github.com/timwei0801/adversarial-viz-evolution)
+[![論文 PDF](https://img.shields.io/badge/論文-PDF-C1272D?style=for-the-badge&logoColor=white)](https://github.com/timwei0801/adversarial-viz-evolution/releases/tag/v1.0.0)
+[![Last commit](https://img.shields.io/github/last-commit/timwei0801/adversarial-viz-evolution?style=for-the-badge&label=updated&color=8A9BA3&labelColor=1F3038)](https://github.com/timwei0801/adversarial-viz-evolution/commits)
 
 ### 🛡️ &nbsp; BitoGuard — 智慧合規風險雷達
 *黑客松決賽入圍 · DIGITIMES × AWS 2026*

@@ -32,7 +32,7 @@ export default {
         titleEm2: '產品。',
         intro1: '我是<strong>魏祺紘 (Tim)</strong>,目前在<strong>安永聯合會計師事務所 (EY Taiwan)</strong> Technology Consulting 部門擔任顧問,專業與產出以 AI/ML 為主,並取得<strong>淡江大學統計與資料科學學系</strong>數據科學碩士學位。',
         intro2: '在 EY,我主導內部 RAG 知識管理系統的架構設計、與某醫療院所合作開發病人專屬衛教單 RAG、開發某大型連鎖通路的 ML 商品推薦引擎、主導銀行客戶的信用評分模型開發 — 這些經驗讓我把學術理論真正變成能落地的產品。',
-        intro3: '學術上,<strong>系排名第一畢業</strong>,獲學業獎與連續三學期優良教學助理,並獲<strong>斐陶斐榮譽學會</strong> (Phi Tau Phi) 提名為榮譽會員。研究橫跨圖神經網路、時空預測、可解釋性 AI 與公平性審計。',
+        intro3: '學術上,<strong>系排名第一畢業</strong>,獲學業獎與連續三學期優良教學助理,並獲<strong>斐陶斐榮譽學會</strong> (Phi Tau Phi) 提名為榮譽會員。碩士論文 <strong>ADVIZ</strong> 用紅藍對抗訓練 AI 偵測誤導性圖表,已完整開源。研究橫跨圖神經網路、視覺語言模型、時空預測、可解釋性 AI 與公平性審計。',
         quote: '"技術的價值,在於把複雜的問題變簡單、把抽象的研究變實用。"',
         quote2: '我同時做研究、寫 code、教書、寫文章 — 因為表達跟實作同等重要。',
         techHeader: 'TECH I WORK WITH',
@@ -75,12 +75,13 @@ export default {
                 position: '資料科學碩士 · 系排名第一畢業',
                 company: '淡江大學 統計與資料科學學系',
                 location: '新北 · 淡水',
-                description: '碩士論文聚焦對抗式自我進化訓練的視覺化 agent (基本完成)。在學期間獲多項學術與教學肯定。',
+                description: '碩士論文 ADVIZ 聚焦對抗式自進化的視覺化 agent,2026 年 7 月完成口試畢業,指導教授高君豪博士。論文全文已收錄於淡江電子學位論文系統,程式碼與互動 demo 全部開源。',
                 bullets: [
+                    '<strong>碩士論文 ADVIZ</strong>:以紅藍對抗自我進化訓練 AI 偵測誤導性圖表,證實偵測瓶頸在於解碼介面而非模型表徵能力 — 平衡準確率 0.57 → 0.83,並在合成對抗圖表上以 3.7M 參數的輕量偵測器勝過通用大模型。',
                     '<strong>系排名第一畢業</strong>,獲學業獎,並為斐陶斐榮譽學會榮譽會員 (淡江統計系提名)。',
                     '<strong>連續三學期優良教學助理</strong>,並獲主計協進社 114 年主計獎學金 (NT$20,000)。',
                 ],
-                tags: ['Data Science', 'GNN', 'PyTorch', 'Statistics', 'Research'],
+                tags: ['Data Science', 'VLM', 'GRPO', 'PyTorch', 'Statistics', 'Research'],
             },
             {
                 period: '2024.02 — 2024.06',
@@ -102,7 +103,18 @@ export default {
         viewLive: 'Live Demo',
         items: [
             {
-                tag: '01 — HACKATHON FINALIST · DIGITIMES × AWS',
+                tag: '01 — 碩士論文 · 淡江資料科學 2026',
+                title: 'ADVIZ 對抗式自進化視覺化系統',
+                subtitle: '紅藍對抗 × VLM × GRPO',
+                description: '訓練 AI 偵測誤導性圖表:紅方生成攻擊、藍方學習識破,兩者透過 Dual-GRPO 共同進化。核心發現是機制性的 — 瓶頸不在模型的表徵能力,而在解碼介面。同一組視覺語言特徵,把生成式 JSON 解碼換成 sigmoid 分類頭,平衡準確率從 0.57 提升到 0.70,融合規則式 linter 後達 0.83。在合成對抗圖表上,這個 3.7M 參數的輕量偵測器 (BalAcc 0.943) 大幅領先通用大模型。',
+                metrics: ['BalAcc 0.57 → 0.83', '勝過通用 LLM 0.943 vs 0.743', '僅 3.7M 可訓練參數'],
+                tags: ['VLM', 'GRPO', 'Qwen2.5-VL', 'LoRA', 'RL', 'PyTorch'],
+                github: 'https://github.com/timwei0801/adversarial-viz-evolution',
+                live: 'https://timwei0801.github.io/adversarial-viz-evolution/',
+                viz: 'architecture',
+            },
+            {
+                tag: '02 — HACKATHON FINALIST · DIGITIMES × AWS',
                 title: 'BitoGuard',
                 subtitle: '智慧合規風險雷達',
                 description: 'AI 驅動的加密貨幣詐欺偵測系統。運用 HeteroSAGE + GAT 異質圖神經網路與 Stacking 集成學習,在 77 萬筆交易中識別詐欺帳戶,整合 SHAP 可解釋性與四維度公平性審計。AUC-ROC 達 0.861。',
@@ -112,7 +124,7 @@ export default {
                 viz: 'architecture',
             },
             {
-                tag: '02 — 2nd PLACE (1st VACANT) · NATIONAL HIGHWAY 2025',
+                tag: '03 — 2nd PLACE (1st VACANT) · NATIONAL HIGHWAY 2025',
                 title: '國道智慧交通預測系統',
                 subtitle: 'Deep Learning × Physics Shockwave',
                 description: '雙引擎並行架構,整合 MT-STNet 時空神經網路與 LWR 物理震波理論。受邀於 2025 中華民國運輸學會年會發表。RAG 智慧決策輔助讓系統不只預測,還能解釋。',
@@ -123,7 +135,7 @@ export default {
                 viz: 'heatmap',
             },
             {
-                tag: '03 — BEST POPULARITY + MERIT · ACADEMIA SINICA 2024',
+                tag: '04 — BEST POPULARITY + MERIT · ACADEMIA SINICA 2024',
                 title: '網路行為與霸凌研究',
                 subtitle: 'Multivariate Analysis × GAP',
                 description: '首創將廣義關聯圖 (GAP) 應用於網路霸凌行為研究。結合 PCA、因素分析、典型相關分析,從 672 位受訪者中識別 5 個使用者群與 4 大行為因子,90%+ 預測準確率。',
@@ -133,7 +145,7 @@ export default {
                 viz: 'cluster',
             },
             {
-                tag: '04 — FULL-STACK AI',
+                tag: '05 — FULL-STACK AI',
                 title: 'ChartGenie 智圖精靈',
                 subtitle: 'AI 驅動的視覺化推薦系統',
                 description: '透過 LLM 自然語言理解,使用者用中文描述需求,系統自動推薦最適合的圖表類型並生成。支援 30+ 圖表、多格式檔案上傳、自動報告生成。',
@@ -142,7 +154,7 @@ export default {
                 viz: 'chart',
             },
             {
-                tag: '05 — IMAGE RECOGNITION × AI',
+                tag: '06 — IMAGE RECOGNITION × AI',
                 title: '德州撲克 AI 決策系統',
                 subtitle: 'Image Recognition × Strategy',
                 description: '結合影像辨識與 AI 的撲克輔助決策系統。95%+ 牌面辨識準確率、500ms 內即時回應,透過 WebSocket 實現即時牌局分析與策略建議。',
