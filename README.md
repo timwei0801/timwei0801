@@ -85,7 +85,7 @@ AI-driven crypto fraud detection across **63,770 users · 129,545 graph edges**.
 
 <p>
   <a href="https://timwei0801.github.io/Bio_AWS_Workshop/">
-    <img src="./.github/assets/bitoguard-dashboard.jpeg" alt="BitoGuard Fraud Detection Dashboard" width="100%" />
+    <img src="./.github/assets/bitoguard-demo.gif" alt="BitoGuard dashboard walkthrough — fraud detection, feature importance and SHAP explainability" width="100%" />
   </a>
 </p>
 
@@ -99,7 +99,15 @@ AI-driven crypto fraud detection across **63,770 users · 129,545 graph edges**.
 Dual-engine architecture combining **MT-STNet** (spatio-temporal GNN) with **LWR shockwave theory** for accurate congestion prediction and real-time alerts. RAG decision support adds explainability on top of prediction.
 
 <p>
-  <img src="./.github/assets/highway-speaking.jpeg" alt="Invited speaker at the 2025 Chinese Institute of Transportation Annual Conference" width="100%" />
+  <a href="https://highway-trafficwave.vercel.app">
+    <img src="./.github/assets/highway-demo.gif" alt="Highway traffic prediction system walkthrough — shockwave detection, live map and RAG decision assistant" width="100%" />
+  </a>
+</p>
+
+<p align="center">
+  <img src="./.github/assets/highway-speaking.jpeg" alt="Invited speaker at the 2025 Chinese Institute of Transportation Annual Conference" width="62%" />
+  <br/>
+  <sub><i>Invited talk at the 2025 Chinese Institute of Transportation Annual Conference.</i></sub>
 </p>
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-00D9A3?style=for-the-badge&logo=vercel&logoColor=0E1A1F)](https://highway-trafficwave.vercel.app)

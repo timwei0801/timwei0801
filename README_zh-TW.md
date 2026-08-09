@@ -85,7 +85,7 @@ AI 驅動的加密貨幣詐欺偵測系統,涵蓋 **63,770 位使用者 · 129,5
 
 <p>
   <a href="https://timwei0801.github.io/Bio_AWS_Workshop/">
-    <img src="./.github/assets/bitoguard-dashboard.jpeg" alt="BitoGuard 詐欺偵測儀表板" width="100%" />
+    <img src="./.github/assets/bitoguard-demo.gif" alt="BitoGuard 儀表板實際操作 — 詐欺偵測、特徵重要性與 SHAP 可解釋性" width="100%" />
   </a>
 </p>
 
@@ -99,7 +99,15 @@ AI 驅動的加密貨幣詐欺偵測系統,涵蓋 **63,770 位使用者 · 129,5
 雙引擎並行架構,整合 **MT-STNet** 時空神經網路與 **LWR** 物理震波理論,實現精準的交通壅塞預測與即時預警。RAG 智慧決策輔助讓系統不只預測,還能解釋。
 
 <p>
-  <img src="./.github/assets/highway-speaking.jpeg" alt="2025 中華民國運輸學會年會 受邀演講" width="100%" />
+  <a href="https://highway-trafficwave.vercel.app">
+    <img src="./.github/assets/highway-demo.gif" alt="國道交通預測系統實際操作 — 震波偵測、即時地圖與 RAG 智慧決策助手" width="100%" />
+  </a>
+</p>
+
+<p align="center">
+  <img src="./.github/assets/highway-speaking.jpeg" alt="2025 中華民國運輸學會年會 受邀演講" width="62%" />
+  <br/>
+  <sub><i>受邀於 2025 中華民國運輸學會年會發表。</i></sub>
 </p>
 
 [![Live Demo](https://img.shields.io/badge/線上展示-00D9A3?style=for-the-badge&logo=vercel&logoColor=0E1A1F)](https://highway-trafficwave.vercel.app)
