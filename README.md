@@ -105,7 +105,7 @@ Dual-engine architecture combining **MT-STNet** (spatio-temporal GNN) with **LWR
 </p>
 
 <p align="center">
-  <img src="./.github/assets/highway-speaking.jpeg" alt="Invited speaker at the 2025 Chinese Institute of Transportation Annual Conference" width="62%" />
+  <img src="./.github/assets/highway-speaking.jpeg" alt="Presenting at the 2025 Chinese Institute of Transportation Annual Conference" width="42%" />
   <br/>
   <sub><i>Invited talk at the 2025 Chinese Institute of Transportation Annual Conference.</i></sub>
 </p>

@@ -105,7 +105,7 @@ AI 驅動的加密貨幣詐欺偵測系統,涵蓋 **63,770 位使用者 · 129,5
 </p>
 
 <p align="center">
-  <img src="./.github/assets/highway-speaking.jpeg" alt="2025 中華民國運輸學會年會 受邀演講" width="62%" />
+  <img src="./.github/assets/highway-speaking.jpeg" alt="2025 中華民國運輸學會年會 受邀發表" width="42%" />
   <br/>
   <sub><i>受邀於 2025 中華民國運輸學會年會發表。</i></sub>
 </p>
