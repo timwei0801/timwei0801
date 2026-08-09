@@ -61,6 +61,18 @@
 
 論文同時誠實刻畫了分布外的天花板:12 個偵測器在真實世界圖表上全數持平,主要原因追溯到 **renderer shift** 而非能力缺失。
 
+<p>
+  <img src="./.github/assets/adviz-architecture.jpg" alt="ADVIZ 雙階段系統:紅藍對抗自我進化,再由 Critic 引導協作生成" width="100%" />
+</p>
+
+<p>
+  <a href="https://timwei0801.github.io/adversarial-viz-evolution/">
+    <img src="./.github/assets/adviz-showcase.png" alt="互動 Showcase — 換你當 Red,看看騙不騙得過訓練好的 Blue Critic" width="100%" />
+  </a>
+</p>
+
+<p align="center"><sub><i>↑ 換你當 Red:勾選誤導手法,看看訓練好的 Blue Critic 抓不抓得到你。</i></sub></p>
+
 [![互動 Showcase](https://img.shields.io/badge/玩玩看%20Showcase-00D9A3?style=for-the-badge&logo=github&logoColor=0E1A1F)](https://timwei0801.github.io/adversarial-viz-evolution/)
 [![ADVIZ repo](https://img.shields.io/badge/原始碼-timwei0801%2Fadversarial--viz--evolution-FF6B35?style=for-the-badge&logo=github&logoColor=white)](https://github.com/timwei0801/adversarial-viz-evolution)
 [![論文 PDF](https://img.shields.io/badge/論文-PDF-C1272D?style=for-the-badge&logoColor=white)](https://github.com/timwei0801/adversarial-viz-evolution/releases/tag/v1.0.0)

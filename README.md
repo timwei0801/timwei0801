@@ -61,6 +61,18 @@ Training AI to detect misleading charts through **red–blue adversarial self-pl
 
 The out-of-distribution ceiling is characterized honestly rather than hidden: all 12 detectors plateau on wild charts, traced substantially to **renderer shift**.
 
+<p>
+  <img src="./.github/assets/adviz-architecture.jpg" alt="ADVIZ two-phase system: Red-Blue adversarial self-evolution, then Critic-guided cooperative generation" width="100%" />
+</p>
+
+<p>
+  <a href="https://timwei0801.github.io/adversarial-viz-evolution/">
+    <img src="./.github/assets/adviz-showcase.png" alt="Interactive showcase — play as the Red attacker and try to fool the trained Blue Critic" width="100%" />
+  </a>
+</p>
+
+<p align="center"><sub><i>↑ Play as the Red attacker: pick misleading techniques and see if the trained Blue Critic catches you.</i></sub></p>
+
 [![Interactive showcase](https://img.shields.io/badge/Play%20the%20Showcase-00D9A3?style=for-the-badge&logo=github&logoColor=0E1A1F)](https://timwei0801.github.io/adversarial-viz-evolution/)
 [![ADVIZ repo](https://img.shields.io/badge/Source-timwei0801%2Fadversarial--viz--evolution-FF6B35?style=for-the-badge&logo=github&logoColor=white)](https://github.com/timwei0801/adversarial-viz-evolution)
 [![Thesis PDF](https://img.shields.io/badge/Thesis-PDF-C1272D?style=for-the-badge&logoColor=white)](https://github.com/timwei0801/adversarial-viz-evolution/releases/tag/v1.0.0)
