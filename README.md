@@ -22,11 +22,11 @@
 
 ## What I'm doing now
 
-**Technology Consulting Consultant · AI/ML @ Ernst & Young Taiwan** &nbsp;·&nbsp; *2025/07 — Present*
+**Technology Consulting Intern · AI/ML @ Ernst & Young Taiwan** &nbsp;·&nbsp; *2025/07 — Present*
 
-> Consultant in EY's Technology Consulting practice, with AI/ML as my hands-on specialty.
+> In EY's Technology Consulting practice, with AI/ML as my hands-on specialty.
 
-- 🤖 &nbsp; **RAG Knowledge System** — Leading architecture & development of an internal RAG-based knowledge management system (PoC), running locally on **Llama 3.1 via Ollama**.
+- 🤖 &nbsp; **RAG Knowledge System** — Built the architecture & implementation of an internal RAG-based knowledge management system (PoC), running locally on **Llama 3.1 via Ollama**.
 - 🏥 &nbsp; **Patient Health-Education RAG** *(in dev)* — Building a RAG system with a healthcare institution that generates a personalized health-education sheet for each patient.
 - 🛒 &nbsp; **Retail ML Recommender** — Real-time product recommendation engine for a major retail chain (PoC), combining user behavior with product nutrition signals, refreshed in 5-minute batches.
 - 🏦 &nbsp; **Banking Credit Scoring** — Owning credit-scoring model development for a banking client. Completed SAS Viya certification and supported the client's platform onboarding.

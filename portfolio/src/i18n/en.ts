@@ -12,7 +12,7 @@ export default {
         headline1: 'I build',
         headline2: 'AI systems that',
         headlineEm: 'actually ship.',
-        subline: "AI/ML Consultant {'@'} EY · M.S. Data Science, Tamkang · Mentored RAG {'@'} NTU",
+        subline: "AI/ML {'@'} EY Technology Consulting · M.S. Data Science, Tamkang · Mentored RAG {'@'} NTU",
         description: 'From financial fraud detection and traffic-flow forecasting to AI explainability and fairness — I believe good models should not only be accurate, but also able to explain themselves.',
         ctaWork: 'See work',
         ctaContact: 'Contact',
@@ -56,12 +56,12 @@ export default {
         items: [
             {
                 period: '2025.07 — Present',
-                position: 'Technology Consulting Consultant · AI/ML',
+                position: 'Technology Consulting Intern · AI/ML',
                 company: 'Ernst & Young (EY Taiwan)',
                 location: 'Taipei',
-                description: 'Consultant in the Technology Consulting practice at one of the Big Four — designing, building and shipping enterprise AI/ML solutions, with AI/ML as my hands-on specialty.',
+                description: 'In the Technology Consulting practice at one of the Big Four — building and shipping enterprise AI/ML solutions, with AI/ML as my hands-on specialty.',
                 bullets: [
-                    '<strong>RAG Knowledge System</strong>: Leading architecture & development of an internal RAG-based knowledge management system (PoC), running locally on Llama 3.1 via Ollama — built to slash the time spent searching regulatory and internal documents.',
+                    '<strong>RAG Knowledge System</strong>: Built the architecture & implementation of an internal RAG-based knowledge management system (PoC), running locally on Llama 3.1 via Ollama — built to slash the time spent searching regulatory and internal documents.',
                     '<strong>Patient Health-Education RAG (in dev)</strong>: Building a RAG system with a healthcare institution that generates a personalized health-education sheet for each patient, combining medical context with a health-education knowledge base.',
                     '<strong>Retail ML Recommender</strong>: Developing a real-time product recommendation engine for a major retail chain (PoC), covering most in-store SKUs, combining user behavior with product nutrition signals, refreshed in 5-minute batches.',
                     '<strong>Banking Credit Scoring</strong>: Leading the development of a credit scoring model for a banking client. Completed SAS Viya certification and supported the client through SAS Viya platform onboarding and model pipeline setup.',
