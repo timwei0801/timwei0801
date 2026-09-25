@@ -29,8 +29,8 @@
 - 🤖 &nbsp; **RAG Knowledge System** — Built the architecture & implementation of an internal RAG-based knowledge management system (PoC), running locally on **Llama 3.1 via Ollama**.
 - 🏥 &nbsp; **Patient Health-Education RAG** *(in dev)* — Building a RAG system with a healthcare institution that generates a personalized health-education sheet for each patient.
 - 🛒 &nbsp; **Retail ML Recommender** — Real-time product recommendation engine for a major retail chain (PoC), combining user behavior with product nutrition signals, refreshed in 5-minute batches.
-- 🏦 &nbsp; **Banking Credit Scoring** — Owning credit-scoring model development for a banking client. Completed SAS Viya certification and supported the client's platform onboarding.
-- 🧪 &nbsp; **AI Model Governance** — Owning fairness, explainability and AI capability evaluation for enterprise clients (SHAP analysis + multi-dimension fairness audit).
+- 🏦 &nbsp; **Banking Credit Scoring** — Contributed to credit-scoring model development for a banking client. Completed SAS Viya certification and supported the client's platform onboarding.
+- 🧪 &nbsp; **AI Model Governance** — Responsible for fairness, explainability and AI capability evaluation for enterprise clients (SHAP analysis + multi-dimension fairness audit).
 - 🎓 &nbsp; **EY Corporate Mentor × NTU Accounting** — Mentored a 6–7 student team through a 16-week, 3-hour-per-week RAG project (Spring 2026 — completed, final reports delivered).
 - 🎤 &nbsp; **AI Ambassador Program Lecturer** — Invited lecturer for the Digital Development Ministry's *AI Talent & Rural Digital Enhancement* program (AI Ambassador), via EY.
 
