@@ -58,15 +58,15 @@ const techList = computed(() => tm('about.techList') as string[])
             <div>
               <div class="mono-caption mb-2">Currently</div>
               <div class="text-bone-200">EY Taiwan</div>
-              <div class="text-bone-500 text-xs">AI/ML Engineer</div>
+              <div class="text-bone-500 text-xs">AI/ML · Technology Consulting</div>
             </div>
             <div>
-              <div class="mono-caption mb-2">Studying</div>
+              <div class="mono-caption mb-2">Education</div>
               <div class="text-bone-200">Tamkang University</div>
-              <div class="text-bone-500 text-xs">M.S. Data Science</div>
+              <div class="text-bone-500 text-xs">M.S. Data Science · 2026</div>
             </div>
             <div>
-              <div class="mono-caption mb-2">Teaching</div>
+              <div class="mono-caption mb-2">Mentored</div>
               <div class="text-bone-200">NTU Accounting</div>
               <div class="text-bone-500 text-xs">RAG · 2026 Spring</div>
             </div>
