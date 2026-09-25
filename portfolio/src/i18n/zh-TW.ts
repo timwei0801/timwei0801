@@ -20,7 +20,7 @@ export default {
     },
     stats: {
         rank: { value: '#1', label: '系排名第一畢業' },
-        systems: { value: '4+', label: 'AI 系統開發上線' },
+        systems: { value: '4+', label: '企業 AI 專案' },
         awards: { value: '7+', label: '競賽 · 獎項 · 演講' },
         teaching: { value: 'EY×NTU', label: '台大企業導師' },
     },

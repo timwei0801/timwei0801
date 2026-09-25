@@ -20,7 +20,7 @@ export default {
     },
     stats: {
         rank: { value: '#1', label: 'RANKED #1 · GRADUATED' },
-        systems: { value: '4+', label: 'AI SYSTEMS SHIPPED' },
+        systems: { value: '4+', label: 'ENTERPRISE AI PROJECTS' },
         awards: { value: '7+', label: 'AWARDS · TALKS' },
         teaching: { value: 'EY×NTU', label: 'CORPORATE MENTOR' },
     },
