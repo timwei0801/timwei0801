@@ -71,11 +71,11 @@ export default {
                 tags: ['RAG', 'LLM', 'Ollama', 'GNN', 'SHAP', 'SAS Viya', 'AI Governance', 'Teaching'],
             },
             {
-                period: '2023 — 2026',
+                period: '2024 — 2026',
                 position: 'M.S. Data Science · Ranked #1 in Department',
                 company: 'Tamkang University, Dept. of Statistics & Data Science',
                 location: 'New Taipei · Tamsui',
-                description: 'Master\'s thesis ADVIZ on adversarial self-evolving visualization agents, defended and graduated July 2026 under Dr. Chiun-How Kao. Full text archived in the TKU electronic thesis system; code and interactive demo fully open-sourced.',
+                description: 'Master\'s thesis ADVIZ on adversarial self-evolving visualization agents, advised by Dr. Chiun-How Kao; graduated August 2026. Full text archived in the TKU electronic thesis system; code and interactive demo fully open-sourced.',
                 bullets: [
                     "<strong>Master's thesis — ADVIZ</strong>: red-blue adversarial self-play to train AI to detect misleading charts, showing the detection bottleneck is the decoding interface rather than representational capacity — balanced accuracy 0.57 → 0.83, with a 3.7M-parameter detector beating general-purpose large models on synthetic adversarial charts.",
                     '<strong>Graduated ranked #1 in the department</strong>, with an academic award, and honorary member of the Phi Tau Phi Honor Society (nominated by Tamkang Stats).',
@@ -88,7 +88,7 @@ export default {
                 position: 'ESG Services Intern · Heng Jia Enterprise',
                 company: '',
                 location: 'Taipei · B2B / Sustainability',
-                description: 'Earlier role during M1: B2B client development, ESG report drafting and carbon-inventory training program planning.',
+                description: 'Earlier role during my final undergraduate year: B2B client development, ESG report drafting and carbon-inventory training program planning.',
                 bullets: [],
                 tags: ['ESG', 'B2B'],
             },
@@ -216,7 +216,9 @@ export default {
         sub: 'Sharing engineering practice and project lessons on Medium and iThome.',
         articles: [
             { title: 'Claude Code Field Manual — a beginner-friendly zh-TW series (G1~G20, ongoing)', date: '2026', tag: 'iThome · Claude Code', url: 'https://ithelp.ithome.com.tw/users/20182796/articles' },
-            { title: 'When 97% of Your Data Lies — Extreme Imbalanced Classification in Crypto AML', date: '2025', tag: 'AML · GNN', url: 'https://medium.com/@chwei9181/篇一-當-97-的資料都在騙你-加密貨幣反洗錢中的極度不平衡分類實戰-627275bc9944' },
+            { title: 'F1 from 0.37 to 0.83 — I Was Squeezing the Model While My Rival Reframed the Features', date: '2026', tag: 'AML · Features', url: 'https://medium.com/@chwei9181/篇三-f1-從-0-37-跳到-0-83-當你發現自己在榨模型-對手在換特徵-framing-1d2b3986b0f9' },
+            { title: 'GNNs in Financial Risk, Hands-On — From Heterogeneous Graphs to HeteroSAGE + GAT', date: '2026', tag: 'GNN · HeteroSAGE', url: 'https://medium.com/@chwei9181/篇二-gnn-在金融風控的落地-從異質圖構建到-heterosage-gat-的實務經驗-ea7e0275c00f' },
+            { title: 'When 97% of Your Data Lies — Extreme Imbalanced Classification in Crypto AML', date: '2026', tag: 'AML · GNN', url: 'https://medium.com/@chwei9181/篇一-當-97-的資料都在騙你-加密貨幣反洗錢中的極度不平衡分類實戰-627275bc9944' },
             { title: 'Building a Portfolio in One Day with AI — Claude Code Collab Reality Check', date: '2025', tag: 'AI Workflow', url: 'https://medium.com/@chwei9181/我用-ai-在一天內完成個人網站-與-claude-code-協作開發的真實體驗-e315f00e365a' },
         ],
     },

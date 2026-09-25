@@ -55,7 +55,7 @@
 ## Selected work
 
 ### 🔴🔵 &nbsp; ADVIZ — Adversarial Self-Evolving Visualization
-*Master's thesis · Tamkang Data Science · Graduated July 2026*
+*Master's thesis · Tamkang Data Science · Graduated August 2026*
 
 Training AI to detect misleading charts through **red–blue adversarial self-play**: Red generates attacks, Blue learns to catch them, both co-evolve via **Dual-GRPO**. The core result is mechanistic — the bottleneck is the model's **decoding interface, not its representational capacity**. On the same vision-language features, swapping generative JSON decoding for a **sigmoid classifier head** lifts balanced accuracy **0.57 → 0.70**; fusing with a rule-based linter reaches **0.83**. On synthetic adversarial charts, the **3.7M-parameter** detector hits **BalAcc 0.943 / AUC 0.997** — well ahead of general-purpose large models.
 
@@ -156,7 +156,9 @@ First application of **Generalized Association Plots (GAP)** to cyberbullying re
 ## Public thinking
 
 - 📚 &nbsp; [Claude Code Field Manual — a beginner-friendly zh-TW tutorial series (G1~G20, ongoing)](https://ithelp.ithome.com.tw/users/20182796/articles) &nbsp;·&nbsp; *iThome · 2026*
-- 📰 &nbsp; [When 97% of Your Data Lies — Extreme Imbalanced Classification in Crypto AML](https://medium.com/@chwei9181/篇一-當-97-的資料都在騙你-加密貨幣反洗錢中的極度不平衡分類實戰-627275bc9944) &nbsp;·&nbsp; *Medium · 2025*
+- 📰 &nbsp; [F1 from 0.37 to 0.83 — I Was Squeezing the Model While My Rival Reframed the Features](https://medium.com/@chwei9181/篇三-f1-從-0-37-跳到-0-83-當你發現自己在榨模型-對手在換特徵-framing-1d2b3986b0f9) &nbsp;·&nbsp; *Medium · 2026*
+- 📰 &nbsp; [GNNs in Financial Risk, Hands-On — From Heterogeneous Graphs to HeteroSAGE + GAT](https://medium.com/@chwei9181/篇二-gnn-在金融風控的落地-從異質圖構建到-heterosage-gat-的實務經驗-ea7e0275c00f) &nbsp;·&nbsp; *Medium · 2026*
+- 📰 &nbsp; [When 97% of Your Data Lies — Extreme Imbalanced Classification in Crypto AML](https://medium.com/@chwei9181/篇一-當-97-的資料都在騙你-加密貨幣反洗錢中的極度不平衡分類實戰-627275bc9944) &nbsp;·&nbsp; *Medium · 2026*
 - 📰 &nbsp; [Building a Portfolio in One Day with AI — Claude Code Collab Reality Check](https://medium.com/@chwei9181/我用-ai-在一天內完成個人網站-與-claude-code-協作開發的真實體驗-e315f00e365a) &nbsp;·&nbsp; *Medium · 2025*
 
 ---
