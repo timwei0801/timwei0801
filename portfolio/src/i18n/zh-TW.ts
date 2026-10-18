@@ -276,6 +276,28 @@ export default {
                 date: '2026',
                 tag: 'iT 邦 · Claude Code',
                 url: 'https://ithelp.ithome.com.tw/users/20182796/articles',
+                platform: 'ithome',
+            },
+            {
+                title: 'Claude Code 雲端 session 實測:拿送的美金 250 額度做一個每天自動跑收集股票相關資訊的工具',
+                date: '2026',
+                tag: 'iT 邦 · 雲端實戰系列 #0',
+                url: 'https://ithelp.ithome.com.tw/articles/10423566',
+                platform: 'ithome',
+            },
+            {
+                title: 'claude-cloud-premarket-brief — 雲端 session 寫出、Routines 每個交易日自動跑的台股盤前整理(只整理公開資訊,不構成投資建議)',
+                date: '2026',
+                tag: 'Open Source · Claude Code',
+                url: 'https://github.com/timwei0801/claude-cloud-premarket-brief',
+                platform: 'github',
+            },
+            {
+                title: '同一份東京行程丟給 5 個 Claude 模型:簡單的事分不出高下,藏了陷阱才看得出來',
+                date: '2026',
+                tag: 'iT 邦 · 實測',
+                url: 'https://ithelp.ithome.com.tw/articles/10421490',
+                platform: 'ithome',
             },
             {
                 title: 'F1 從 0.37 跳到 0.83 — 當你發現自己在榨模型,對手在換特徵 framing',

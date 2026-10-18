@@ -215,7 +215,10 @@ export default {
         titleEm: 'thinking.',
         sub: 'Sharing engineering practice and project lessons on Medium and iThome.',
         articles: [
-            { title: 'Claude Code Field Manual — a beginner-friendly zh-TW series (G1~G20, ongoing)', date: '2026', tag: 'iThome · Claude Code', url: 'https://ithelp.ithome.com.tw/users/20182796/articles' },
+            { title: 'Claude Code Field Manual — a beginner-friendly zh-TW series (G1~G20, ongoing)', date: '2026', tag: 'iThome · Claude Code', url: 'https://ithelp.ithome.com.tw/users/20182796/articles', platform: 'ithome' },
+            { title: 'Claude Code Cloud Sessions, Tested — Turning a Free US$250 Credit into a Daily Stock-Market Briefing Tool', date: '2026', tag: 'iThome · Cloud Series #0', url: 'https://ithelp.ithome.com.tw/articles/10423566', platform: 'ithome' },
+            { title: 'claude-cloud-premarket-brief — a Taiwan-stock pre-market brief built in a Claude Code cloud session, run every trading day by Routines (public info only, not investment advice)', date: '2026', tag: 'Open Source · Claude Code', url: 'https://github.com/timwei0801/claude-cloud-premarket-brief', platform: 'github' },
+            { title: 'One Tokyo Itinerary, Five Claude Models — Easy Tasks Can\'t Tell Them Apart; Hidden Traps Can', date: '2026', tag: 'iThome · Hands-on Test', url: 'https://ithelp.ithome.com.tw/articles/10421490', platform: 'ithome' },
             { title: 'F1 from 0.37 to 0.83 — I Was Squeezing the Model While My Rival Reframed the Features', date: '2026', tag: 'AML · Features', url: 'https://medium.com/@chwei9181/篇三-f1-從-0-37-跳到-0-83-當你發現自己在榨模型-對手在換特徵-framing-1d2b3986b0f9' },
             { title: 'GNNs in Financial Risk, Hands-On — From Heterogeneous Graphs to HeteroSAGE + GAT', date: '2026', tag: 'GNN · HeteroSAGE', url: 'https://medium.com/@chwei9181/篇二-gnn-在金融風控的落地-從異質圖構建到-heterosage-gat-的實務經驗-ea7e0275c00f' },
             { title: 'When 97% of Your Data Lies — Extreme Imbalanced Classification in Crypto AML', date: '2026', tag: 'AML · GNN', url: 'https://medium.com/@chwei9181/篇一-當-97-的資料都在騙你-加密貨幣反洗錢中的極度不平衡分類實戰-627275bc9944' },

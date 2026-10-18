@@ -11,6 +11,8 @@
   &nbsp;·&nbsp;
   <a href="https://medium.com/@chwei9181">Medium</a>
   &nbsp;·&nbsp;
+  <a href="https://www.threads.com/@timwei.ai">Threads</a>
+  &nbsp;·&nbsp;
   <a href="./README_zh-TW.md">繁體中文</a>
 </p>
 
@@ -156,6 +158,8 @@ First application of **Generalized Association Plots (GAP)** to cyberbullying re
 ## Public thinking
 
 - 📚 &nbsp; [Claude Code Field Manual — a beginner-friendly zh-TW tutorial series (G1~G20, ongoing)](https://ithelp.ithome.com.tw/users/20182796/articles) &nbsp;·&nbsp; *iThome · 2026*
+- ☁️ &nbsp; [Claude Code Cloud Sessions, Tested — Turning a Free US$250 Credit into a Daily Stock-Market Briefing Tool](https://ithelp.ithome.com.tw/articles/10423566) &nbsp;·&nbsp; *iThome · Cloud Series #0 · 2026* — source: [claude-cloud-premarket-brief](https://github.com/timwei0801/claude-cloud-premarket-brief) (public info only, not investment advice)
+- 🔍 &nbsp; [One Tokyo Itinerary, Five Claude Models — Easy Tasks Can't Tell Them Apart; Hidden Traps Can](https://ithelp.ithome.com.tw/articles/10421490) &nbsp;·&nbsp; *iThome · Hands-on Test · 2026*
 - 📰 &nbsp; [F1 from 0.37 to 0.83 — I Was Squeezing the Model While My Rival Reframed the Features](https://medium.com/@chwei9181/篇三-f1-從-0-37-跳到-0-83-當你發現自己在榨模型-對手在換特徵-framing-1d2b3986b0f9) &nbsp;·&nbsp; *Medium · 2026*
 - 📰 &nbsp; [GNNs in Financial Risk, Hands-On — From Heterogeneous Graphs to HeteroSAGE + GAT](https://medium.com/@chwei9181/篇二-gnn-在金融風控的落地-從異質圖構建到-heterosage-gat-的實務經驗-ea7e0275c00f) &nbsp;·&nbsp; *Medium · 2026*
 - 📰 &nbsp; [When 97% of Your Data Lies — Extreme Imbalanced Classification in Crypto AML](https://medium.com/@chwei9181/篇一-當-97-的資料都在騙你-加密貨幣反洗錢中的極度不平衡分類實戰-627275bc9944) &nbsp;·&nbsp; *Medium · 2026*

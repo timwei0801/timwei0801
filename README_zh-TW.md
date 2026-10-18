@@ -11,6 +11,8 @@
   &nbsp;·&nbsp;
   <a href="https://medium.com/@chwei9181">Medium</a>
   &nbsp;·&nbsp;
+  <a href="https://www.threads.com/@timwei.ai">Threads</a>
+  &nbsp;·&nbsp;
   <a href="./README.md">English</a>
 </p>
 
@@ -156,6 +158,8 @@ AI 驅動的加密貨幣詐欺偵測系統,涵蓋 **63,770 位使用者 · 129,5
 ## 公開寫作
 
 - 📚 &nbsp; [Claude Code 實戰手冊 — 從零開始的繁中教學連載(G1~G20,連載中)](https://ithelp.ithome.com.tw/users/20182796/articles) &nbsp;·&nbsp; *iT 邦幫忙 · 2026*
+- ☁️ &nbsp; [Claude Code 雲端 session 實測:拿送的美金 250 額度做一個每天自動跑收集股票相關資訊的工具](https://ithelp.ithome.com.tw/articles/10423566) &nbsp;·&nbsp; *iT 邦幫忙 · 雲端實戰系列 #0 · 2026* — 原始碼:[claude-cloud-premarket-brief](https://github.com/timwei0801/claude-cloud-premarket-brief)(只整理公開資訊,不構成投資建議)
+- 🔍 &nbsp; [同一份東京行程丟給 5 個 Claude 模型:簡單的事分不出高下,藏了陷阱才看得出來](https://ithelp.ithome.com.tw/articles/10421490) &nbsp;·&nbsp; *iT 邦幫忙 · 實測 · 2026*
 - 📰 &nbsp; [F1 從 0.37 跳到 0.83 — 當你發現自己在榨模型,對手在換特徵 framing](https://medium.com/@chwei9181/篇三-f1-從-0-37-跳到-0-83-當你發現自己在榨模型-對手在換特徵-framing-1d2b3986b0f9) &nbsp;·&nbsp; *Medium · 2026*
 - 📰 &nbsp; [GNN 在金融風控的落地 — 從異質圖構建到 HeteroSAGE + GAT 的實務經驗](https://medium.com/@chwei9181/篇二-gnn-在金融風控的落地-從異質圖構建到-heterosage-gat-的實務經驗-ea7e0275c00f) &nbsp;·&nbsp; *Medium · 2026*
 - 📰 &nbsp; [當 97% 的資料都在騙你 — 加密貨幣反洗錢中的極度不平衡分類實戰](https://medium.com/@chwei9181/篇一-當-97-的資料都在騙你-加密貨幣反洗錢中的極度不平衡分類實戰-627275bc9944) &nbsp;·&nbsp; *Medium · 2026*
