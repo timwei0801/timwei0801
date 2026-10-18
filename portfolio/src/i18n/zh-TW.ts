@@ -178,6 +178,7 @@ export default {
                 org: '淡江大學 統計與資料科學學系',
                 desc: '碩士班系排名第一畢業,獲學業獎,並連續三學期獲選優良教學助理。',
                 tag: '學業榮譽',
+                image: 'rank',
             },
             {
                 year: '2026',
@@ -186,6 +187,7 @@ export default {
                 org: '提名 by 淡江統計系',
                 desc: '由淡江大學統計學系提名為斐陶斐榮譽學會榮譽會員,表彰學術卓越表現。',
                 tag: '學術榮譽',
+                image: 'phiTauPhi',
             },
             {
                 year: '2025',
@@ -194,6 +196,7 @@ export default {
                 org: '主計協進社',
                 desc: '獲頒主計協進社 114 年主計獎學金 (NT$20,000),全國各校獲獎名單之一。',
                 tag: '獎學金',
+                image: 'scholarship',
             },
             {
                 year: '2026',
@@ -202,6 +205,7 @@ export default {
                 org: 'DIGITIMES × AWS',
                 desc: '「Agent for Truth: Disinformation Defense Hackathon 2026」決賽入圍,作品 BitoGuard。',
                 tag: '黑客松',
+                image: 'hackathon',
             },
             {
                 year: '2025',
@@ -210,6 +214,7 @@ export default {
                 org: '交通部高速公路局',
                 desc: '2025 國道智慧交通競賽全國第二名 (第一名從缺),作品為國道交通預測系統。',
                 tag: '全國競賽',
+                image: 'highway',
             },
             {
                 year: '2025',
@@ -218,6 +223,7 @@ export default {
                 org: '高公局主辦',
                 desc: '受邀於 2025 運輸年會發表「AI 國道交通預測:整合深度學習與震波理論」。',
                 tag: '受邀演講',
+                image: 'speaker',
             },
             {
                 year: '2024',
@@ -226,6 +232,7 @@ export default {
                 org: '中央研究院',
                 desc: '中研院 2024 資料科學漫步「最佳人氣獎」,作品為網路行為與霸凌研究。',
                 tag: '學術競賽',
+                image: 'sinica',
             },
             {
                 year: '2024',
@@ -234,6 +241,7 @@ export default {
                 org: '中央研究院',
                 desc: '同場「優選獎」,單場雙獎肯定。',
                 tag: '學術競賽',
+                image: 'merit',
             },
         ],
     },
