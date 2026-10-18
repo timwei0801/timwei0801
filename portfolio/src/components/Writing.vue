@@ -2,10 +2,18 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-interface Article { title: string; date: string; tag: string; url: string }
+type Platform = 'medium' | 'ithome' | 'github'
+interface Article { title: string; date: string; tag: string; url: string; platform?: Platform }
+
+const platformMeta: Record<Platform, { badge: string; cta: string }> = {
+  medium: { badge: 'MEDIUM', cta: 'Read on Medium' },
+  ithome: { badge: 'ITHOME', cta: 'Read on iThome' },
+  github: { badge: 'GITHUB', cta: 'View on GitHub' },
+}
 
 const { t, tm } = useI18n()
 const articles = computed(() => tm('writing.articles') as unknown as Article[])
+const metaOf = (a: Article) => platformMeta[a.platform ?? 'medium']
 </script>
 
 <template>
@@ -30,13 +38,13 @@ const articles = computed(() => tm('writing.articles') as unknown as Article[])
         >
           <div class="flex items-center justify-between mb-5">
             <div class="font-mono text-[10px] text-ember-500 tracking-[0.16em]">{{ a.tag }}</div>
-            <div class="font-mono text-[10px] text-bone-500">{{ a.date }} · MEDIUM</div>
+            <div class="font-mono text-[10px] text-bone-500">{{ a.date }} · {{ metaOf(a).badge }}</div>
           </div>
           <h3 class="font-serif text-xl md:text-2xl text-bone-100 leading-snug mb-6 text-balance group-hover:text-ember-500 transition-colors">
             {{ a.title }}
           </h3>
           <div class="flex items-center gap-2 text-bone-400 text-sm font-medium">
-            <span>Read on Medium</span>
+            <span>{{ metaOf(a).cta }}</span>
             <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
             </svg>
