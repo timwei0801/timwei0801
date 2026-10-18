@@ -111,7 +111,7 @@ export default {
                 tags: ['VLM', 'GRPO', 'Qwen2.5-VL', 'LoRA', 'RL', 'PyTorch'],
                 github: 'https://github.com/timwei0801/adversarial-viz-evolution',
                 live: 'https://timwei0801.github.io/adversarial-viz-evolution/',
-                viz: 'architecture',
+                viz: 'adviz',
             },
             {
                 tag: '02 — HACKATHON FINALIST · DIGITIMES × AWS',

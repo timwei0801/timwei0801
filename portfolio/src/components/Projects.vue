@@ -7,6 +7,7 @@ import ClusterViz from './viz/ClusterViz.vue'
 import ChartViz from './viz/ChartViz.vue'
 import PokerViz from './viz/PokerViz.vue'
 import ArchitectureViz from './viz/ArchitectureViz.vue'
+import AdvizViz from './viz/AdvizViz.vue'
 
 interface Project {
   tag: string
@@ -31,6 +32,7 @@ const vizMap: Record<string, any> = {
   chart: ChartViz,
   poker: PokerViz,
   architecture: ArchitectureViz,
+  adviz: AdvizViz,
 }
 </script>
 
