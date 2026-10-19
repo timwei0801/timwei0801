@@ -114,7 +114,7 @@ export default {
                 viz: 'adviz',
             },
             {
-                tag: '02 — HACKATHON FINALIST · DIGITIMES × AWS',
+                tag: '02 — HACKATHON FINALIST · DIGITIMES × AWS × BITOPRO',
                 title: 'BitoGuard',
                 subtitle: '智慧合規風險雷達',
                 description: 'AI 驅動的加密貨幣詐欺偵測系統。運用 HeteroSAGE + GAT 異質圖神經網路與 Stacking 集成學習,在 77 萬筆交易中識別詐欺帳戶,整合 SHAP 可解釋性與四維度公平性審計。AUC-ROC 達 0.861。',
@@ -202,7 +202,7 @@ export default {
                 year: '2026',
                 name: 'Hackathon Finalist',
                 nameZh: 'Agent for Truth Hackathon',
-                org: 'DIGITIMES × AWS',
+                org: 'DIGITIMES × AWS × BitoPro',
                 desc: '「Agent for Truth: Disinformation Defense Hackathon 2026」決賽入圍,作品 BitoGuard。',
                 tag: '黑客松',
                 image: 'hackathon',
