@@ -177,8 +177,7 @@ export default {
             { year: '2026', name: 'Hackathon Finalist', nameZh: 'Agent for Truth', org: 'DIGITIMES × AWS', desc: 'Finalist at "Agent for Truth: Disinformation Defense Hackathon 2026" with BitoGuard.', tag: 'Hackathon', image: 'hackathon' },
             { year: '2025', name: '2nd Place (1st Vacant)', nameZh: 'National Highway Comp.', org: 'Taiwan Highway Bureau', desc: '2nd place (1st place vacant) at the 2025 National Highway Intelligent Traffic Competition.', tag: 'National', image: 'highway' },
             { year: '2025', name: 'Invited Speaker', nameZh: 'Transportation Annual Conf.', org: 'Highway Bureau', desc: 'Invited talk at the 2025 Chinese Institute of Transportation Annual Conference on AI traffic prediction.', tag: 'Speaking', image: 'speaker' },
-            { year: '2024', name: 'Best Popularity Award', nameZh: 'Data Science Stroll', org: 'Academia Sinica', desc: 'Best Popularity Award at Academia Sinica 2024 Data Science Stroll for cyberbullying research.', tag: 'Academic', image: 'sinica' },
-            { year: '2024', name: 'Merit Award', nameZh: 'Data Science Stroll', org: 'Academia Sinica', desc: 'Merit Award at the same event — dual recognition in a single competition.', tag: 'Academic', image: 'merit' },
+            { year: '2024', name: 'Best Popularity + Merit', nameZh: 'Data Science Stroll', org: 'Academia Sinica', desc: 'Best Popularity Award and Merit Award at Academia Sinica 2024 Data Science Stroll — dual recognition in a single competition, for cyberbullying research.', tag: 'Academic', image: 'sinica' },
         ],
     },
     skills: {

@@ -1,12 +1,14 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useRotation } from '../composables/useRotation'
 
 import phiTauPhi from '../assets/images/awards/phi-tau-phi.png'
 import hackathon from '../assets/images/awards/hackathon-team.jpeg'
 import highway from '../assets/images/awards/highway-award.jpeg'
 import transportSpeak from '../assets/images/experience/transport-conference-speaking.jpg'
 import sinica from '../assets/images/awards/academia-sinica-award.jpeg'
+import aiExpo from '../assets/images/awards/ai-expo-2026.jpeg'
 
 interface AwardItem {
   year: string; name: string; nameZh: string; org: string; desc: string; tag: string; image: string;
@@ -18,23 +20,29 @@ const items = computed(() => tm('awards.items') as unknown as AwardItem[])
 // Each award names its visual by key (awards.items[].image), so reordering or
 // adding awards can't shift photos onto the wrong card. Awards without a photo
 // of their own get a typographic plate instead of a borrowed image.
-interface Photo { src: string; contain?: boolean; position?: string }
-const photos: Record<string, Photo> = {
-  phiTauPhi: { src: phiTauPhi, contain: true },
-  hackathon: { src: hackathon, position: 'center 35%' },
-  highway: { src: highway },
-  speaker: { src: transportSpeak, position: 'center 45%' },
-  sinica: { src: sinica },
+// An award with several photos crossfades between them.
+interface Photo { src: string; contain?: boolean; position?: string; alt?: string }
+const photos: Record<string, Photo[]> = {
+  phiTauPhi: [{ src: phiTauPhi, contain: true }],
+  hackathon: [
+    { src: hackathon, position: 'center 35%' },
+    { src: aiExpo, position: 'center 70%', alt: 'Taiwan AI EXPO 2026 — hackathon finals & exhibition' },
+  ],
+  highway: [{ src: highway }],
+  speaker: [{ src: transportSpeak, position: 'center 45%' }],
+  sinica: [{ src: sinica }],
 }
 const plates: Record<string, string> = {
   rank: '#1',
   scholarship: 'NT$20,000',
-  merit: 'Merit',
 }
 
 const cards = computed(() =>
-  items.value.map((a) => ({ ...a, photo: photos[a.image], plate: plates[a.image] })),
+  items.value.map((a) => ({ ...a, photos: photos[a.image] ?? [], plate: plates[a.image] })),
 )
+
+// One shared clock; a card with n photos shows photo (tick % n).
+const { index: tick, paused } = useRotation(() => 2, 4500)
 </script>
 
 <template>
@@ -53,22 +61,27 @@ const cards = computed(() =>
           v-for="(a, i) in cards"
           :key="i"
           class="reveal group bg-ink-700 border border-ink-500 rounded-md overflow-hidden hover:border-ember-500 transition-all duration-300"
+          @mouseenter="a.photos.length > 1 && (paused = true)"
+          @mouseleave="paused = false"
         >
           <!-- Image -->
           <div class="aspect-[4/3] overflow-hidden bg-ink-900 relative">
             <img
-              v-if="a.photo"
-              :src="a.photo.src"
-              :alt="a.name"
+              v-for="(ph, k) in a.photos"
+              :key="ph.src"
+              :src="ph.src"
+              :alt="ph.alt ?? a.name"
+              :aria-hidden="a.photos.length > 1 && k !== tick % a.photos.length"
               :class="[
-                'w-full h-full transition-transform duration-700 group-hover:scale-105',
-                a.photo.contain ? 'object-contain p-10' : 'object-cover',
+                'absolute inset-0 w-full h-full transition-[transform,opacity] duration-700 group-hover:scale-105',
+                ph.contain ? 'object-contain p-10' : 'object-cover',
+                k === tick % a.photos.length ? 'opacity-100' : 'opacity-0',
               ]"
-              :style="a.photo.position ? { objectPosition: a.photo.position } : undefined"
+              :style="ph.position ? { objectPosition: ph.position } : undefined"
               loading="lazy"
             />
             <div
-              v-else-if="a.plate"
+              v-if="!a.photos.length && a.plate"
               class="w-full h-full flex items-center justify-center"
               aria-hidden="true"
             >
