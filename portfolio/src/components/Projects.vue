@@ -1,13 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
-import NetworkViz from './viz/NetworkViz.vue'
-import HeatmapViz from './viz/HeatmapViz.vue'
-import ClusterViz from './viz/ClusterViz.vue'
-import ChartViz from './viz/ChartViz.vue'
-import PokerViz from './viz/PokerViz.vue'
-import ArchitectureViz from './viz/ArchitectureViz.vue'
-import AdvizGallery from './viz/AdvizGallery.vue'
+import ProjectGallery from './viz/ProjectGallery.vue'
+import { galleries } from './viz/galleries'
 
 interface Project {
   tag: string
@@ -24,16 +19,6 @@ interface Project {
 const { t, tm } = useI18n()
 
 const items = computed(() => tm('projects.items') as unknown as Project[])
-
-const vizMap: Record<string, any> = {
-  network: NetworkViz,
-  heatmap: HeatmapViz,
-  cluster: ClusterViz,
-  chart: ChartViz,
-  poker: PokerViz,
-  architecture: ArchitectureViz,
-  adviz: AdvizGallery,
-}
 </script>
 
 <template>
@@ -104,8 +89,8 @@ const vizMap: Record<string, any> = {
           </div>
 
           <!-- Viz side -->
-          <div class="aspect-[4/3] bg-ink-900 border border-ink-500 rounded-md overflow-hidden relative group hover:border-ember-500 transition-colors">
-            <component :is="vizMap[p.viz]" v-if="vizMap[p.viz]" />
+          <div class="bg-ink-900 border border-ink-500 rounded-md overflow-hidden relative group hover:border-ember-500 transition-colors">
+            <ProjectGallery v-if="galleries[p.viz]" :slides="galleries[p.viz]!" />
           </div>
         </div>
       </div>
