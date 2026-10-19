@@ -9,18 +9,21 @@ import highway from '../assets/images/awards/highway-award.jpeg'
 import transportSpeak from '../assets/images/experience/transport-conference-speaking.jpg'
 import sinica from '../assets/images/awards/academia-sinica-award.jpeg'
 import aiExpo from '../assets/images/awards/ai-expo-2026.jpeg'
+import academicAward from '../assets/images/awards/academic-award.webp'
+import scholarshipList from '../assets/images/awards/scholarship-list.webp'
 
 interface AwardItem {
   year: string; name: string; nameZh: string; org: string; desc: string; tag: string; image: string;
+  link?: string; linkLabel?: string;
 }
 
 const { t, tm } = useI18n()
 const items = computed(() => tm('awards.items') as unknown as AwardItem[])
 
 // Each award names its visual by key (awards.items[].image), so reordering or
-// adding awards can't shift photos onto the wrong card. Awards without a photo
-// of their own get a typographic plate instead of a borrowed image.
-// An award with several photos crossfades between them.
+// adding awards can't shift photos onto the wrong card. Never borrow another
+// award's photo. An award with several photos crossfades between them.
+// Other people's names in these images are blurred.
 interface Photo { src: string; contain?: boolean; position?: string; alt?: string }
 const photos: Record<string, Photo[]> = {
   phiTauPhi: [{ src: phiTauPhi, contain: true }],
@@ -31,14 +34,12 @@ const photos: Record<string, Photo[]> = {
   highway: [{ src: highway }],
   speaker: [{ src: transportSpeak, position: 'center 45%' }],
   sinica: [{ src: sinica }],
-}
-const plates: Record<string, string> = {
-  rank: '#1',
-  scholarship: 'NT$20,000',
+  rank: [{ src: academicAward, position: 'center 40%', alt: 'Receiving the academic award at the Tamkang Statistics graduation ceremony' }],
+  scholarship: [{ src: scholarshipList, position: 'center 70%', alt: 'Official 2025 (ROC 114) Accounting Scholarship recipient list, with Tim Wei of Tamkang University highlighted' }],
 }
 
 const cards = computed(() =>
-  items.value.map((a) => ({ ...a, photos: photos[a.image] ?? [], plate: plates[a.image] })),
+  items.value.map((a) => ({ ...a, photos: photos[a.image] ?? [] })),
 )
 
 // One shared clock; a card with n photos shows photo (tick % n).
@@ -80,20 +81,6 @@ const { index: tick, paused } = useRotation(() => 2, 4500)
               :style="ph.position ? { objectPosition: ph.position } : undefined"
               loading="lazy"
             />
-            <div
-              v-if="!a.photos.length && a.plate"
-              class="w-full h-full flex items-center justify-center"
-              aria-hidden="true"
-            >
-              <span
-                :class="[
-                  'font-serif italic text-ember-500 transition-transform duration-700 group-hover:scale-105',
-                  a.plate.length > 5 ? 'text-4xl md:text-5xl' : 'text-5xl md:text-6xl',
-                ]"
-              >
-                {{ a.plate }}
-              </span>
-            </div>
             <div class="absolute top-3 left-3 font-mono text-[10px] px-2 py-1 bg-ink-900/80 backdrop-blur-sm border border-ink-500 rounded text-ember-500">
               {{ a.tag }}
             </div>
@@ -110,6 +97,16 @@ const { index: tick, paused } = useRotation(() => 2, 4500)
             <div class="text-bone-400 text-sm mb-3">{{ a.nameZh }}</div>
             <div class="font-mono text-[11px] text-ember-500 mb-3">{{ a.org }}</div>
             <p class="text-bone-400 text-sm leading-relaxed">{{ a.desc }}</p>
+            <a
+              v-if="a.link"
+              :href="a.link"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-1.5 mt-4 font-mono text-[11px] text-bone-300 hover:text-ember-500 transition-colors"
+            >
+              {{ a.linkLabel }}
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </a>
           </div>
         </article>
       </div>

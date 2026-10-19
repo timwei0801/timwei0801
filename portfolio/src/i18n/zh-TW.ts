@@ -121,6 +121,7 @@ export default {
                 metrics: ['770K+ 交易', 'AUC 0.861', '4 維度公平性審計'],
                 tags: ['GNN', 'HeteroSAGE', 'XGBoost', 'SHAP', 'AWS', 'PyTorch'],
                 github: 'https://github.com/timwei0801/Bio_AWS_Workshop',
+                live: 'https://timwei0801.github.io/Bio_AWS_Workshop/',
                 viz: 'architecture',
             },
             {
@@ -197,6 +198,8 @@ export default {
                 desc: '獲頒主計協進社 114 年主計獎學金（NT$20,000），全國各校獲獎名單之一。',
                 tag: '獎學金',
                 image: 'scholarship',
+                link: 'https://bas-association.org.tw/reader/scholars.asp?y=114',
+                linkLabel: '獲獎名單',
             },
             {
                 year: '2026',

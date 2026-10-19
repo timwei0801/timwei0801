@@ -121,6 +121,7 @@ export default {
                 metrics: ['770K+ TX', 'AUC 0.861', '4D Fairness'],
                 tags: ['GNN', 'HeteroSAGE', 'XGBoost', 'SHAP', 'AWS', 'PyTorch'],
                 github: 'https://github.com/timwei0801/Bio_AWS_Workshop',
+                live: 'https://timwei0801.github.io/Bio_AWS_Workshop/',
                 viz: 'architecture',
             },
             {
@@ -173,7 +174,7 @@ export default {
         items: [
             { year: '2026', name: 'Ranked #1 Graduate', nameZh: 'M.S. Data Science', org: 'Tamkang University, Stats & DS', desc: 'Graduated ranked #1 in the department, with an academic award and Outstanding TA for 3 consecutive semesters.', tag: 'Academic', image: 'rank' },
             { year: '2026', name: 'Phi Tau Phi Honor Society', nameZh: 'Honorary Member', org: 'Nominated by Tamkang Stats', desc: 'Nominated as honorary member of the Phi Tau Phi Scholastic Honor Society for academic excellence.', tag: 'Honor', image: 'phiTauPhi' },
-            { year: '2025', name: 'Accounting Scholarship', nameZh: 'NT$20,000', org: 'Accounting Association', desc: 'Recipient of the 2025 Accounting Association Scholarship (NT$20,000), among national award recipients.', tag: 'Scholarship', image: 'scholarship' },
+            { year: '2025', name: 'Accounting Scholarship', nameZh: 'NT$20,000', org: 'Accounting Association', desc: 'Recipient of the 2025 Accounting Association Scholarship (NT$20,000), among national award recipients.', tag: 'Scholarship', image: 'scholarship', link: 'https://bas-association.org.tw/reader/scholars.asp?y=114', linkLabel: 'Recipient list' },
             { year: '2026', name: 'Hackathon Finalist', nameZh: 'Agent for Truth', org: 'DIGITIMES × AWS × BitoPro', desc: 'Finalist at "Agent for Truth: Disinformation Defense Hackathon 2026" with BitoGuard.', tag: 'Hackathon', image: 'hackathon' },
             { year: '2025', name: '2nd Place (1st Vacant)', nameZh: 'National Highway Comp.', org: 'Taiwan Highway Bureau', desc: '2nd place (1st place vacant) at the 2025 National Highway Intelligent Traffic Competition.', tag: 'National', image: 'highway' },
             { year: '2025', name: 'Invited Speaker', nameZh: 'Transportation Annual Conf.', org: 'Highway Bureau', desc: 'Invited talk at the 2025 Chinese Institute of Transportation Annual Conference on AI traffic prediction.', tag: 'Speaking', image: 'speaker' },
