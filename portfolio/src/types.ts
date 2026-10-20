@@ -16,7 +16,7 @@ export interface CoverLine { k: string; b: string; t: string; to: string }
 
 export interface CvRow { when: string; role: string; org: string; note: string }
 
-export interface HomePost { k: string; title: string; p: string; url: string }
+export interface Channel { k: string; title: string; p: string; url: string }
 
 export interface Article { title: string; date: string; tag: string; url: string; platform?: 'medium' | 'ithome' | 'github' }
 

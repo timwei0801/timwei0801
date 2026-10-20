@@ -89,15 +89,18 @@ export default {
     ],
   },
   writing: {
-    title: 'Notes & essays',
+    title: 'Writing & community',
     all: '全部文章 →',
     pageTitle: '把做過的事寫下來。',
-    pageSub: '在 iT 邦幫忙與 Medium 持續分享技術實戰與專案經驗。',
+    pageSub: '主要在 iT 邦幫忙連載、在 Threads 寫每天的實測筆記，並經營 Claude Code Taiwan 社群。Medium 上的早期文章也一併列在下方。',
+    channelsTitle: '我在哪裡寫',
+    listTitle: '文章',
     crumb: 'Writing',
-    home: [
-      { k: 'iT 邦幫忙 · 連載中', title: 'Claude Code 實戰手冊：從零開始的繁中教學連載', p: 'G1 到 G20，寫給想把 AI 工具真正用進工作流的人。', url: 'https://ithelp.ithome.com.tw/users/20182796/articles' },
-      { k: 'Medium · AML', title: 'F1 從 0.37 跳到 0.83：當你發現自己在榨模型，對手在換特徵 framing', p: 'BitoGuard 背後的特徵工程故事。', url: 'https://medium.com/@chwei9181/篇三-f1-從-0-37-跳到-0-83-當你發現自己在榨模型-對手在換特徵-framing-1d2b3986b0f9' },
-      { k: 'Medium · GNN', title: 'GNN 在金融風控的落地：從異質圖構建到 HeteroSAGE + GAT', p: '圖怎麼建、邊怎麼定義、哪裡會踩雷。', url: 'https://medium.com/@chwei9181/篇二-gnn-在金融風控的落地-從異質圖構建到-heterosage-gat-的實務經驗-ea7e0275c00f' },
+    channels: [
+      { k: 'iT 邦幫忙 · 連載中', title: 'Claude Code 實戰手冊', p: '從零開始的繁中教學連載，G1 到 G20，寫給想把 AI 工具真正用進工作流的人。', url: 'https://ithelp.ithome.com.tw/users/20182796/articles' },
+      { k: "Threads · {'@'}timwei.ai", title: 'Tim 的 AI 實戰筆記', p: '每天的 AI 與 Claude Code 實測筆記，目前的主力頻道。', url: 'https://www.threads.com/@timwei.ai' },
+      { k: 'Facebook 社團 · 創辦', title: 'Claude Code Taiwan', p: '我創立的繁中 Claude Code 社群，一起解題、分享工作流。', url: 'https://www.facebook.com/groups/946060791911862/' },
+      { k: 'LinkedIn', title: '專案回顧與職涯紀錄', p: '英文的專案回顧與反思，給海外的同行與招募者看。', url: 'https://linkedin.com/in/timwei0801' },
     ],
     articles: [
       { title: 'Claude Code 實戰手冊：從零開始的繁中教學連載（G1 到 G20，連載中）', date: '2026', tag: 'iT 邦 · Claude Code', url: 'https://ithelp.ithome.com.tw/users/20182796/articles', platform: 'ithome' },

@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
-import type { HomePost } from '../types'
+import type { Channel } from '../types'
 
 const { t, tm } = useI18n()
-const posts = computed(() => tm('writing.home') as unknown as HomePost[])
+const posts = computed(() => tm('writing.channels') as unknown as Channel[])
 </script>
 
 <template>
@@ -25,10 +25,11 @@ const posts = computed(() => tm('writing.home') as unknown as HomePost[])
 .head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:22px}
 h3{margin:0;font-family:var(--serif);font-weight:500;font-style:italic;font-size:26px}
 .all:hover{color:var(--accent)}
-.posts{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.posts{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
 .post{border-top:2px solid var(--rule);padding-top:14px}
 .post h4{margin:8px 0 6px;font-family:var(--zh);font-weight:700;font-size:18px;line-height:1.4}
 .post:hover h4{color:var(--accent)}
 .post p{margin:0;font-family:var(--serif);font-size:14px;color:var(--muted)}
-@media (max-width:860px){.posts{grid-template-columns:1fr}}
+@media (max-width:960px){.posts{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.posts{grid-template-columns:1fr}}
 </style>

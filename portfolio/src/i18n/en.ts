@@ -87,15 +87,18 @@ export default {
     ],
   },
   writing: {
-    title: 'Notes & essays',
+    title: 'Writing & community',
     all: 'All articles →',
     pageTitle: 'Writing down what I build.',
-    pageSub: 'Engineering practice and project lessons, on iThome and Medium.',
+    pageSub: 'A zh-TW series on iThome, daily hands-on notes on Threads, and the Claude Code Taiwan community I run. Earlier Medium pieces are listed below too.',
+    channelsTitle: 'Where I write',
+    listTitle: 'Articles',
     crumb: 'Writing',
-    home: [
-      { k: 'iThome · ongoing', title: 'Claude Code Field Manual: a zh-TW series from zero', p: 'G1 to G20, for people who want AI tools in their real workflow.', url: 'https://ithelp.ithome.com.tw/users/20182796/articles' },
-      { k: 'Medium · AML', title: 'F1 from 0.37 to 0.83: I was squeezing the model while my rival reframed the features', p: 'The feature-engineering story behind BitoGuard.', url: 'https://medium.com/@chwei9181/篇三-f1-從-0-37-跳到-0-83-當你發現自己在榨模型-對手在換特徵-framing-1d2b3986b0f9' },
-      { k: 'Medium · GNN', title: 'GNNs in financial risk, hands-on: from heterogeneous graphs to HeteroSAGE + GAT', p: 'How to build the graph, define the edges, and where it bites.', url: 'https://medium.com/@chwei9181/篇二-gnn-在金融風控的落地-從異質圖構建到-heterosage-gat-的實務經驗-ea7e0275c00f' },
+    channels: [
+      { k: 'iThome · ongoing', title: 'Claude Code Field Manual', p: 'A zh-TW series from zero, G1 to G20, for people who want AI tools in their real workflow.', url: 'https://ithelp.ithome.com.tw/users/20182796/articles' },
+      { k: "Threads · {'@'}timwei.ai", title: "Tim's AI field notes", p: 'Daily hands-on notes on AI and Claude Code; my main channel right now.', url: 'https://www.threads.com/@timwei.ai' },
+      { k: 'Facebook group · founder', title: 'Claude Code Taiwan', p: 'The zh-TW Claude Code community I founded: solving problems and sharing workflows together.', url: 'https://www.facebook.com/groups/946060791911862/' },
+      { k: 'LinkedIn', title: 'Project retrospectives', p: 'English write-ups and reflections, for peers and recruiters abroad.', url: 'https://linkedin.com/in/timwei0801' },
     ],
     articles: [
       { title: 'Claude Code Field Manual — a beginner-friendly zh-TW series (G1 to G20, ongoing)', date: '2026', tag: 'iThome · Claude Code', url: 'https://ithelp.ithome.com.tw/users/20182796/articles', platform: 'ithome' },

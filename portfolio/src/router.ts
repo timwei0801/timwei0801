@@ -14,7 +14,9 @@ const router = createRouter({
   scrollBehavior(to, _from, saved) {
     if (saved) return saved
     if (to.hash) return { el: to.hash, top: 72, behavior: 'smooth' }
-    return { top: 0 }
+    // Let the out-in page transition swap views first (a scroll issued during
+    // the swap is dropped in Safari), then glide to the top of the new page.
+    return new Promise((resolve) => setTimeout(() => resolve({ top: 0, behavior: 'smooth' }), 80))
   },
 })
 
