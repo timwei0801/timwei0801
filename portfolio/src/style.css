@@ -118,6 +118,13 @@
 .dot-pulse{display:inline-block;width:6px;height:6px;background:#00d9a3;border-radius:50%;animation:pulseSoft 2s infinite ease-in-out}
 @keyframes pulseSoft{0%,100%{opacity:1}50%{opacity:.4}}
 
-/* route transition */
-.page-enter-active { transition: opacity 0.35s ease, transform 0.35s ease; }
-.page-enter-from { opacity: 0; transform: translateY(8px); }
+/* route transition: old page lifts and fades, new page rises in */
+.page-leave-active { transition: opacity 0.22s ease, transform 0.22s ease; }
+.page-leave-to { opacity: 0; transform: translateY(-12px); }
+.page-enter-active { transition: opacity 0.55s cubic-bezier(0.2, 0.7, 0.2, 1), transform 0.55s cubic-bezier(0.2, 0.7, 0.2, 1); }
+.page-enter-from { opacity: 0; transform: translateY(28px); }
+
+/* progress line under the sticky nav during a page change */
+.route-bar { position: fixed; top: 58px; left: 0; right: 0; height: 2px; z-index: 41; background: var(--accent); transform: scaleX(0); transform-origin: left; opacity: 0; pointer-events: none; }
+.route-bar.on { opacity: 1; animation: route-bar 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+@keyframes route-bar { from { transform: scaleX(0); } to { transform: scaleX(1); } }

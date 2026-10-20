@@ -1,11 +1,18 @@
 <script setup lang="ts">
-import { watchEffect } from 'vue'
-import { useRoute } from 'vue-router'
+import { ref, watchEffect } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import SiteNav from './components/SiteNav.vue'
 import ContactBand from './components/ContactBand.vue'
 
 const route = useRoute()
+const router = useRouter()
+
+// Thin cobalt line under the nav while a page change is in flight.
+const navigating = ref(false)
+let navTimer = 0
+router.beforeEach(() => { navigating.value = true })
+router.afterEach(() => { clearTimeout(navTimer); navTimer = window.setTimeout(() => (navigating.value = false), 700) })
 const { t, te, locale } = useI18n()
 
 watchEffect(() => {
@@ -24,6 +31,7 @@ watchEffect(() => {
 
 <template>
   <div class="min-h-screen">
+    <div class="route-bar" :class="{ on: navigating }" aria-hidden="true"></div>
     <SiteNav />
     <router-view v-slot="{ Component }">
       <transition name="page" mode="out-in">

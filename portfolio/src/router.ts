@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import { glideTo } from './composables/glide'
 
 // History mode on GitHub Pages: the build copies index.html to 404.html so
 // deep links (e.g. /timwei0801/work/adviz) resolve to the app.
@@ -15,8 +16,8 @@ const router = createRouter({
     if (saved) return saved
     if (to.hash) return { el: to.hash, top: 72, behavior: 'smooth' }
     // Let the out-in page transition swap views first (a scroll issued during
-    // the swap is dropped in Safari), then glide to the top of the new page.
-    return new Promise((resolve) => setTimeout(() => resolve({ top: 0, behavior: 'smooth' }), 80))
+    // the swap is dropped in Safari), then glide to the top at our own pace.
+    return new Promise((resolve) => setTimeout(() => { void glideTo(0, 900); resolve(false) }, 260))
   },
 })
 
