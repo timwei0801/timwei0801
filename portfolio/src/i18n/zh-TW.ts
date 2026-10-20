@@ -133,7 +133,21 @@ export default {
     pageTitle: '把做過的事寫下來。',
     pageSub: '主要在 iT 邦幫忙連載、在 Threads 寫每天的實測筆記，並經營 Claude Code Taiwan 社群。Medium 上的早期文章也一併列在下方。',
     channelsTitle: '我在哪裡寫',
+    threadsTitle: 'Threads 熱門',
+    threadsSub: '「Tim 的 AI 實戰筆記」流量最好的幾篇。瀏覽數是發文後 24 小時到數天的累計。',
+    views: '次瀏覽',
     listTitle: '文章',
+    // url 為主頁者：Tim 尚未提供該篇的 Threads 連結
+    threads: [
+      { title: '自介：白天做 Technology Consultant，空閒在 iT 邦寫 Claude Code 新手教學', date: '2026-09-29', views: 46000, label: '置頂', url: 'https://www.threads.com/@timwei.ai/post/Dd3kpRxGLjW' },
+      { title: 'Claude 重置券：重置 5 小時和每週額度，只能用一次', date: '2026-09-30', views: 20000, label: '⚡快訊', url: 'https://www.threads.com/@timwei.ai' },
+      { title: 'G2 用量：Claude Code 不是吃到飽，新手常誤會的三個地方', date: '2026-10-14', views: 3287, label: '📝筆記', url: 'https://www.threads.com/@timwei.ai' },
+      { title: '模型實測另外三題：健檢、地圖、雨天備案', date: '2026-10-06', views: 2251, label: '🔍實測', url: 'https://www.threads.com/@timwei.ai' },
+      { title: 'Claude 當機了怎麼知道：狀態頁與錯誤訊息分辨表', date: '2026-10-08', views: 1255, label: '📝筆記', url: 'https://www.threads.com/@timwei.ai' },
+      { title: 'Claude Code 的 advisor：Sonnet 主力、Opus 待命', date: '2026-10-18', views: 0, label: '📝筆記', url: 'https://www.threads.com/@timwei.ai/post/DenWI_YDzM3' },
+      { title: 'Opus 5.5 突然改講英文？不是只有你', date: '2026-10-19', views: 0, label: '📝筆記', url: 'https://www.threads.com/@timwei.ai/post/Dep66L7iiNF' },
+      { title: '想回去找上個月跟 Claude Code 的對話，紀錄卻找不到？', date: '2026-10-20', views: 0, label: '📝筆記', url: 'https://www.threads.com/@timwei.ai/post/DesfxnYkil4' },
+    ],
     crumb: 'Writing',
     channels: [
       { k: 'iT 邦幫忙 · 連載中', title: 'Claude Code 實戰手冊', p: '從零開始的繁中教學連載，G1 到 G20，寫給想把 AI 工具真正用進工作流的人。', url: 'https://ithelp.ithome.com.tw/users/20182796/articles' },

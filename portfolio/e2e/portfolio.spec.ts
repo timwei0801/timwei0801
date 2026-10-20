@@ -102,9 +102,11 @@ test.describe('About & Writing', () => {
     await expect(page.locator('.award')).toHaveCount(7)
   })
 
-  test('writing lists all articles', async ({ page }) => {
+  test('writing lists popular Threads posts and all articles', async ({ page }) => {
     await page.goto(`${BASE}writing`)
-    await expect(page.locator('.list li')).toHaveCount(8)
+    await expect(page.locator('.tlist li')).toHaveCount(8)
+    await expect(page.locator('.list:not(.tlist) li')).toHaveCount(8)
+    await expect(page.locator('.tlist a').first()).toHaveAttribute('href', /threads\.com\/@timwei\.ai\/post\//)
   })
 })
 

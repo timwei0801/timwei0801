@@ -23,6 +23,8 @@ export interface CvRow { when: string; role: string; org: string; note: string }
 
 export interface Channel { k: string; title: string; p: string; url: string }
 
+export interface ThreadsPost { title: string; date: string; views: number; label: string; url: string }
+
 export interface Article { title: string; date: string; tag: string; url: string; platform?: 'medium' | 'ithome' | 'github' }
 
 export interface Social { label: string; url: string }
