@@ -119,7 +119,7 @@ export default {
     cols: ['When', 'Role', 'Notes'],
     rows: [
       { when: '2025.07 —', role: 'Technology Consulting Intern · AI/ML', org: 'Ernst & Young (EY Taiwan)', note: 'RAG knowledge system, patient-education RAG, retail recommender, bank credit scoring, AI governance' },
-      { when: '2026', role: 'Lecturer, AI Ambassador program', org: 'Ministry of Digital Affairs, Administration for Digital Industries', note: 'Invited lecturer · 2026 showcase' },
+      { when: '2026', role: 'Project mentor, AI Ambassador program', org: 'Ministry of Digital Affairs, Administration for Digital Industries · with EY', note: 'Assigned by EY as project mentor · 2026 showcase' },
       { when: 'Spring 2026', role: 'RAG course mentor', org: 'NTU Dept. of Accounting', note: '16 weeks × 3 hours, a team of 6 to 7' },
       { when: '2024 — 2026', role: 'M.S. Data Science · ranked #1 graduate', org: 'Tamkang University, Statistics & Data Science', note: 'Phi Tau Phi honorary member · outstanding TA three semesters running' },
       { when: '2024', role: 'Best Popularity + Merit, Data Science Stroll', org: 'Academia Sinica', note: 'Internet use & cyberbullying research' },
@@ -201,7 +201,7 @@ export default {
             '<strong>Retail ML recommender</strong>: a real-time product recommendation engine for a major retail chain (PoC), covering most in-store SKUs, combining user behavior with product nutrition data, refreshed in 5-minute batches.',
             '<strong>Bank credit scoring</strong>: contributed to a credit scoring model for a banking client; completed SAS Viya training and supported the client through platform onboarding and model pipeline setup.',
             '<strong>AI model governance</strong>: fairness, explainability and AI capability evaluation for enterprise clients, delivering SHAP feature-importance analysis and multi-dimension fairness audit reports.',
-            "<strong>Teaching and outreach</strong>: EY corporate mentor guiding a team of 6 to 7 students through a 16-week RAG project at NTU Accounting (Spring 2026, completed); invited lecturer for the Ministry of Digital Affairs' AI Ambassador program.",
+            "<strong>Teaching and outreach</strong>: EY corporate mentor guiding a team of 6 to 7 students through a 16-week RAG project at NTU Accounting (Spring 2026, completed); and, assigned by EY, project mentor in the Ministry of Digital Affairs' AI Ambassador program, guiding participants to completion and the 2026 showcase.",
           ],
         },
         {
