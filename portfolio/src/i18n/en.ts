@@ -148,7 +148,7 @@ export default {
     crumb: 'Writing',
     channels: [
       { k: 'iThome · ongoing', title: 'Claude Code Field Manual', p: 'A zh-TW series from zero, G1 to G20, for people who want AI tools in their real workflow.', url: 'https://ithelp.ithome.com.tw/users/20182796/articles' },
-      { k: "Threads · {'@'}timwei.ai", title: "Tim's AI field notes", p: 'Daily hands-on notes on AI and Claude Code; my main channel right now.', url: 'https://www.threads.com/@timwei.ai' },
+      { k: 'Threads · @timwei.ai', title: "Tim's AI field notes", p: 'Daily hands-on notes on AI and Claude Code; my main channel right now.', url: 'https://www.threads.com/@timwei.ai' },
       { k: 'Facebook group · founder', title: 'Claude Code Taiwan', p: 'The zh-TW Claude Code community I founded: solving problems and sharing workflows together.', url: 'https://www.facebook.com/groups/946060791911862/' },
       { k: 'LinkedIn', title: 'Project retrospectives', p: 'English write-ups and reflections, for peers and recruiters abroad.', url: 'https://linkedin.com/in/timwei0801' },
     ],

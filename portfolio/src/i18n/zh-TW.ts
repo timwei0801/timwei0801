@@ -151,7 +151,7 @@ export default {
     crumb: 'Writing',
     channels: [
       { k: 'iT 邦幫忙 · 連載中', title: 'Claude Code 實戰手冊', p: '從零開始的繁中教學連載，G1 到 G20，寫給想把 AI 工具真正用進工作流的人。', url: 'https://ithelp.ithome.com.tw/users/20182796/articles' },
-      { k: "Threads · {'@'}timwei.ai", title: 'Tim 的 AI 實戰筆記', p: '每天的 AI 與 Claude Code 實測筆記，目前的主力頻道。', url: 'https://www.threads.com/@timwei.ai' },
+      { k: 'Threads · @timwei.ai', title: 'Tim 的 AI 實戰筆記', p: '每天的 AI 與 Claude Code 實測筆記，目前的主力頻道。', url: 'https://www.threads.com/@timwei.ai' },
       { k: 'Facebook 社團 · 創辦', title: 'Claude Code Taiwan', p: '我創立的繁中 Claude Code 社群，一起解題、分享工作流。', url: 'https://www.facebook.com/groups/946060791911862/' },
       { k: 'LinkedIn', title: '專案回顧與職涯紀錄', p: '英文的專案回顧與反思，給海外的同行與招募者看。', url: 'https://linkedin.com/in/timwei0801' },
     ],
