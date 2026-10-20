@@ -1,138 +1,123 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@300;400;500;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* ------------------------------------------------------------------
+   v3 tokens — cover is a poster, inside is a journal.
+   Warm paper + ink + one cobalt. Poster = 2px rules, condensed caps.
+   Journal = hairlines, serif body, numbered figures.
+------------------------------------------------------------------- */
+:root {
+  --paper: #f4f0e6;
+  --paper-2: #ece6d8;
+  --ink: #141414;
+  --muted: #6a6458;
+  --line: #cbc4b4;
+  --rule: #141414;
+  --grid: rgba(20, 20, 20, 0.08);
+  --accent: #1e3fdb;
+  --accent-ink: #ffffff;
+  --accent-soft: #dde3f9;
+
+  --display: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+  --zh: 'Noto Sans TC', sans-serif;
+  --serif: 'Noto Serif TC', 'Newsreader', Georgia, serif;
+  --mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  --gutter: max(16px, env(safe-area-inset-left, 0px));
+  --gutter-r: max(16px, env(safe-area-inset-right, 0px));
+  --max: 1320px;
+  color-scheme: light;
+}
+
 @layer base {
-  * { @apply box-border; }
-
-  html {
-    @apply scroll-smooth bg-ink-800;
-    scroll-behavior: smooth;
-  }
-
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; background: var(--paper); }
   body {
-    @apply bg-ink-800 text-bone-200 font-sans antialiased;
     margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--display), var(--zh);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
-    font-feature-settings: 'ss01', 'ss02', 'cv11';
   }
-
-  ::selection {
-    @apply bg-ember-500 text-ink-900;
-  }
-
-  ::-webkit-scrollbar { @apply w-1.5; }
-  ::-webkit-scrollbar-track { @apply bg-ink-800; }
-  ::-webkit-scrollbar-thumb { @apply bg-ink-500 rounded-full; }
-  ::-webkit-scrollbar-thumb:hover { @apply bg-ember-500; }
-
-  /* Reduce focus jank — keep accessible */
-  :focus-visible {
-    @apply outline-2 outline-offset-2 outline-ember-500;
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
+  ::selection { background: var(--accent); color: var(--accent-ink); }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
   }
 }
 
 @layer components {
-  .container-x {
-    @apply max-w-[1240px] mx-auto px-6 sm:px-8 lg:px-12;
+  .wrap {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding-left: var(--gutter);
+    padding-right: var(--gutter-r);
   }
-
-  .section-y {
-    @apply py-24 md:py-32 lg:py-40;
+  .mono {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
   }
-
-  /* Section number tag */
-  .section-num {
-    @apply font-mono text-xs text-ember-500 mb-4 inline-flex items-center gap-3;
+  /* condensed poster caps */
+  .cond {
+    font-family: var(--display);
+    font-weight: 900;
+    font-stretch: 62%;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    line-height: 0.85;
   }
-  .section-num::before {
-    content: '';
-    @apply inline-block w-8 h-px bg-ember-500;
+  /* heavy Chinese headline */
+  .zh9 {
+    font-family: var(--zh);
+    font-weight: 900;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
   }
-
-  /* Display headings (serif italic accent) */
-  .h-display {
-    @apply font-serif font-light text-bone-100;
-    font-feature-settings: 'ss01';
-  }
-  .h-display em {
-    @apply not-italic;
-    font-style: italic;
-    @apply text-ember-500;
-  }
-
-  /* Mono caption / overline */
-  .mono-caption {
-    @apply font-mono text-[11px] text-bone-500 uppercase tracking-[0.18em];
-  }
-
-  /* Tag pill (mono) */
-  .tag-pill {
-    @apply font-mono text-[11px] px-2.5 py-1 border border-ink-500 text-bone-400 rounded-full
-           transition-colors duration-200 hover:border-ember-500 hover:text-ember-500;
-  }
-
-  /* Buttons */
-  .btn-ember {
-    @apply inline-flex items-center gap-2 px-6 py-3.5 bg-ember-500 text-ink-900 font-semibold rounded
-           transition-all duration-200 hover:-translate-y-0.5 hover:shadow-glow-ember;
-  }
-
-  .btn-ghost {
-    @apply inline-flex items-center gap-2 px-6 py-3.5 border border-ink-500 text-bone-200 rounded font-medium
-           transition-all duration-200 hover:border-ember-500 hover:text-ember-500;
-  }
-
-  /* Subtle vertical divider line */
-  .v-line {
-    @apply w-px bg-ink-500;
-  }
-
-  /* Hero animated grid background */
   .grid-bg {
-    background-image:
-      linear-gradient(rgba(31, 48, 56, 0.4) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(31, 48, 56, 0.4) 1px, transparent 1px);
-    background-size: 64px 64px;
-    mask-image: radial-gradient(ellipse 60% 50% at 50% 30%, black 30%, transparent 80%);
+    background-image: repeating-linear-gradient(90deg, var(--grid) 0 1px, transparent 1px calc(100% / 12));
   }
-
-  /* Reveal animation classes (used with IntersectionObserver) */
-  .reveal {
-    opacity: 0;
-    transform: translateY(24px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    will-change: opacity, transform;
+  /* figure caption: 「圖 n」 in cobalt mono, serif text */
+  .figcap {
+    font-family: var(--serif);
+    font-size: 13.5px;
+    color: var(--muted);
+    margin-top: 10px;
+    line-height: 1.6;
   }
-  .reveal.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  /* Marquee row */
-  .marquee {
-    @apply flex gap-12 whitespace-nowrap;
-    animation: marquee 40s linear infinite;
+  .figcap b {
+    font-family: var(--mono);
+    color: var(--accent);
+    margin-right: 8px;
+    font-weight: 500;
   }
 }
 
-@layer utilities {
-  .text-balance { text-wrap: balance; }
-  .text-pretty { text-wrap: pretty; }
-
-  .border-grid {
-    border-image: linear-gradient(to bottom, transparent, rgba(31, 48, 56, 0.6), transparent) 1;
-  }
+/* Motion (outside @layer so Tailwind never purges the keyframes) */
+/* reveal: visible at rest, plays once when it enters the viewport */
+.reveal.in { animation: rise 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+@keyframes rise {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: none; }
 }
-
-/* Pulse dot used in viz labels */
-.dot-pulse {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  background: #00D9A3;
-  border-radius: 50%;
-  animation: pulseSoft 2s infinite ease-in-out;
+@keyframes slide-in {
+  from { transform: translateX(-4%); opacity: 0; }
+  to { transform: none; opacity: 1; }
 }
+@keyframes marq { to { transform: translateX(-50%); } }
+
+/* pulse dot used in viz labels (legacy v2 viz) */
+.dot-pulse{display:inline-block;width:6px;height:6px;background:#00d9a3;border-radius:50%;animation:pulseSoft 2s infinite ease-in-out}
+@keyframes pulseSoft{0%,100%{opacity:1}50%{opacity:.4}}
+
+/* route transition */
+.page-enter-active { transition: opacity 0.35s ease, transform 0.35s ease; }
+.page-enter-from { opacity: 0; transform: translateY(8px); }

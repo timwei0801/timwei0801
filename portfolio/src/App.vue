@@ -1,71 +1,35 @@
 <script setup lang="ts">
-import { onMounted, onBeforeUnmount } from 'vue'
-import Navbar from './components/Navbar.vue'
-import Hero from './components/Hero.vue'
-import About from './components/About.vue'
-import Experience from './components/Experience.vue'
-import Projects from './components/Projects.vue'
-import Awards from './components/Awards.vue'
-import Skills from './components/Skills.vue'
-import Writing from './components/Writing.vue'
-import Contact from './components/Contact.vue'
-import Footer from './components/Footer.vue'
-import ScrollToTop from './components/ScrollToTop.vue'
+import { watchEffect } from 'vue'
+import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
+import SiteNav from './components/SiteNav.vue'
+import ContactBand from './components/ContactBand.vue'
 
-let observer: IntersectionObserver | null = null
+const route = useRoute()
+const { t, te, locale } = useI18n()
 
-onMounted(() => {
-  // Graceful degradation: if IntersectionObserver isn't supported, show all
-  if (typeof IntersectionObserver === 'undefined') {
-    document.querySelectorAll('.reveal').forEach((el) => el.classList.add('is-visible'))
-    return
-  }
-
-  observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible')
-          observer?.unobserve(entry.target)
-        }
-      })
-    },
-    { rootMargin: '0px 0px -5% 0px', threshold: 0.01 }
-  )
-
-  document.querySelectorAll('.reveal').forEach((el) => observer?.observe(el))
-
-  // Failsafe: any reveal still hidden 4s after load gets force-revealed
-  setTimeout(() => {
-    document.querySelectorAll('.reveal:not(.is-visible)').forEach((el) => {
-      const rect = el.getBoundingClientRect()
-      // If element is above viewport (already scrolled past), reveal it
-      if (rect.top < window.innerHeight) {
-        el.classList.add('is-visible')
-      }
-    })
-  }, 4000)
-})
-
-onBeforeUnmount(() => {
-  observer?.disconnect()
+watchEffect(() => {
+  // touch locale so the title re-computes on language switch
+  void locale.value
+  let title = t('meta.home')
+  if (route.name === 'case') {
+    const key = `cases.${String(route.params.slug)}.title`
+    title = te(key) ? `${t(key)} · Tim Wei` : t('meta.notFound')
+  } else if (route.name === 'about') title = t('meta.about')
+  else if (route.name === 'writing') title = t('meta.writing')
+  else if (route.name === 'not-found') title = t('meta.notFound')
+  document.title = title
 })
 </script>
 
 <template>
-  <div class="min-h-screen bg-ink-800 text-bone-200">
-    <Navbar />
-    <main>
-      <Hero />
-      <About />
-      <Experience />
-      <Projects />
-      <Awards />
-      <Skills />
-      <Writing />
-      <Contact />
-    </main>
-    <Footer />
-    <ScrollToTop />
+  <div class="min-h-screen">
+    <SiteNav />
+    <router-view v-slot="{ Component }">
+      <transition name="page" mode="out-in">
+        <component :is="Component" :key="route.fullPath.split('#')[0]" />
+      </transition>
+    </router-view>
+    <ContactBand />
   </div>
 </template>
