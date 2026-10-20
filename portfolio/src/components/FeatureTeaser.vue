@@ -13,8 +13,9 @@ const items = computed(() => { void locale.value; return tm('feature.items') as 
 const root = ref<HTMLElement | null>(null)
 const { index: pi, paused } = useRotation(() => items.value.length, 12000, root)
 const cur = computed(() => items.value[pi.value % items.value.length] ?? items.value[0])
-const { index: fi, paused: fpaused } = useRotation(() => cur.value?.figs.length ?? 1, 4000, root)
-watch(pi, () => { fi.value = 0 })
+const { index: fi, paused: fpaused, restart: restartFigs } = useRotation(() => cur.value?.figs.length ?? 1, 4000, root)
+// A case change restarts the figure clock, so every case opens on its first figure.
+watch(pi, () => restartFigs())
 watch(paused, (v) => { fpaused.value = v })
 const fig = computed(() => cur.value?.figs[fi.value % cur.value.figs.length] ?? cur.value?.figs[0])
 </script>
@@ -62,8 +63,8 @@ const fig = computed(() => cur.value?.figs[fi.value % cur.value.figs.length] ?? 
 .text{grid-column:1/6;display:flex;flex-direction:column;gap:18px}
 .figure{grid-column:6/13;margin:0}
 h3{margin:0 0 10px;font-size:clamp(28px,3vw,42px)}
-.sub{font-family:var(--serif);font-style:italic;color:var(--muted);font-size:18px;margin:0 0 18px}
-.first{font-family:var(--serif);font-size:18px;line-height:1.85;margin:0 0 14px}
+.sub{font-family:var(--serif);font-style:italic;color:var(--muted);font-size:20px;margin:0 0 18px}
+.first{font-family:var(--serif);font-size:20px;line-height:1.85;margin:0 0 14px}
 .first::first-letter{font-family:var(--serif);font-size:3em;float:left;line-height:.85;padding:6px 10px 0 0;color:var(--accent);font-weight:700}
 .read{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;display:inline-flex;gap:8px;border-bottom:1px solid var(--ink);padding-bottom:2px}
 .read:hover{color:var(--accent);border-color:var(--accent)}

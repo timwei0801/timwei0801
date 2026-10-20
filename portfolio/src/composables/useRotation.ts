@@ -41,5 +41,15 @@ export function useRotation(
     observer?.disconnect()
   })
 
-  return { index, paused }
+  // Reset to the first item and restart the clock from now (used when an
+  // outer rotation changes the set of items).
+  const restart = () => {
+    index.value = 0
+    if (!timer) return
+    window.clearInterval(timer)
+    timer = 0
+    start()
+  }
+
+  return { index, paused, restart }
 }

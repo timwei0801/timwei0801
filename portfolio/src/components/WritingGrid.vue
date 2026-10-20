@@ -27,9 +27,9 @@ h3{margin:0;font-family:var(--serif);font-weight:500;font-style:italic;font-size
 .all:hover{color:var(--accent)}
 .posts{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
 .post{border-top:2px solid var(--rule);padding-top:14px}
-.post h4{margin:8px 0 6px;font-family:var(--zh);font-weight:700;font-size:19px;line-height:1.4}
+.post h4{margin:8px 0 6px;font-family:var(--zh);font-weight:700;font-size:21px;line-height:1.4}
 .post:hover h4{color:var(--accent)}
-.post p{margin:0;font-family:var(--serif);font-size:15.5px;color:var(--muted)}
+.post p{margin:0;font-family:var(--serif);font-size:17.5px;color:var(--muted)}
 @media (max-width:960px){.posts{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.posts{grid-template-columns:1fr}}
 </style>

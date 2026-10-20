@@ -104,7 +104,7 @@ const { index: tick } = useRotation(() => 2, 4500)
 .crumb a:hover{color:var(--accent)}
 .ah{display:grid;grid-template-columns:7fr 5fr;gap:clamp(24px,4vw,56px);padding-block:22px clamp(36px,5vw,64px);border-bottom:2px solid var(--ink);align-items:start}
 h1{margin:0;font-size:clamp(40px,6vw,84px)}
-.lede{font-family:var(--serif);font-size:clamp(19px,1.8vw,23px);line-height:1.8;margin:18px 0 0;max-width:34em}
+.lede{font-family:var(--serif);font-size:clamp(21px,2vw,25px);line-height:1.8;margin:18px 0 0;max-width:34em}
 .toc{list-style:none;margin:28px 0 0;padding:0;border-top:2px solid var(--ink);max-width:420px}
 .toc a{display:grid;grid-template-columns:36px 1fr;gap:8px;padding:12px 0;border-bottom:1px solid var(--line);font-family:var(--zh);font-weight:700;font-size:18px;transition:padding-left .2s}
 .toc a:hover{color:var(--accent);padding-left:6px}
@@ -115,14 +115,14 @@ h1{margin:0;font-size:clamp(40px,6vw,84px)}
 .sec{padding-block:clamp(36px,5vw,64px);border-bottom:1px solid var(--rule)}
 .sec h2{font-family:var(--zh);font-weight:900;font-size:clamp(26px,3vw,40px);margin:0 0 10px;display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:baseline;scroll-margin-top:80px}
 .sec h2 span{font-family:var(--serif);font-style:italic;font-weight:400;font-size:.8em;color:var(--accent)}
-.secsub{font-family:var(--serif);font-size:17px;color:var(--muted);margin:0 0 26px}
+.secsub{font-family:var(--serif);font-size:19px;color:var(--muted);margin:0 0 26px}
 .job{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:22px 0;border-top:1px solid var(--line)}
 .job:first-of-type{margin-top:16px}
 .when{font-family:var(--mono);font-size:13px;color:var(--muted);padding-top:4px}
 .job h3{margin:0;font-family:var(--zh);font-weight:700;font-size:22px}
-.job .org{font-family:var(--serif);color:var(--muted);font-size:15.5px;margin-top:4px}
-.job .desc{font-family:var(--serif);font-size:18px;line-height:1.85;margin:12px 0 0}
-.job ul{list-style:disc;font-family:var(--serif);font-size:17.5px;line-height:1.85;padding-left:1.1em;margin:12px 0 0}
+.job .org{font-family:var(--serif);color:var(--muted);font-size:17.5px;margin-top:4px}
+.job .desc{font-family:var(--serif);font-size:20px;line-height:1.85;margin:12px 0 0}
+.job ul{list-style:disc;font-family:var(--serif);font-size:19.5px;line-height:1.85;padding-left:1.1em;margin:12px 0 0}
 .job li{margin-bottom:8px}
 .job :deep(strong){font-family:var(--zh);font-weight:700}
 @media (max-width:640px){.job{grid-template-columns:1fr}}
@@ -135,14 +135,14 @@ h1{margin:0;font-size:clamp(40px,6vw,84px)}
 .frame img.show{opacity:1}
 .frame img.contain{object-fit:contain;padding:28px;background:#fff}
 .frame .tag{position:absolute;top:10px;left:10px;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;background:var(--ink);color:var(--paper);padding:3px 8px}
-.award figcaption{margin-top:10px;font-family:var(--serif);font-size:16px;line-height:1.65;color:var(--muted)}
+.award figcaption{margin-top:10px;font-family:var(--serif);font-size:18px;line-height:1.65;color:var(--muted)}
 .award .figno{font-family:var(--mono);color:var(--accent);font-weight:500;margin-right:8px}
-.award .nm{font-family:var(--zh);font-weight:700;font-size:16px;color:var(--ink)}
+.award .nm{font-family:var(--zh);font-weight:700;font-size:18px;color:var(--ink)}
 .award .org,.award .desc{display:block}
 .award .lnk{display:inline-block;margin-top:4px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);border-bottom:1px solid var(--ink)}
 .award .lnk:hover{color:var(--accent);border-color:var(--accent)}
-.tbl{width:100%;border-collapse:collapse;margin-top:10px;font-size:16px}
+.tbl{width:100%;border-collapse:collapse;margin-top:10px;font-size:18px}
 .tbl th{text-align:left;font-family:var(--zh);font-weight:700;padding:14px 16px 14px 0;border-bottom:1px solid var(--line);width:240px;vertical-align:top}
-.tbl td{font-family:var(--mono);font-size:14px;padding:14px 0;border-bottom:1px solid var(--line);color:var(--muted);line-height:1.8}
+.tbl td{font-family:var(--mono);font-size:15.5px;padding:14px 0;border-bottom:1px solid var(--line);color:var(--muted);line-height:1.8}
 @media (max-width:640px){.tbl th{width:40%}}
 </style>

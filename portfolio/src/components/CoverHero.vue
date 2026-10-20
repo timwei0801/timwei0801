@@ -61,7 +61,7 @@ const cur = computed(() => photos.value[index.value % photos.value.length] ?? ph
 .tagline{font-family:var(--serif);font-weight:700;font-size:clamp(24px,3vw,42px);line-height:1.3;margin:0;text-wrap:balance}
 .tagline span{color:var(--accent)}
 .lines{border-top:2px solid var(--ink)}
-.lines a{display:grid;grid-template-columns:110px 1fr auto;gap:16px;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--line);font-family:var(--serif);font-size:17.5px;transition:padding-left .25s}
+.lines a{display:grid;grid-template-columns:110px 1fr auto;gap:16px;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--line);font-family:var(--serif);font-size:19.5px;transition:padding-left .25s}
 .lines a:hover{padding-left:8px;color:var(--accent)}
 .lines a .mono{color:var(--accent)}
 .lines a b{font-family:var(--zh);font-weight:700}

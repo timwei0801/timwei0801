@@ -38,7 +38,7 @@
     background: var(--paper);
     color: var(--ink);
     font-family: var(--display), var(--zh);
-    font-size: 17px;
+    font-size: 19px;
     line-height: 1.7;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
@@ -88,7 +88,7 @@
   /* figure caption: 「圖 n」 in cobalt mono, serif text */
   .figcap {
     font-family: var(--serif);
-    font-size: 15px;
+    font-size: 17px;
     color: var(--muted);
     margin-top: 10px;
     line-height: 1.6;

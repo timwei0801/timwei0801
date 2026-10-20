@@ -33,13 +33,13 @@ h3{margin:0;font-family:var(--serif);font-weight:500;font-style:italic;font-size
 h3 small{display:block;font-style:normal;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:6px}
 .more{display:inline-block;margin-top:16px;font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid var(--ink);padding-bottom:2px}
 .more:hover{color:var(--accent);border-color:var(--accent)}
-table{width:100%;border-collapse:collapse;font-size:16px}
+table{width:100%;border-collapse:collapse;font-size:18px}
 th{text-align:left;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:500;padding:0 0 10px;border-bottom:1px solid var(--rule)}
 td{padding:14px 16px 14px 0;border-bottom:1px solid var(--line);vertical-align:top}
 td:first-child{font-family:var(--mono);font-size:12px;color:var(--muted);white-space:nowrap}
 td b{display:block;font-family:var(--zh);font-weight:700}
-.org{color:var(--muted);font-size:14.5px;font-family:var(--serif)}
-td:last-child{color:var(--muted);font-size:15px;font-family:var(--serif)}
+.org{color:var(--muted);font-size:16.5px;font-family:var(--serif)}
+td:last-child{color:var(--muted);font-size:17px;font-family:var(--serif)}
 tr:hover td{background:var(--paper-2)}
 @media (max-width:760px){.cv{grid-template-columns:1fr}td:last-child{display:none}}
 </style>

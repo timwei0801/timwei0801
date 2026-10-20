@@ -31,7 +31,7 @@ const { copied, copy } = useCopy()
 .contact{background:var(--accent);color:var(--accent-ink);border-top:2px solid var(--ink)}
 .wrap{padding-block:clamp(40px,6vw,80px) 28px}
 h2{margin:0;font-size:clamp(64px,13vw,200px)}
-.zhline{font-family:var(--serif);font-size:clamp(16px,1.6vw,20px);margin:18px 0 0;max-width:34em;opacity:.95}
+.zhline{font-family:var(--serif);font-size:clamp(18px,1.8vw,22px);margin:18px 0 0;max-width:34em;opacity:.95}
 .mailrow{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-top:26px;font-family:var(--mono);font-size:clamp(16px,2.4vw,26px)}
 .mailrow a{border-bottom:1px solid transparent}.mailrow a:hover{border-color:var(--accent-ink)}
 .copy{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;background:var(--accent-ink);color:var(--accent);border:0;padding:8px 14px;cursor:pointer}
