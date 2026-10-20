@@ -1,23 +1,44 @@
 <script setup lang="ts">
 // Home feature: rotates through the three featured cases, and within each
 // case through its figures. Hover pauses; the numbered tabs switch cases.
-import { computed, ref, watch } from 'vue'
+import { computed, ref, onMounted, onUnmounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { images, vizComponents } from '../data/figures'
-import { useRotation } from '../composables/useRotation'
 import type { FeatureItem } from '../types'
 
 const { t, tm, locale } = useI18n()
 const items = computed(() => { void locale.value; return tm('feature.items') as unknown as FeatureItem[] })
 
+// One clock. Every STEP ms it shows the case's next figure; after the last
+// figure has had its turn it moves to the next case, starting on figure 1.
+const STEP = 4000
 const root = ref<HTMLElement | null>(null)
-const { index: pi, paused } = useRotation(() => items.value.length, 12000, root)
+const pi = ref(0)
+const fi = ref(0)
+const paused = ref(false)
 const cur = computed(() => items.value[pi.value % items.value.length] ?? items.value[0])
-const { index: fi, paused: fpaused, restart: restartFigs } = useRotation(() => cur.value?.figs.length ?? 1, 4000, root)
-// A case change restarts the figure clock, so every case opens on its first figure.
-watch(pi, () => restartFigs())
-watch(paused, (v) => { fpaused.value = v })
 const fig = computed(() => cur.value?.figs[fi.value % cur.value.figs.length] ?? cur.value?.figs[0])
+
+let timer = 0
+let observer: IntersectionObserver | undefined
+function tick() {
+  if (paused.value) return
+  const n = cur.value?.figs.length ?? 1
+  if (fi.value < n - 1) fi.value++
+  else { pi.value = (pi.value + 1) % items.value.length; fi.value = 0 }
+}
+function start() { if (!timer) timer = window.setInterval(tick, STEP) }
+function restart() { window.clearInterval(timer); timer = 0; start() }
+function pick(i: number) { pi.value = i; fi.value = 0; restart() }
+function pickFig(k: number) { fi.value = k; restart() }
+onMounted(() => {
+  if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return
+  const el = root.value
+  if (!el || !('IntersectionObserver' in window)) return start()
+  observer = new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting)) { start(); observer?.disconnect() } }, { threshold: 0.3 })
+  observer.observe(el)
+})
+onUnmounted(() => { window.clearInterval(timer); observer?.disconnect() })
 </script>
 
 <template>
@@ -33,7 +54,7 @@ const fig = computed(() => cur.value?.figs[fi.value % cur.value.figs.length] ?? 
         </div>
       </transition>
       <div class="tabs" role="tablist">
-        <button v-for="(it, i) in items" :key="it.slug" type="button" role="tab" :aria-selected="i === pi % items.length" :class="{ on: i === pi % items.length }" @click="pi = i">{{ it.no }}</button>
+        <button v-for="(it, i) in items" :key="it.slug" type="button" role="tab" :aria-selected="i === pi % items.length" :class="{ on: i === pi % items.length }" @click="pick(i)">{{ it.no }}</button>
       </div>
     </div>
     <figure class="figure">
@@ -50,7 +71,7 @@ const fig = computed(() => cur.value?.figs[fi.value % cur.value.figs.length] ?? 
         <span v-if="fig?.illustration" class="ill">{{ t('caseUi.illustration') }} · </span>{{ fig?.cap }}
       </figcaption>
       <div class="fdots">
-        <button v-for="(f, k) in cur?.figs ?? []" :key="'f' + k" type="button" :class="{ on: k === fi % (cur?.figs.length ?? 1) }" :aria-label="f.cap" @click="fi = k"></button>
+        <button v-for="(f, k) in cur?.figs ?? []" :key="'f' + k" type="button" :class="{ on: k === fi % (cur?.figs.length ?? 1) }" :aria-label="f.cap" @click="pickFig(k)"></button>
       </div>
     </figure>
   </article>

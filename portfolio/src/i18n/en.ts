@@ -119,6 +119,7 @@ export default {
     cols: ['When', 'Role', 'Notes'],
     rows: [
       { when: '2025.07 —', role: 'Technology Consulting Intern · AI/ML', org: 'Ernst & Young (EY Taiwan)', note: 'RAG knowledge system, patient-education RAG, retail recommender, bank credit scoring, AI governance' },
+      { when: '2026', role: 'Lecturer, AI Ambassador program', org: 'Ministry of Digital Affairs, Administration for Digital Industries', note: 'Invited lecturer · 2026 showcase' },
       { when: 'Spring 2026', role: 'RAG course mentor', org: 'NTU Dept. of Accounting', note: '16 weeks × 3 hours, a team of 6 to 7' },
       { when: '2024 — 2026', role: 'M.S. Data Science · ranked #1 graduate', org: 'Tamkang University, Statistics & Data Science', note: 'Phi Tau Phi honorary member · outstanding TA three semesters running' },
       { when: '2024', role: 'Best Popularity + Merit, Data Science Stroll', org: 'Academia Sinica', note: 'Internet use & cyberbullying research' },
