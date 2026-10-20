@@ -42,6 +42,7 @@ export default {
     photoAlt: '魏祺紘在 2025 中華民國運輸學會年會演講',
     photos: [
       { img: 'tim', cap: '2025 · 運輸學會年會 · 受邀演講', alt: '魏祺紘在 2025 中華民國運輸學會年會演講' },
+      { img: 'ai-ambassador', cap: '2026 · 智匯星球 跨域點亮 · AI 大使成果發表', alt: '2026 智匯星球跨域點亮，數位發展部 AI 大使計劃成果發表，與 EY 團隊合影' },
       { img: 'award-aiexpo', cap: '2026 · Taiwan AI EXPO · 黑客松決賽', alt: 'Taiwan AI EXPO 2026 黑客松決賽與展出' },
       { img: 'award-hackathon', cap: '2026 · Agent for Truth 黑客松', alt: 'Agent for Truth 黑客松團隊' },
       { img: 'award-highway', cap: '2025 · 國道智慧交通競賽 · 全國第二', alt: '2025 國道智慧交通競賽頒獎' },

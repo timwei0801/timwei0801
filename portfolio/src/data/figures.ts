@@ -6,6 +6,7 @@ import ArchitectureViz from '../components/viz/ArchitectureViz.vue'
 import HeatmapViz from '../components/viz/HeatmapViz.vue'
 
 import tim from '../assets/images/experience/transport-conference-speaking.jpg'
+import aiAmbassador from '../assets/images/experience/ai-ambassador-showcase-2026.jpg'
 
 import advizTaxonomy from '../assets/images/projects/adviz/taxonomy.webp'
 import advizInterface from '../assets/images/projects/adviz/interface.webp'
@@ -28,6 +29,7 @@ import scholarshipList from '../assets/images/awards/scholarship-list.webp'
 
 export const images: Record<string, string> = {
   tim,
+  'ai-ambassador': aiAmbassador,
   'adviz-taxonomy': advizTaxonomy,
   'adviz-interface': advizInterface,
   'adviz-showcase': advizShowcase,
@@ -62,4 +64,5 @@ export const imageHints: Record<string, { contain?: boolean; position?: string }
   'award-speaker': { position: 'center 45%' },
   'award-rank': { position: 'center 40%' },
   'award-scholarship': { position: 'center 70%' },
+  'ai-ambassador': { position: 'center 42%' },
 }

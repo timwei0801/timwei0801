@@ -40,6 +40,7 @@ export default {
     photoAlt: 'Tim Wei speaking at the 2025 Chinese Institute of Transportation Annual Conference',
     photos: [
       { img: 'tim', cap: '2025 · Transportation Conference · invited talk', alt: 'Tim Wei speaking at the 2025 Chinese Institute of Transportation Annual Conference' },
+      { img: 'ai-ambassador', cap: '2026 · AI Ambassador showcase · MODA', alt: 'AI Ambassador program showcase 2026 hosted by the Ministry of Digital Affairs, with the EY team' },
       { img: 'award-aiexpo', cap: '2026 · Taiwan AI EXPO · hackathon finals', alt: 'Hackathon finals and exhibition at Taiwan AI EXPO 2026' },
       { img: 'award-hackathon', cap: '2026 · Agent for Truth hackathon', alt: 'Agent for Truth hackathon team' },
       { img: 'award-highway', cap: '2025 · National Highway Competition · 2nd place', alt: 'Award ceremony of the 2025 National Highway Traffic Competition' },
