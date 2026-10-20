@@ -14,6 +14,11 @@ export interface IndexItem {
 
 export interface CoverLine { k: string; b: string; t: string; to: string }
 
+export interface CoverPhoto { img: string; cap: string; alt?: string }
+
+export interface FeatureFig { img?: string; viz?: string; cap: string; alt?: string; illustration?: boolean }
+export interface FeatureItem { slug: string; no: string; meta: string; tech: string; title: string; sub: string; body: string; figs: FeatureFig[] }
+
 export interface CvRow { when: string; role: string; org: string; note: string }
 
 export interface Channel { k: string; title: string; p: string; url: string }

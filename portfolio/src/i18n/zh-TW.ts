@@ -40,6 +40,13 @@ export default {
     issueSub: '系排名第一畢業',
     photoCap: '2025 · 運輸學會年會',
     photoAlt: '魏祺紘在 2025 中華民國運輸學會年會演講',
+    photos: [
+      { img: 'tim', cap: '2025 · 運輸學會年會 · 受邀演講', alt: '魏祺紘在 2025 中華民國運輸學會年會演講' },
+      { img: 'award-aiexpo', cap: '2026 · Taiwan AI EXPO · 黑客松決賽', alt: 'Taiwan AI EXPO 2026 黑客松決賽與展出' },
+      { img: 'award-hackathon', cap: '2026 · Agent for Truth 黑客松', alt: 'Agent for Truth 黑客松團隊' },
+      { img: 'award-highway', cap: '2025 · 國道智慧交通競賽 · 全國第二', alt: '2025 國道智慧交通競賽頒獎' },
+      { img: 'award-sinica', cap: '2024 · 中研院資料科學漫步 · 雙獎', alt: '中研院資料科學漫步頒獎' },
+    ],
   },
   marquee: [
     '系排名第一畢業',
@@ -65,16 +72,46 @@ export default {
     ],
   },
   feature: {
-    kicker: '本期專題 · 案例 i',
-    kickerAfter: '碩士論文 · 2026',
-    tech: 'VLM · GRPO · PyTorch',
-    title: 'ADVIZ：訓練 AI 看穿會騙人的圖表',
-    sub: 'Teaching a model to see through charts that lie.',
-    body: '紅方生成攻擊、藍方學習識破，兩者透過 Dual-GRPO 共同進化。核心發現是機制性的：瓶頸不在模型的表徵能力，而在解碼介面。同一組視覺語言特徵，把生成式 JSON 解碼換成 sigmoid 分類頭，平衡準確率從 0.57 提升到 0.70，融合規則式 linter 後達 0.83。',
+    kicker: '本期專題',
     read: '閱讀完整案例 →',
     figNo: '圖 2',
-    figCap: '開源的互動 demo。你扮演紅方，勾選誤導手法把右圖變造，再送 Blue Critic 評分。真的誤導、又讓 Blue 漏看，就找到了 AI 的盲點。',
-    figAlt: 'ADVIZ 互動 demo：你來當 Red，騙得過 AI 嗎',
+    items: [
+      {
+        slug: 'adviz', no: '案例 i', meta: '碩士論文 · 2026', tech: 'VLM · GRPO · PyTorch',
+        title: 'ADVIZ：訓練 AI 看穿會騙人的圖表',
+        sub: 'Teaching a model to see through charts that lie.',
+        body: '紅方生成攻擊、藍方學習識破，兩者透過 Dual-GRPO 共同進化。核心發現是機制性的：瓶頸不在模型的表徵能力，而在解碼介面。同一組視覺語言特徵，把生成式 JSON 解碼換成 sigmoid 分類頭，平衡準確率從 0.57 提升到 0.70，融合規則式 linter 後達 0.83。',
+        figs: [
+          { img: 'adviz-showcase', cap: '開源的互動 demo。你扮演紅方，勾選誤導手法把右圖變造，再送 Blue Critic 評分。', alt: 'ADVIZ 互動 demo' },
+          { img: 'adviz-taxonomy', cap: '六大類誤導手法。左邊誠實、右邊被動過手腳，同一份資料。', alt: '誤導手法分類' },
+          { img: 'adviz-interface', cap: '同一組特徵，三種解碼介面：0.57、0.70、0.83。', alt: '三種解碼介面的平衡準確率' },
+          { img: 'adviz-3d', cap: '已知盲點：3D 透視把前方區塊視覺放大。', alt: '2D 與 3D 圓餅對照' },
+        ],
+      },
+      {
+        slug: 'bitoguard', no: '案例 ii', meta: '黑客松決賽 · 2026', tech: 'HeteroSAGE · GAT · SHAP · AWS',
+        title: 'BitoGuard：在 77 萬筆加密貨幣交易裡抓詐欺',
+        sub: 'Finding fraud in 770,000 crypto transactions, and explaining why.',
+        body: '把交易建成異質圖，HeteroSAGE 加 GAT 讀出帳戶之間的關係，再疊一層 Stacking 集成。真正的跳躍來自換一種問法：不問「這個帳戶像不像詐欺」，問「它的鄰居有多毒」，F1 從 0.37 跳到 0.83，AUC-ROC 0.861。每個判定都附 SHAP 解釋與四維度公平性審計。',
+        figs: [
+          { img: 'bito-dashboard', cap: '風險雷達儀表板：帳戶統計、混淆矩陣與前 20 名特徵重要性。', alt: 'BitoGuard 儀表板' },
+          { viz: 'architecture', cap: '系統流程：原始交易 → 特徵工程 → 異質圖神經網路 → 集成 → 可解釋性 → 風險分數。', alt: '系統架構' },
+          { img: 'bito-f1', cap: '加入 LOO 毒性特徵後，六項指標同時上升，F1 從 0.37 到 0.83。', alt: 'F1 前後對比' },
+          { img: 'bito-shap', cap: 'SHAP 前十名：三個 LOO 毒性特徵占 43% 的決策權重。', alt: 'SHAP 特徵重要性' },
+        ],
+      },
+      {
+        slug: 'highway', no: '案例 iii', meta: '全國第二 · 2025', tech: 'MT-STNet · LWR · RAG · Vue',
+        title: '國道智慧交通預測：深度學習加物理震波的雙引擎',
+        sub: 'Deep learning meets shockwave physics, with RAG to explain the forecast.',
+        body: '第一個引擎是 MT-STNet 時空神經網路，負責預測；第二個引擎是 LWR 物理震波模型，負責解釋壅塞為什麼往上游傳。兩者餵進 RAG 決策輔助層，用交控人員聽得懂的語言說明。2025 國道智慧交通競賽全國第二（第一名從缺），受邀於運輸學會年會發表。',
+        figs: [
+          { img: 'hw-admin', cap: '管理端控制中心：全路網監控、預測狀態與 AI 決策輔助。', alt: '管理端儀表板' },
+          { img: 'hw-driver', cap: '駕駛端：即時壅塞地圖、震波警示與 AI 路線建議。', alt: '駕駛端儀表板' },
+          { viz: 'heatmap', illustration: true, cap: '24 小時 × 8 車道的壅塞強度，模擬資料。', alt: '壅塞熱圖示意' },
+        ],
+      },
+    ],
   },
   cv: {
     title: 'Curriculum',

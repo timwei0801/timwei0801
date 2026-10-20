@@ -104,7 +104,7 @@ const { index: tick } = useRotation(() => 2, 4500)
 .crumb a:hover{color:var(--accent)}
 .ah{display:grid;grid-template-columns:7fr 5fr;gap:clamp(24px,4vw,56px);padding-block:22px clamp(36px,5vw,64px);border-bottom:2px solid var(--ink);align-items:start}
 h1{margin:0;font-size:clamp(40px,6vw,84px)}
-.lede{font-family:var(--serif);font-size:clamp(18px,1.7vw,22px);line-height:1.8;margin:18px 0 0;max-width:34em}
+.lede{font-family:var(--serif);font-size:clamp(19px,1.8vw,23px);line-height:1.8;margin:18px 0 0;max-width:34em}
 .toc{list-style:none;margin:28px 0 0;padding:0;border-top:2px solid var(--ink);max-width:420px}
 .toc a{display:grid;grid-template-columns:36px 1fr;gap:8px;padding:12px 0;border-bottom:1px solid var(--line);font-family:var(--zh);font-weight:700;font-size:18px;transition:padding-left .2s}
 .toc a:hover{color:var(--accent);padding-left:6px}
@@ -121,8 +121,8 @@ h1{margin:0;font-size:clamp(40px,6vw,84px)}
 .when{font-family:var(--mono);font-size:13px;color:var(--muted);padding-top:4px}
 .job h3{margin:0;font-family:var(--zh);font-weight:700;font-size:22px}
 .job .org{font-family:var(--serif);color:var(--muted);font-size:15.5px;margin-top:4px}
-.job .desc{font-family:var(--serif);font-size:17px;line-height:1.85;margin:12px 0 0}
-.job ul{list-style:disc;font-family:var(--serif);font-size:16.5px;line-height:1.85;padding-left:1.1em;margin:12px 0 0}
+.job .desc{font-family:var(--serif);font-size:18px;line-height:1.85;margin:12px 0 0}
+.job ul{list-style:disc;font-family:var(--serif);font-size:17.5px;line-height:1.85;padding-left:1.1em;margin:12px 0 0}
 .job li{margin-bottom:8px}
 .job :deep(strong){font-family:var(--zh);font-weight:700}
 @media (max-width:640px){.job{grid-template-columns:1fr}}
@@ -135,7 +135,7 @@ h1{margin:0;font-size:clamp(40px,6vw,84px)}
 .frame img.show{opacity:1}
 .frame img.contain{object-fit:contain;padding:28px;background:#fff}
 .frame .tag{position:absolute;top:10px;left:10px;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;background:var(--ink);color:var(--paper);padding:3px 8px}
-.award figcaption{margin-top:10px;font-family:var(--serif);font-size:15px;line-height:1.65;color:var(--muted)}
+.award figcaption{margin-top:10px;font-family:var(--serif);font-size:16px;line-height:1.65;color:var(--muted)}
 .award .figno{font-family:var(--mono);color:var(--accent);font-weight:500;margin-right:8px}
 .award .nm{font-family:var(--zh);font-weight:700;font-size:16px;color:var(--ink)}
 .award .org,.award .desc{display:block}

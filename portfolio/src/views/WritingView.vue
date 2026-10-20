@@ -47,14 +47,14 @@ const platformLabel: Record<string, string> = { medium: 'Medium', ithome: 'iThom
 .crumb a:hover{color:var(--accent)}
 .wh{padding-block:22px clamp(28px,4vw,48px);border-bottom:2px solid var(--ink)}
 h1{margin:0;font-size:clamp(36px,5.5vw,76px)}
-.lede{font-family:var(--serif);font-size:clamp(16px,1.4vw,19px);color:var(--muted);margin:14px 0 0;max-width:36em}
+.lede{font-family:var(--serif);font-size:clamp(17px,1.5vw,20px);color:var(--muted);margin:14px 0 0;max-width:36em}
 .sect{font-family:var(--serif);font-weight:500;font-style:italic;font-size:26px;margin:clamp(28px,4vw,48px) 0 18px}
 .channels{border-bottom:1px solid var(--rule);padding-bottom:clamp(20px,3vw,36px)}
 .chgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
 .ch{border-top:2px solid var(--rule);padding-top:14px}
 .ch h3{margin:8px 0 6px;font-family:var(--zh);font-weight:700;font-size:19px;line-height:1.4}
 .ch:hover h3{color:var(--accent)}
-.ch p{margin:0;font-family:var(--serif);font-size:15px;color:var(--muted)}
+.ch p{margin:0;font-family:var(--serif);font-size:16px;color:var(--muted)}
 @media (max-width:960px){.chgrid{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.chgrid{grid-template-columns:1fr}}
 .list{list-style:none;margin:0;padding:0 0 clamp(40px,6vw,80px)}

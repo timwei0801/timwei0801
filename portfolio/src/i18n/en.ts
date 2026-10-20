@@ -38,6 +38,13 @@ export default {
     issueSub: 'Ranked #1 graduate',
     photoCap: '2025 · Transportation Conf.',
     photoAlt: 'Tim Wei speaking at the 2025 Chinese Institute of Transportation Annual Conference',
+    photos: [
+      { img: 'tim', cap: '2025 · Transportation Conference · invited talk', alt: 'Tim Wei speaking at the 2025 Chinese Institute of Transportation Annual Conference' },
+      { img: 'award-aiexpo', cap: '2026 · Taiwan AI EXPO · hackathon finals', alt: 'Hackathon finals and exhibition at Taiwan AI EXPO 2026' },
+      { img: 'award-hackathon', cap: '2026 · Agent for Truth hackathon', alt: 'Agent for Truth hackathon team' },
+      { img: 'award-highway', cap: '2025 · National Highway Competition · 2nd place', alt: 'Award ceremony of the 2025 National Highway Traffic Competition' },
+      { img: 'award-sinica', cap: '2024 · Academia Sinica Data Science Stroll · two awards', alt: 'Award ceremony at Academia Sinica' },
+    ],
   },
   marquee: [
     'Ranked #1 graduate',
@@ -63,16 +70,46 @@ export default {
     ],
   },
   feature: {
-    kicker: 'Feature · case i',
-    kickerAfter: "Master's thesis · 2026",
-    tech: 'VLM · GRPO · PyTorch',
-    title: 'ADVIZ: training AI to see through charts that lie',
-    sub: 'Teaching a model to see through charts that lie.',
-    body: 'Red generates attacks, Blue learns to catch them, and both co-evolve through Dual-GRPO. The core finding is mechanistic: the bottleneck is the decoding interface, not representational capacity. On the same vision-language features, swapping generative JSON decoding for a sigmoid classifier head lifts balanced accuracy from 0.57 to 0.70; fusing a rule-based linter reaches 0.83.',
+    kicker: 'Feature',
     read: 'Read the full case →',
     figNo: 'Fig. 2',
-    figCap: 'The open-source interactive demo. You play Red, pick misleading techniques to alter the right-hand chart, then let the Blue Critic score it. A real distortion that Blue misses is a blind spot found.',
-    figAlt: 'ADVIZ interactive demo: play Red, can you fool the AI?',
+    items: [
+      {
+        slug: 'adviz', no: 'case i', meta: "Master's thesis · 2026", tech: 'VLM · GRPO · PyTorch',
+        title: 'ADVIZ: training AI to see through charts that lie',
+        sub: 'Teaching a model to see through charts that lie.',
+        body: 'Red generates attacks, Blue learns to catch them, and both co-evolve through Dual-GRPO. The core finding is mechanistic: the bottleneck is the decoding interface, not representational capacity. On the same vision-language features, swapping generative JSON decoding for a sigmoid classifier head lifts balanced accuracy from 0.57 to 0.70; fusing a rule-based linter reaches 0.83.',
+        figs: [
+          { img: 'adviz-showcase', cap: 'The open-source interactive demo: play Red, alter the chart, let the Blue Critic score it.', alt: 'ADVIZ interactive demo' },
+          { img: 'adviz-taxonomy', cap: 'Six categories of misleading techniques; honest on the left, tampered on the right, same data.', alt: 'Taxonomy of misleading techniques' },
+          { img: 'adviz-interface', cap: 'Same features, three decoding interfaces: 0.57, 0.70, 0.83.', alt: 'Balanced accuracy of three decoding interfaces' },
+          { img: 'adviz-3d', cap: 'A known blind spot: 3D perspective visually enlarges the front slices.', alt: '2D versus 3D pie' },
+        ],
+      },
+      {
+        slug: 'bitoguard', no: 'case ii', meta: 'Hackathon finalist · 2026', tech: 'HeteroSAGE · GAT · SHAP · AWS',
+        title: 'BitoGuard: finding fraud in 770,000 crypto transactions',
+        sub: 'Catching fraudulent accounts, and explaining why.',
+        body: 'Transactions become a heterogeneous graph; HeteroSAGE plus GAT read the relationships between accounts, with a stacking ensemble on top. The real jump came from a different question: not "does this account look like fraud" but "how toxic are its neighbours". F1 went from 0.37 to 0.83, AUC-ROC 0.861, every call explained with SHAP and a four-dimension fairness audit.',
+        figs: [
+          { img: 'bito-dashboard', cap: 'Risk radar dashboard: account statistics, confusion matrix and top-20 feature importance.', alt: 'BitoGuard dashboard' },
+          { viz: 'architecture', cap: 'Pipeline: raw transactions → features → heterogeneous GNN → ensemble → explainability → risk score.', alt: 'System architecture' },
+          { img: 'bito-f1', cap: 'With LOO toxicity features all six metrics rise together; F1 from 0.37 to 0.83.', alt: 'F1 before and after' },
+          { img: 'bito-shap', cap: 'SHAP top-10: three LOO toxicity features carry 43% of the decision weight.', alt: 'SHAP feature importance' },
+        ],
+      },
+      {
+        slug: 'highway', no: 'case iii', meta: '2nd place national · 2025', tech: 'MT-STNet · LWR · RAG · Vue',
+        title: 'Highway traffic prediction: a deep-learning + shockwave-physics dual engine',
+        sub: 'Deep learning meets shockwave physics, with RAG to explain the forecast.',
+        body: 'Engine one, MT-STNet, predicts; engine two, an LWR shockwave model, explains why congestion travels upstream. Both feed a RAG decision-support layer that speaks the controller\'s language. 2nd place at the 2025 National Highway Traffic Competition (1st vacant) and an invited talk at the Transportation Annual Conference.',
+        figs: [
+          { img: 'hw-admin', cap: 'Admin control centre: network monitoring, prediction status and AI decision support.', alt: 'Admin dashboard' },
+          { img: 'hw-driver', cap: 'Driver view: live congestion map, shockwave alerts and AI route suggestions.', alt: 'Driver dashboard' },
+          { viz: 'heatmap', illustration: true, cap: '24 hours × 8 lanes of congestion intensity, simulated data.', alt: 'Congestion heatmap illustration' },
+        ],
+      },
+    ],
   },
   cv: {
     title: 'Curriculum',

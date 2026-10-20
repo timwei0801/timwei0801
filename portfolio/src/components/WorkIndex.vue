@@ -72,7 +72,7 @@ h2 small{display:block;font-family:var(--zh);font-weight:700;font-size:clamp(13p
 .no{font-family:var(--serif);font-style:italic;font-size:15px;color:var(--accent)}
 .row:hover .no{color:var(--paper)}
 .t{font-family:var(--zh);font-weight:900;font-size:clamp(20px,2.3vw,30px);line-height:1.2}
-.t small{display:block;font-family:var(--serif);font-weight:400;font-size:13.5px;color:var(--muted);margin-top:4px}
+.t small{display:block;font-family:var(--serif);font-weight:400;font-size:15px;color:var(--muted);margin-top:4px}
 .row:hover .t small{color:var(--paper);opacity:.7}
 .k{font-family:var(--mono);font-size:12px;letter-spacing:.06em}
 .y{font-family:var(--display);font-weight:700;font-stretch:75%;font-size:22px;text-align:right}
