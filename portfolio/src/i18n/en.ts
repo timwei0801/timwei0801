@@ -206,7 +206,7 @@ export default {
         },
         {
           period: '2024 — 2026',
-          position: 'M.S. Data Science · ranked #1 in the department',
+          position: 'M.S. Data Science · ranked #1 in the department · Phi Tau Phi honorary member',
           company: 'Tamkang University, Dept. of Statistics & Data Science · New Taipei',
           description: "Master's thesis ADVIZ on adversarial self-evolving visualization agents, advised by Dr. Chiun-How Kao; graduated August 2026. Full text in the TKU electronic thesis system; code and interactive demo fully open-sourced.",
           bullets: [
