@@ -72,6 +72,16 @@ test.describe('Case pages (journal)', () => {
     })
   }
 
+  test('client-side navigation out of a case page renders the next view', async ({ page }) => {
+    await page.goto(`${BASE}work/adviz`)
+    await page.locator('nav.next a').last().click()
+    await expect(page).toHaveURL(/\/work\/bitoguard$/)
+    await expect(page.locator('main.case h1')).toContainText('BitoGuard')
+    await page.locator('nav a[href$="/about"]').click()
+    await expect(page).toHaveURL(/\/about$/)
+    await expect(page.locator('main.about #experience')).toBeVisible()
+  })
+
   test('unknown slug shows the 404 page', async ({ page }) => {
     await page.goto(`${BASE}work/nope`)
     await expect(page.locator('.nf')).toBeVisible()

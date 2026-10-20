@@ -48,6 +48,7 @@ onBeforeUnmount(() => io?.disconnect())
 </script>
 
 <template>
+  <div class="case-page">
   <NotFoundView v-if="!exists" />
   <main v-else class="wrap case">
     <div class="crumb"><router-link to="/#index">{{ t('caseUi.crumbIndex') }}</router-link> &nbsp;/&nbsp; {{ t('caseUi.crumbCase') }} {{ data.no }}</div>
@@ -103,6 +104,7 @@ onBeforeUnmount(() => io?.disconnect())
     <router-link v-if="data.next" :to="`/work/${data.next}`"><span class="mono">{{ t('caseUi.next') }} {{ siblingNo(data.next) }} →</span><b>{{ siblingTitle(data.next) }}</b></router-link>
     <router-link v-else to="/#index"><span class="mono">{{ t('caseUi.allWork') }} →</span><b>{{ t('caseUi.crumbIndex') }}</b></router-link>
   </nav>
+  </div>
 </template>
 
 <style scoped>

@@ -52,5 +52,5 @@ function goHash(hash: string) {
 .links a,.links .lang{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;margin-left:22px;position:relative;background:none;border:0;padding:0;cursor:pointer;color:inherit}
 .links a::after,.links .lang::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:2px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .2s}
 .links a:hover::after,.links .lang:hover::after,.links a.router-link-active:not([href="/"])::after{transform:scaleX(1)}
-@media (max-width:700px){.links .hm{display:none}.brand small{display:none}.links a,.links .lang{margin-left:16px}}
+@media (max-width:700px){.brand .nm,.brand small{display:none}.links a,.links .lang{margin-left:13px;font-size:11px;letter-spacing:.08em}}
 </style>
